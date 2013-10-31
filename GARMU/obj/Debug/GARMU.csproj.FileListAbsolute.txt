@@ -298,3 +298,16 @@ E:\GARMU\GARMU\GARMU\bin\Debug\garmuBD.mdf
 E:\GARMU\GARMU\GARMU\bin\Debug\garmuBD_log.ldf
 J:\GARMU\GARMU\GARMU\bin\Debug\garmuBD.mdf
 J:\GARMU\GARMU\GARMU\bin\Debug\garmuBD_log.ldf
+D:\Documents\GitHub\GARMU\GARMU\bin\Debug\GARMU.exe.config
+D:\Documents\GitHub\GARMU\GARMU\obj\Debug\GARMU.exe
+D:\Documents\GitHub\GARMU\GARMU\obj\Debug\GARMU.pdb
+D:\Documents\GitHub\GARMU\GARMU\obj\Debug\GARMU.frmPrincipal.resources
+D:\Documents\GitHub\GARMU\GARMU\obj\Debug\GARMU.Properties.Resources.resources
+D:\Documents\GitHub\GARMU\GARMU\obj\Debug\GARMU.Vue.frmAPropos.resources
+D:\Documents\GitHub\GARMU\GARMU\obj\Debug\GARMU.Vue.frmActionsRequete.resources
+D:\Documents\GitHub\GARMU\GARMU\obj\Debug\GARMU.csproj.GenerateResource.Cache
+D:\Documents\GitHub\GARMU\GARMU\bin\Debug\GARMU.exe
+D:\Documents\GitHub\GARMU\GARMU\bin\Debug\GARMU.pdb
+D:\Documents\GitHub\GARMU\GARMU\bin\Debug\EntityFramework.dll
+D:\Documents\GitHub\GARMU\GARMU\bin\Debug\EntityFramework.xml
+D:\Documents\GitHub\GARMU\GARMU\bin\Debug\fr\EntityFramework.resources.dll

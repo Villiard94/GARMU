@@ -987,26 +987,6 @@ namespace GARMU
 
         }
 
-        private void bAjouterVehicule_Click(object sender, EventArgs e)
-        {
-            //int numeroVeh;
-
-            try //essaie de convertir le string en int
-            {
-                //numeroVeh = int.Parse(noVehiculeTextBox.Text);
-
-            }
-            catch (Exception)
-            {
-
-                MessageBox.Show("Ceci n'est pas un numéro de véhicule valide valide");
-                return;
-            }
-
-            //Ajouter le vehicule
-            //_mVehicule.Add(numeroVeh);
-        }
-
         private void bAddVeh_Click(object sender, EventArgs e)
         {
             tbNoVeh.Clear();
@@ -1031,17 +1011,19 @@ namespace GARMU
                 return;
             }
 
-            int numeroVeh;
+            string numeroVeh;
 
             try //essaie de convertir le string en int
             {
-                numeroVeh = int.Parse(tbNoVeh.Text);
+                int.Parse(tbNoVeh.Text);
             }
             catch (Exception)
             {
                 MessageBox.Show("Ceci n'est pas un numéro de véhicule valide");
                 return;
             }
+
+            numeroVeh = tbNoVeh.Text;
 
             string msg = _mVehicule.Add(numeroVeh.ToString());
             MessageBox.Show(msg);
