@@ -1,0 +1,1878 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+      <Schema Namespace="garmuBDModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+        <EntityContainer Name="garmuBDModelStoreContainer">
+          <EntitySet Name="Action" EntityType="garmuBDModel.Store.Action" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ActionPrevue" EntityType="garmuBDModel.Store.ActionPrevue" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Assignation" EntityType="garmuBDModel.Store.Assignation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DemandeSpeciale" EntityType="garmuBDModel.Store.DemandeSpeciale" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="DetailPlanificationMensuelle" EntityType="garmuBDModel.Store.DetailPlanificationMensuelle" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Domaine" EntityType="garmuBDModel.Store.Domaine" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Employee" EntityType="garmuBDModel.Store.Employee" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="EndroitCible" EntityType="garmuBDModel.Store.EndroitCible" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Equipe" EntityType="garmuBDModel.Store.Equipe" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="JourMois" EntityType="garmuBDModel.Store.JourMois" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="MarqueVehicule" EntityType="garmuBDModel.Store.MarqueVehicule" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ModeleVehicule" EntityType="garmuBDModel.Store.ModeleVehicule" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Patrouilleur" EntityType="garmuBDModel.Store.Patrouilleur" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PlanificationMensuelle" EntityType="garmuBDModel.Store.PlanificationMensuelle" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="PrioriteLocale" EntityType="garmuBDModel.Store.PrioriteLocale" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProblemeSouleve" EntityType="garmuBDModel.Store.ProblemeSouleve" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="ProblemeSouleve_DemandeSpeciale" EntityType="garmuBDModel.Store.ProblemeSouleve_DemandeSpeciale" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Releve" EntityType="garmuBDModel.Store.Releve" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Secteur" EntityType="garmuBDModel.Store.Secteur" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="SuiviDemande" EntityType="garmuBDModel.Store.SuiviDemande" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Suspect" EntityType="garmuBDModel.Store.Suspect" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Suspect_DemandeSpeciale" EntityType="garmuBDModel.Store.Suspect_DemandeSpeciale" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TacheQuotidienne" EntityType="garmuBDModel.Store.TacheQuotidienne" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TacheQuotidienne_Assignation" EntityType="garmuBDModel.Store.TacheQuotidienne_Assignation" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TacheQuotidienne_DemandeSpeciale" EntityType="garmuBDModel.Store.TacheQuotidienne_DemandeSpeciale" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="TacheQuotidienne_Patrouilleur" EntityType="garmuBDModel.Store.TacheQuotidienne_Patrouilleur" store:Type="Tables" Schema="dbo" />
+          <EntitySet Name="Vehicule" EntityType="garmuBDModel.Store.Vehicule" store:Type="Tables" Schema="dbo" />
+          <AssociationSet Name="Assignation est dans une ou des Tache" Association="garmuBDModel.Store.Assignation est dans une ou des Tache">
+            <End Role="Assignation" EntitySet="Assignation" />
+            <End Role="TacheQuotidienne_Assignation" EntitySet="TacheQuotidienne_Assignation" />
+          </AssociationSet>
+          <AssociationSet Name="Demande a des Probleme" Association="garmuBDModel.Store.Demande a des Probleme">
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+            <End Role="ProblemeSouleve_DemandeSpeciale" EntitySet="ProblemeSouleve_DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Demande a des Suspect" Association="garmuBDModel.Store.Demande a des Suspect">
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+            <End Role="Suspect_DemandeSpeciale" EntitySet="Suspect_DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Demande a Modele" Association="garmuBDModel.Store.Demande a Modele">
+            <End Role="ModeleVehicule" EntitySet="ModeleVehicule" />
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Demande a un Suivi" Association="garmuBDModel.Store.Demande a un Suivi">
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+            <End Role="SuiviDemande" EntitySet="SuiviDemande" />
+          </AssociationSet>
+          <AssociationSet Name="Demande est dans Tache" Association="garmuBDModel.Store.Demande est dans Tache">
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+            <End Role="TacheQuotidienne_DemandeSpeciale" EntitySet="TacheQuotidienne_DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Demande remplit par Patrouilleur" Association="garmuBDModel.Store.Demande remplit par Patrouilleur">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Detail a des Action" Association="garmuBDModel.Store.Detail a des Action">
+            <End Role="ActionPrevue" EntitySet="ActionPrevue" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Detail a des Endroit" Association="garmuBDModel.Store.Detail a des Endroit">
+            <End Role="EndroitCible" EntitySet="EndroitCible" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Detail a des Priorite" Association="garmuBDModel.Store.Detail a des Priorite">
+            <End Role="PrioriteLocale" EntitySet="PrioriteLocale" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Detail a un Domaine" Association="garmuBDModel.Store.Detail a un Domaine">
+            <End Role="Domaine" EntitySet="Domaine" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Detail etablie des Assignation" Association="garmuBDModel.Store.Detail etablie des Assignation">
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+            <End Role="Assignation" EntitySet="Assignation" />
+          </AssociationSet>
+          <AssociationSet Name="Employee est Patrouilleur" Association="garmuBDModel.Store.Employee est Patrouilleur">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois a Assignation" Association="garmuBDModel.Store.JourMois a Assignation">
+            <End Role="JourMois" EntitySet="JourMois" />
+            <End Role="Assignation" EntitySet="Assignation" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois a des Tache" Association="garmuBDModel.Store.JourMois a des Tache">
+            <End Role="JourMois" EntitySet="JourMois" />
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois a une Releve" Association="garmuBDModel.Store.JourMois a une Releve">
+            <End Role="Releve" EntitySet="Releve" />
+            <End Role="JourMois" EntitySet="JourMois" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois est fait a partir de Planif " Association="garmuBDModel.Store.JourMois est fait a partir de Planif ">
+            <End Role="PlanificationMensuelle" EntitySet="PlanificationMensuelle" />
+            <End Role="JourMois" EntitySet="JourMois" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois est pour Equipe" Association="garmuBDModel.Store.JourMois est pour Equipe">
+            <End Role="Equipe" EntitySet="Equipe" />
+            <End Role="JourMois" EntitySet="JourMois" />
+          </AssociationSet>
+          <AssociationSet Name="Modele a une Marque" Association="garmuBDModel.Store.Modele a une Marque">
+            <End Role="MarqueVehicule" EntitySet="MarqueVehicule" />
+            <End Role="ModeleVehicule" EntitySet="ModeleVehicule" />
+          </AssociationSet>
+          <AssociationSet Name="Patrouilleur a un Veh" Association="garmuBDModel.Store.Patrouilleur a un Veh">
+            <End Role="Vehicule" EntitySet="Vehicule" />
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+          </AssociationSet>
+          <AssociationSet Name="Patrouilleur est assigne Tache" Association="garmuBDModel.Store.Patrouilleur est assigne Tache">
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+            <End Role="TacheQuotidienne_Patrouilleur" EntitySet="TacheQuotidienne_Patrouilleur" />
+          </AssociationSet>
+          <AssociationSet Name="Patrouilleur est dans Equipe" Association="garmuBDModel.Store.Patrouilleur est dans Equipe">
+            <End Role="Equipe" EntitySet="Equipe" />
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+          </AssociationSet>
+          <AssociationSet Name="Planif a des Detail" Association="garmuBDModel.Store.Planif a des Detail">
+            <End Role="PlanificationMensuelle" EntitySet="PlanificationMensuelle" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Probleme est dans Demande" Association="garmuBDModel.Store.Probleme est dans Demande">
+            <End Role="ProblemeSouleve" EntitySet="ProblemeSouleve" />
+            <End Role="ProblemeSouleve_DemandeSpeciale" EntitySet="ProblemeSouleve_DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Suivi comprend Action" Association="garmuBDModel.Store.Suivi comprend Action">
+            <End Role="SuiviDemande" EntitySet="SuiviDemande" />
+            <End Role="Action" EntitySet="Action" />
+          </AssociationSet>
+          <AssociationSet Name="Suivi est traite par Patrouilleur" Association="garmuBDModel.Store.Suivi est traite par Patrouilleur">
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+            <End Role="SuiviDemande" EntitySet="SuiviDemande" />
+          </AssociationSet>
+          <AssociationSet Name="Supect est dans Demande" Association="garmuBDModel.Store.Supect est dans Demande">
+            <End Role="Suspect" EntitySet="Suspect" />
+            <End Role="Suspect_DemandeSpeciale" EntitySet="Suspect_DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Tache assigne Patrouilleur" Association="garmuBDModel.Store.Tache assigne Patrouilleur">
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+            <End Role="TacheQuotidienne_Patrouilleur" EntitySet="TacheQuotidienne_Patrouilleur" />
+          </AssociationSet>
+          <AssociationSet Name="Tache comporte Demande" Association="garmuBDModel.Store.Tache comporte Demande">
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+            <End Role="TacheQuotidienne_DemandeSpeciale" EntitySet="TacheQuotidienne_DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Tache comporte une ou des Assignation" Association="garmuBDModel.Store.Tache comporte une ou des Assignation">
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+            <End Role="TacheQuotidienne_Assignation" EntitySet="TacheQuotidienne_Assignation" />
+          </AssociationSet>
+          <AssociationSet Name="Tache dans Secteur" Association="garmuBDModel.Store.Tache dans Secteur">
+            <End Role="Secteur" EntitySet="Secteur" />
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Action">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="HeureDebut" Type="datetime" Nullable="false" />
+          <Property Name="HeureFin" Type="datetime" Nullable="false" />
+          <Property Name="Constats" Type="int" Nullable="false" />
+          <Property Name="Action" Type="varchar" Nullable="false" MaxLength="255" />
+          <Property Name="SuiviDemandeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="ActionPrevue">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" Nullable="false" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Assignation">
+          <Key>
+            <PropertyRef Name="DetailPlanID" />
+            <PropertyRef Name="JourMoisID" />
+          </Key>
+          <Property Name="DetailPlanID" Type="int" Nullable="false" />
+          <Property Name="JourMoisID" Type="int" Nullable="false" />
+          <Property Name="QuantitieJournee" Type="int" Nullable="false" />
+          <Property Name="NbCompleteJournee" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="DemandeSpeciale">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NomDemandeur" Type="varchar" Nullable="false" MaxLength="100" />
+          <Property Name="AdresseDemandeur" Type="int" Nullable="false" />
+          <Property Name="TelephoneDemandeur" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="FaxDemandeur" Type="varchar" MaxLength="20" />
+          <Property Name="CourrielDemandeur" Type="varchar" MaxLength="100" />
+          <Property Name="DemandeRetour" Type="bit" Nullable="false" />
+          <Property Name="DescriptionDemande" Type="varchar" MaxLength="1000" />
+          <Property Name="Localisation" Type="varchar" MaxLength="100" />
+          <Property Name="DescriptionVehicule" Type="varchar" MaxLength="255" />
+          <Property Name="ModeleVehiculeID" Type="int" />
+          <Property Name="Immatriculation" Type="varchar" MaxLength="10" />
+          <Property Name="DescriptionSuspect" Type="varchar" MaxLength="1000" />
+          <Property Name="SecteurContrevenant" Type="bit" />
+          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="DateDemande" Type="datetime" Nullable="false" />
+          <Property Name="Provenance" Type="varchar" MaxLength="500" />
+          <Property Name="Municipalite" Type="varchar" MaxLength="50" />
+          <Property Name="Releve" Type="int" />
+          <Property Name="JourSemaine" Type="varchar" MaxLength="15" />
+        </EntityType>
+        <EntityType Name="DetailPlanificationMensuelle">
+          <Key>
+            <PropertyRef Name="DetailPlanID" />
+          </Key>
+          <Property Name="DetailPlanID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="PlanificationMensuelleAnnee" Type="int" Nullable="false" />
+          <Property Name="PlanificationMensuelleMois" Type="int" Nullable="false" />
+          <Property Name="DomaineID" Type="int" Nullable="false" />
+          <Property Name="PrioritesLocalesID" Type="int" Nullable="false" />
+          <Property Name="EndroitsCiblesID" Type="int" Nullable="false" />
+          <Property Name="ActionsPrevuesID" Type="int" Nullable="false" />
+          <Property Name="Condition" Type="varchar" MaxLength="255" />
+          <Property Name="Quantite" Type="int" />
+          <Property Name="Resultat" Type="int" />
+        </EntityType>
+        <EntityType Name="Domaine">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" MaxLength="50" />
+          <Property Name="Prenom" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="EndroitCible">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="Equipe">
+          <Key>
+            <PropertyRef Name="NoEquipe" />
+          </Key>
+          <Property Name="NoEquipe" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="JourMois">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="datetime" Nullable="false" />
+          <Property Name="NoEquipe" Type="int" />
+          <Property Name="ReleveID" Type="int" />
+          <Property Name="PlanificationMensuelleAnnee" Type="int" />
+          <Property Name="PlanificationMensuelleMois" Type="int" />
+        </EntityType>
+        <EntityType Name="MarqueVehicule">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" Nullable="false" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="ModeleVehicule">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" Nullable="false" MaxLength="20" />
+          <Property Name="MarqueVehiculeID" Type="int" />
+        </EntityType>
+        <EntityType Name="Patrouilleur">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="Matricule" Type="int" Nullable="false" />
+          <Property Name="VehiculeId" Type="int" />
+          <Property Name="EquipeNoEquipe" Type="int" />
+        </EntityType>
+        <EntityType Name="PlanificationMensuelle">
+          <Key>
+            <PropertyRef Name="Annee" />
+            <PropertyRef Name="Mois" />
+          </Key>
+          <Property Name="Annee" Type="int" Nullable="false" />
+          <Property Name="Mois" Type="int" Nullable="false" />
+          <Property Name="Theme" Type="varchar" MaxLength="255" />
+          <Property Name="Poste" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="PrioriteLocale">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" Nullable="false" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ProblemeSouleve">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" MaxLength="100" />
+        </EntityType>
+        <EntityType Name="ProblemeSouleve_DemandeSpeciale">
+          <Key>
+            <PropertyRef Name="ProblemeSouleveID" />
+            <PropertyRef Name="DemandesSpecialesID" />
+          </Key>
+          <Property Name="ProblemeSouleveID" Type="int" Nullable="false" />
+          <Property Name="DemandesSpecialesID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Releve">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" MaxLength="20" />
+        </EntityType>
+        <EntityType Name="Secteur">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="varchar" Nullable="false" MaxLength="5" />
+          <Property Name="Nom" Type="varchar" MaxLength="50" />
+        </EntityType>
+        <EntityType Name="SuiviDemande">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="VerificationInfrastructure" Type="bit" Nullable="false" />
+          <Property Name="DureeSurveillance" Type="int" />
+          <Property Name="DateAgenda" Type="datetime" />
+          <Property Name="NbConstatEmis" Type="int" />
+          <Property Name="NbPoliciers" Type="int" />
+          <Property Name="TypeSurveillance" Type="bit" Nullable="false" />
+          <Property Name="Commentaires" Type="varchar" MaxLength="1000" />
+          <Property Name="Complete" Type="bit" />
+          <Property Name="Retourne" Type="bit" Nullable="false" />
+          <Property Name="RetourPar" Type="varchar" MaxLength="75" />
+          <Property Name="RetourDate" Type="datetime" />
+          <Property Name="RetourHeure" Type="datetime" />
+          <Property Name="RetourMoyen" Type="varchar" MaxLength="255" />
+          <Property Name="Parl" Type="bit" Nullable="false" />
+          <Property Name="ParlPar" Type="varchar" MaxLength="75" />
+          <Property Name="ControlePar" Type="varchar" Nullable="false" MaxLength="75" />
+          <Property Name="DemandesSpecialesID" Type="int" Nullable="false" />
+          <Property Name="PatrouilleurEmployeeID" Type="int" />
+        </EntityType>
+        <EntityType Name="Suspect">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="varchar" MaxLength="55" />
+          <Property Name="Prenom" Type="varchar" MaxLength="55" />
+          <Property Name="DDN" Type="varchar" MaxLength="50" />
+          <Property Name="DescriptionPhysique" Type="varchar" MaxLength="255" />
+        </EntityType>
+        <EntityType Name="Suspect_DemandeSpeciale">
+          <Key>
+            <PropertyRef Name="SuspectID" />
+            <PropertyRef Name="DemandesSpecialesID" />
+          </Key>
+          <Property Name="SuspectID" Type="int" Nullable="false" />
+          <Property Name="DemandesSpecialesID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TacheQuotidienne">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="SecteurID" Type="varchar" MaxLength="5" />
+          <Property Name="JourMoisID" Type="int" Nullable="false" />
+          <Property Name="DixVingt" Type="varchar" MaxLength="10" />
+        </EntityType>
+        <EntityType Name="TacheQuotidienne_Assignation">
+          <Key>
+            <PropertyRef Name="TacheQuotidienneID" />
+            <PropertyRef Name="AssignationDetailPlanID" />
+            <PropertyRef Name="AssignationJourMoisID" />
+          </Key>
+          <Property Name="TacheQuotidienneID" Type="int" Nullable="false" />
+          <Property Name="AssignationDetailPlanID" Type="int" Nullable="false" />
+          <Property Name="AssignationJourMoisID" Type="int" Nullable="false" />
+          <Property Name="Complete" Type="bit" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TacheQuotidienne_DemandeSpeciale">
+          <Key>
+            <PropertyRef Name="TacheQuotidienneID" />
+            <PropertyRef Name="DemandeSpecialeID" />
+          </Key>
+          <Property Name="TacheQuotidienneID" Type="int" Nullable="false" />
+          <Property Name="DemandeSpecialeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TacheQuotidienne_Patrouilleur">
+          <Key>
+            <PropertyRef Name="TacheQuotidienneID" />
+            <PropertyRef Name="PatrouilleurEmployeeID" />
+          </Key>
+          <Property Name="TacheQuotidienneID" Type="int" Nullable="false" />
+          <Property Name="PatrouilleurEmployeeID" Type="int" Nullable="false" />
+        </EntityType>
+        <EntityType Name="Vehicule">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+          <Property Name="NoVehicule" Type="varchar" Nullable="false" MaxLength="50" />
+        </EntityType>
+        <Association Name="Assignation est dans une ou des Tache">
+          <End Role="Assignation" Type="garmuBDModel.Store.Assignation" Multiplicity="1" />
+          <End Role="TacheQuotidienne_Assignation" Type="garmuBDModel.Store.TacheQuotidienne_Assignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Assignation">
+              <PropertyRef Name="DetailPlanID" />
+              <PropertyRef Name="JourMoisID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne_Assignation">
+              <PropertyRef Name="AssignationDetailPlanID" />
+              <PropertyRef Name="AssignationJourMoisID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Demande a des Probleme">
+          <End Role="DemandeSpeciale" Type="garmuBDModel.Store.DemandeSpeciale" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ProblemeSouleve_DemandeSpeciale" Type="garmuBDModel.Store.ProblemeSouleve_DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DemandeSpeciale">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ProblemeSouleve_DemandeSpeciale">
+              <PropertyRef Name="DemandesSpecialesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Demande a des Suspect">
+          <End Role="DemandeSpeciale" Type="garmuBDModel.Store.DemandeSpeciale" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Suspect_DemandeSpeciale" Type="garmuBDModel.Store.Suspect_DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DemandeSpeciale">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Suspect_DemandeSpeciale">
+              <PropertyRef Name="DemandesSpecialesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Demande a Modele">
+          <End Role="ModeleVehicule" Type="garmuBDModel.Store.ModeleVehicule" Multiplicity="0..1" />
+          <End Role="DemandeSpeciale" Type="garmuBDModel.Store.DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModeleVehicule">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DemandeSpeciale">
+              <PropertyRef Name="ModeleVehiculeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Demande a un Suivi">
+          <End Role="DemandeSpeciale" Type="garmuBDModel.Store.DemandeSpeciale" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SuiviDemande" Type="garmuBDModel.Store.SuiviDemande" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DemandeSpeciale">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SuiviDemande">
+              <PropertyRef Name="DemandesSpecialesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Demande est dans Tache">
+          <End Role="DemandeSpeciale" Type="garmuBDModel.Store.DemandeSpeciale" Multiplicity="1" />
+          <End Role="TacheQuotidienne_DemandeSpeciale" Type="garmuBDModel.Store.TacheQuotidienne_DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DemandeSpeciale">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne_DemandeSpeciale">
+              <PropertyRef Name="DemandeSpecialeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Demande remplit par Patrouilleur">
+          <End Role="Employee" Type="garmuBDModel.Store.Employee" Multiplicity="1" />
+          <End Role="DemandeSpeciale" Type="garmuBDModel.Store.DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DemandeSpeciale">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail a des Action">
+          <End Role="ActionPrevue" Type="garmuBDModel.Store.ActionPrevue" Multiplicity="1" />
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.Store.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActionPrevue">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="ActionsPrevuesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail a des Endroit">
+          <End Role="EndroitCible" Type="garmuBDModel.Store.EndroitCible" Multiplicity="1" />
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.Store.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EndroitCible">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="EndroitsCiblesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail a des Priorite">
+          <End Role="PrioriteLocale" Type="garmuBDModel.Store.PrioriteLocale" Multiplicity="1" />
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.Store.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PrioriteLocale">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="PrioritesLocalesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail a un Domaine">
+          <End Role="Domaine" Type="garmuBDModel.Store.Domaine" Multiplicity="1" />
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.Store.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Domaine">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="DomaineID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail etablie des Assignation">
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.Store.DetailPlanificationMensuelle" Multiplicity="1" />
+          <End Role="Assignation" Type="garmuBDModel.Store.Assignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="DetailPlanID" />
+            </Principal>
+            <Dependent Role="Assignation">
+              <PropertyRef Name="DetailPlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Employee est Patrouilleur">
+          <End Role="Employee" Type="garmuBDModel.Store.Employee" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Patrouilleur" Type="garmuBDModel.Store.Patrouilleur" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Patrouilleur">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois a Assignation">
+          <End Role="JourMois" Type="garmuBDModel.Store.JourMois" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Assignation" Type="garmuBDModel.Store.Assignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JourMois">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Assignation">
+              <PropertyRef Name="JourMoisID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois a des Tache">
+          <End Role="JourMois" Type="garmuBDModel.Store.JourMois" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TacheQuotidienne" Type="garmuBDModel.Store.TacheQuotidienne" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JourMois">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne">
+              <PropertyRef Name="JourMoisID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois a une Releve">
+          <End Role="Releve" Type="garmuBDModel.Store.Releve" Multiplicity="0..1" />
+          <End Role="JourMois" Type="garmuBDModel.Store.JourMois" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Releve">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="JourMois">
+              <PropertyRef Name="ReleveID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois est fait a partir de Planif ">
+          <End Role="PlanificationMensuelle" Type="garmuBDModel.Store.PlanificationMensuelle" Multiplicity="0..1" />
+          <End Role="JourMois" Type="garmuBDModel.Store.JourMois" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlanificationMensuelle">
+              <PropertyRef Name="Annee" />
+              <PropertyRef Name="Mois" />
+            </Principal>
+            <Dependent Role="JourMois">
+              <PropertyRef Name="PlanificationMensuelleAnnee" />
+              <PropertyRef Name="PlanificationMensuelleMois" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois est pour Equipe">
+          <End Role="Equipe" Type="garmuBDModel.Store.Equipe" Multiplicity="0..1" />
+          <End Role="JourMois" Type="garmuBDModel.Store.JourMois" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipe">
+              <PropertyRef Name="NoEquipe" />
+            </Principal>
+            <Dependent Role="JourMois">
+              <PropertyRef Name="NoEquipe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Modele a une Marque">
+          <End Role="MarqueVehicule" Type="garmuBDModel.Store.MarqueVehicule" Multiplicity="0..1" />
+          <End Role="ModeleVehicule" Type="garmuBDModel.Store.ModeleVehicule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MarqueVehicule">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ModeleVehicule">
+              <PropertyRef Name="MarqueVehiculeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Patrouilleur a un Veh">
+          <End Role="Vehicule" Type="garmuBDModel.Store.Vehicule" Multiplicity="0..1" />
+          <End Role="Patrouilleur" Type="garmuBDModel.Store.Patrouilleur" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicule">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Patrouilleur">
+              <PropertyRef Name="VehiculeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Patrouilleur est assigne Tache">
+          <End Role="Patrouilleur" Type="garmuBDModel.Store.Patrouilleur" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TacheQuotidienne_Patrouilleur" Type="garmuBDModel.Store.TacheQuotidienne_Patrouilleur" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patrouilleur">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne_Patrouilleur">
+              <PropertyRef Name="PatrouilleurEmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Patrouilleur est dans Equipe">
+          <End Role="Equipe" Type="garmuBDModel.Store.Equipe" Multiplicity="0..1" />
+          <End Role="Patrouilleur" Type="garmuBDModel.Store.Patrouilleur" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipe">
+              <PropertyRef Name="NoEquipe" />
+            </Principal>
+            <Dependent Role="Patrouilleur">
+              <PropertyRef Name="EquipeNoEquipe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Planif a des Detail">
+          <End Role="PlanificationMensuelle" Type="garmuBDModel.Store.PlanificationMensuelle" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.Store.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlanificationMensuelle">
+              <PropertyRef Name="Annee" />
+              <PropertyRef Name="Mois" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="PlanificationMensuelleAnnee" />
+              <PropertyRef Name="PlanificationMensuelleMois" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Probleme est dans Demande">
+          <End Role="ProblemeSouleve" Type="garmuBDModel.Store.ProblemeSouleve" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="ProblemeSouleve_DemandeSpeciale" Type="garmuBDModel.Store.ProblemeSouleve_DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ProblemeSouleve">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ProblemeSouleve_DemandeSpeciale">
+              <PropertyRef Name="ProblemeSouleveID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Suivi comprend Action">
+          <End Role="SuiviDemande" Type="garmuBDModel.Store.SuiviDemande" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Action" Type="garmuBDModel.Store.Action" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SuiviDemande">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Action">
+              <PropertyRef Name="SuiviDemandeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Suivi est traite par Patrouilleur">
+          <End Role="Patrouilleur" Type="garmuBDModel.Store.Patrouilleur" Multiplicity="0..1" />
+          <End Role="SuiviDemande" Type="garmuBDModel.Store.SuiviDemande" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patrouilleur">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="SuiviDemande">
+              <PropertyRef Name="PatrouilleurEmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Supect est dans Demande">
+          <End Role="Suspect" Type="garmuBDModel.Store.Suspect" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Suspect_DemandeSpeciale" Type="garmuBDModel.Store.Suspect_DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Suspect">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Suspect_DemandeSpeciale">
+              <PropertyRef Name="SuspectID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Tache assigne Patrouilleur">
+          <End Role="TacheQuotidienne" Type="garmuBDModel.Store.TacheQuotidienne" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TacheQuotidienne_Patrouilleur" Type="garmuBDModel.Store.TacheQuotidienne_Patrouilleur" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TacheQuotidienne">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne_Patrouilleur">
+              <PropertyRef Name="TacheQuotidienneID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Tache comporte Demande">
+          <End Role="TacheQuotidienne" Type="garmuBDModel.Store.TacheQuotidienne" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TacheQuotidienne_DemandeSpeciale" Type="garmuBDModel.Store.TacheQuotidienne_DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TacheQuotidienne">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne_DemandeSpeciale">
+              <PropertyRef Name="TacheQuotidienneID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Tache comporte une ou des Assignation">
+          <End Role="TacheQuotidienne" Type="garmuBDModel.Store.TacheQuotidienne" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TacheQuotidienne_Assignation" Type="garmuBDModel.Store.TacheQuotidienne_Assignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TacheQuotidienne">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne_Assignation">
+              <PropertyRef Name="TacheQuotidienneID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Tache dans Secteur">
+          <End Role="Secteur" Type="garmuBDModel.Store.Secteur" Multiplicity="0..1" />
+          <End Role="TacheQuotidienne" Type="garmuBDModel.Store.TacheQuotidienne" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Secteur">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne">
+              <PropertyRef Name="SecteurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+      </Schema>
+    </edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="garmuBDModel" Alias="Self" p1:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:p1="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityContainer Name="garmuBDEntities" p1:LazyLoadingEnabled="true">
+          <EntitySet Name="Action" EntityType="garmuBDModel.Action" />
+          <EntitySet Name="ActionPrevue" EntityType="garmuBDModel.ActionPrevue" />
+          <EntitySet Name="Assignation" EntityType="garmuBDModel.Assignation" />
+          <EntitySet Name="DemandeSpeciale" EntityType="garmuBDModel.DemandeSpeciale" />
+          <EntitySet Name="DetailPlanificationMensuelle" EntityType="garmuBDModel.DetailPlanificationMensuelle" />
+          <EntitySet Name="Domaine" EntityType="garmuBDModel.Domaine" />
+          <EntitySet Name="Employee" EntityType="garmuBDModel.Employee" />
+          <EntitySet Name="EndroitCible" EntityType="garmuBDModel.EndroitCible" />
+          <EntitySet Name="Equipe" EntityType="garmuBDModel.Equipe" />
+          <EntitySet Name="JourMois" EntityType="garmuBDModel.JourMois" />
+          <EntitySet Name="MarqueVehicule" EntityType="garmuBDModel.MarqueVehicule" />
+          <EntitySet Name="ModeleVehicule" EntityType="garmuBDModel.ModeleVehicule" />
+          <EntitySet Name="Patrouilleur" EntityType="garmuBDModel.Patrouilleur" />
+          <EntitySet Name="PlanificationMensuelle" EntityType="garmuBDModel.PlanificationMensuelle" />
+          <EntitySet Name="PrioriteLocale" EntityType="garmuBDModel.PrioriteLocale" />
+          <EntitySet Name="ProblemeSouleve" EntityType="garmuBDModel.ProblemeSouleve" />
+          <EntitySet Name="Releve" EntityType="garmuBDModel.Releve" />
+          <EntitySet Name="Secteur" EntityType="garmuBDModel.Secteur" />
+          <EntitySet Name="SuiviDemande" EntityType="garmuBDModel.SuiviDemande" />
+          <EntitySet Name="Suspect" EntityType="garmuBDModel.Suspect" />
+          <EntitySet Name="TacheQuotidienne" EntityType="garmuBDModel.TacheQuotidienne" />
+          <EntitySet Name="TacheQuotidienne_Assignation" EntityType="garmuBDModel.TacheQuotidienne_Assignation" />
+          <EntitySet Name="Vehicule" EntityType="garmuBDModel.Vehicule" />
+          <AssociationSet Name="Suivi_comprend_Action" Association="garmuBDModel.Suivi_comprend_Action">
+            <End Role="SuiviDemande" EntitySet="SuiviDemande" />
+            <End Role="Action" EntitySet="Action" />
+          </AssociationSet>
+          <AssociationSet Name="Detail_a_des_Action" Association="garmuBDModel.Detail_a_des_Action">
+            <End Role="ActionPrevue" EntitySet="ActionPrevue" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Assignation_est_dans_une_ou_des_Tache" Association="garmuBDModel.Assignation_est_dans_une_ou_des_Tache">
+            <End Role="Assignation" EntitySet="Assignation" />
+            <End Role="TacheQuotidienne_Assignation" EntitySet="TacheQuotidienne_Assignation" />
+          </AssociationSet>
+          <AssociationSet Name="Detail_etablie_des_Assignation" Association="garmuBDModel.Detail_etablie_des_Assignation">
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+            <End Role="Assignation" EntitySet="Assignation" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois_a_Assignation" Association="garmuBDModel.JourMois_a_Assignation">
+            <End Role="JourMois" EntitySet="JourMois" />
+            <End Role="Assignation" EntitySet="Assignation" />
+          </AssociationSet>
+          <AssociationSet Name="Demande_a_Modele" Association="garmuBDModel.Demande_a_Modele">
+            <End Role="ModeleVehicule" EntitySet="ModeleVehicule" />
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Demande_a_un_Suivi" Association="garmuBDModel.Demande_a_un_Suivi">
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+            <End Role="SuiviDemande" EntitySet="SuiviDemande" />
+          </AssociationSet>
+          <AssociationSet Name="Demande_remplit_par_Patrouilleur" Association="garmuBDModel.Demande_remplit_par_Patrouilleur">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+          </AssociationSet>
+          <AssociationSet Name="Detail_a_des_Endroit" Association="garmuBDModel.Detail_a_des_Endroit">
+            <End Role="EndroitCible" EntitySet="EndroitCible" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Detail_a_des_Priorite" Association="garmuBDModel.Detail_a_des_Priorite">
+            <End Role="PrioriteLocale" EntitySet="PrioriteLocale" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Detail_a_un_Domaine" Association="garmuBDModel.Detail_a_un_Domaine">
+            <End Role="Domaine" EntitySet="Domaine" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Planif_a_des_Detail" Association="garmuBDModel.Planif_a_des_Detail">
+            <End Role="PlanificationMensuelle" EntitySet="PlanificationMensuelle" />
+            <End Role="DetailPlanificationMensuelle" EntitySet="DetailPlanificationMensuelle" />
+          </AssociationSet>
+          <AssociationSet Name="Employee_est_Patrouilleur" Association="garmuBDModel.Employee_est_Patrouilleur">
+            <End Role="Employee" EntitySet="Employee" />
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois_est_pour_Equipe" Association="garmuBDModel.JourMois_est_pour_Equipe">
+            <End Role="Equipe" EntitySet="Equipe" />
+            <End Role="JourMois" EntitySet="JourMois" />
+          </AssociationSet>
+          <AssociationSet Name="Patrouilleur_est_dans_Equipe" Association="garmuBDModel.Patrouilleur_est_dans_Equipe">
+            <End Role="Equipe" EntitySet="Equipe" />
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois_a_des_Tache" Association="garmuBDModel.JourMois_a_des_Tache">
+            <End Role="JourMois" EntitySet="JourMois" />
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois_a_une_Releve" Association="garmuBDModel.JourMois_a_une_Releve">
+            <End Role="Releve" EntitySet="Releve" />
+            <End Role="JourMois" EntitySet="JourMois" />
+          </AssociationSet>
+          <AssociationSet Name="JourMois_est_fait_a_partir_de_Planif_" Association="garmuBDModel.JourMois_est_fait_a_partir_de_Planif_">
+            <End Role="PlanificationMensuelle" EntitySet="PlanificationMensuelle" />
+            <End Role="JourMois" EntitySet="JourMois" />
+          </AssociationSet>
+          <AssociationSet Name="Modele_a_une_Marque" Association="garmuBDModel.Modele_a_une_Marque">
+            <End Role="MarqueVehicule" EntitySet="MarqueVehicule" />
+            <End Role="ModeleVehicule" EntitySet="ModeleVehicule" />
+          </AssociationSet>
+          <AssociationSet Name="Patrouilleur_a_un_Veh" Association="garmuBDModel.Patrouilleur_a_un_Veh">
+            <End Role="Vehicule" EntitySet="Vehicule" />
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+          </AssociationSet>
+          <AssociationSet Name="Suivi_est_traite_par_Patrouilleur" Association="garmuBDModel.Suivi_est_traite_par_Patrouilleur">
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+            <End Role="SuiviDemande" EntitySet="SuiviDemande" />
+          </AssociationSet>
+          <AssociationSet Name="Tache_dans_Secteur" Association="garmuBDModel.Tache_dans_Secteur">
+            <End Role="Secteur" EntitySet="Secteur" />
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+          </AssociationSet>
+          <AssociationSet Name="Tache_comporte_une_ou_des_Assignation" Association="garmuBDModel.Tache_comporte_une_ou_des_Assignation">
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+            <End Role="TacheQuotidienne_Assignation" EntitySet="TacheQuotidienne_Assignation" />
+          </AssociationSet>
+          <AssociationSet Name="ProblemeSouleve_DemandeSpeciale" Association="garmuBDModel.ProblemeSouleve_DemandeSpeciale">
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+            <End Role="ProblemeSouleve" EntitySet="ProblemeSouleve" />
+          </AssociationSet>
+          <AssociationSet Name="Suspect_DemandeSpeciale" Association="garmuBDModel.Suspect_DemandeSpeciale">
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+            <End Role="Suspect" EntitySet="Suspect" />
+          </AssociationSet>
+          <AssociationSet Name="TacheQuotidienne_DemandeSpeciale" Association="garmuBDModel.TacheQuotidienne_DemandeSpeciale">
+            <End Role="DemandeSpeciale" EntitySet="DemandeSpeciale" />
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+          </AssociationSet>
+          <AssociationSet Name="TacheQuotidienne_Patrouilleur" Association="garmuBDModel.TacheQuotidienne_Patrouilleur">
+            <End Role="Patrouilleur" EntitySet="Patrouilleur" />
+            <End Role="TacheQuotidienne" EntitySet="TacheQuotidienne" />
+          </AssociationSet>
+        </EntityContainer>
+        <EntityType Name="Action">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="HeureDebut" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="HeureFin" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Constats" Type="Int32" Nullable="false" />
+          <Property Name="Action1" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="SuiviDemandeID" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="SuiviDemande" Relationship="garmuBDModel.Suivi_comprend_Action" FromRole="Action" ToRole="SuiviDemande" />
+        </EntityType>
+        <EntityType Name="ActionPrevue">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" Nullable="false" MaxLength="255" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="DetailPlanificationMensuelle" Relationship="garmuBDModel.Detail_a_des_Action" FromRole="ActionPrevue" ToRole="DetailPlanificationMensuelle" />
+        </EntityType>
+        <EntityType Name="Assignation">
+          <Key>
+            <PropertyRef Name="DetailPlanID" />
+            <PropertyRef Name="JourMoisID" />
+          </Key>
+          <Property Name="DetailPlanID" Type="Int32" Nullable="false" />
+          <Property Name="JourMoisID" Type="Int32" Nullable="false" />
+          <Property Name="QuantitieJournee" Type="Int32" Nullable="false" />
+          <Property Name="NbCompleteJournee" Type="Int32" Nullable="false" />
+          <NavigationProperty Name="TacheQuotidienne_Assignation" Relationship="garmuBDModel.Assignation_est_dans_une_ou_des_Tache" FromRole="Assignation" ToRole="TacheQuotidienne_Assignation" />
+          <NavigationProperty Name="DetailPlanificationMensuelle" Relationship="garmuBDModel.Detail_etablie_des_Assignation" FromRole="Assignation" ToRole="DetailPlanificationMensuelle" />
+          <NavigationProperty Name="JourMois" Relationship="garmuBDModel.JourMois_a_Assignation" FromRole="Assignation" ToRole="JourMois" />
+        </EntityType>
+        <EntityType Name="DemandeSpeciale">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NomDemandeur" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="AdresseDemandeur" Type="Int32" Nullable="false" />
+          <Property Name="TelephoneDemandeur" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="FaxDemandeur" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="CourrielDemandeur" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="DemandeRetour" Type="Boolean" Nullable="false" />
+          <Property Name="DescriptionDemande" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="Localisation" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <Property Name="DescriptionVehicule" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="ModeleVehiculeID" Type="Int32" />
+          <Property Name="Immatriculation" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <Property Name="DescriptionSuspect" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="SecteurContrevenant" Type="Boolean" />
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+          <Property Name="DateDemande" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="Provenance" Type="String" MaxLength="500" Unicode="false" FixedLength="false" />
+          <Property Name="Municipalite" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Releve" Type="Int32" />
+          <Property Name="JourSemaine" Type="String" MaxLength="15" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ModeleVehicule" Relationship="garmuBDModel.Demande_a_Modele" FromRole="DemandeSpeciale" ToRole="ModeleVehicule" />
+          <NavigationProperty Name="SuiviDemande" Relationship="garmuBDModel.Demande_a_un_Suivi" FromRole="DemandeSpeciale" ToRole="SuiviDemande" />
+          <NavigationProperty Name="Employee" Relationship="garmuBDModel.Demande_remplit_par_Patrouilleur" FromRole="DemandeSpeciale" ToRole="Employee" />
+          <NavigationProperty Name="ProblemeSouleve" Relationship="garmuBDModel.ProblemeSouleve_DemandeSpeciale" FromRole="DemandeSpeciale" ToRole="ProblemeSouleve" />
+          <NavigationProperty Name="Suspect" Relationship="garmuBDModel.Suspect_DemandeSpeciale" FromRole="DemandeSpeciale" ToRole="Suspect" />
+          <NavigationProperty Name="TacheQuotidienne" Relationship="garmuBDModel.TacheQuotidienne_DemandeSpeciale" FromRole="DemandeSpeciale" ToRole="TacheQuotidienne" />
+        </EntityType>
+        <EntityType Name="DetailPlanificationMensuelle">
+          <Key>
+            <PropertyRef Name="DetailPlanID" />
+          </Key>
+          <Property Name="DetailPlanID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="PlanificationMensuelleAnnee" Type="Int32" Nullable="false" />
+          <Property Name="PlanificationMensuelleMois" Type="Int32" Nullable="false" />
+          <Property Name="DomaineID" Type="Int32" Nullable="false" />
+          <Property Name="PrioritesLocalesID" Type="Int32" Nullable="false" />
+          <Property Name="EndroitsCiblesID" Type="Int32" Nullable="false" />
+          <Property Name="ActionsPrevuesID" Type="Int32" Nullable="false" />
+          <Property Name="Condition" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Quantite" Type="Int32" />
+          <Property Name="Resultat" Type="Int32" />
+          <NavigationProperty Name="ActionPrevue" Relationship="garmuBDModel.Detail_a_des_Action" FromRole="DetailPlanificationMensuelle" ToRole="ActionPrevue" />
+          <NavigationProperty Name="Assignation" Relationship="garmuBDModel.Detail_etablie_des_Assignation" FromRole="DetailPlanificationMensuelle" ToRole="Assignation" />
+          <NavigationProperty Name="EndroitCible" Relationship="garmuBDModel.Detail_a_des_Endroit" FromRole="DetailPlanificationMensuelle" ToRole="EndroitCible" />
+          <NavigationProperty Name="PrioriteLocale" Relationship="garmuBDModel.Detail_a_des_Priorite" FromRole="DetailPlanificationMensuelle" ToRole="PrioriteLocale" />
+          <NavigationProperty Name="Domaine" Relationship="garmuBDModel.Detail_a_un_Domaine" FromRole="DetailPlanificationMensuelle" ToRole="Domaine" />
+          <NavigationProperty Name="PlanificationMensuelle" Relationship="garmuBDModel.Planif_a_des_Detail" FromRole="DetailPlanificationMensuelle" ToRole="PlanificationMensuelle" />
+        </EntityType>
+        <EntityType Name="Domaine">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="DetailPlanificationMensuelle" Relationship="garmuBDModel.Detail_a_un_Domaine" FromRole="Domaine" ToRole="DetailPlanificationMensuelle" />
+        </EntityType>
+        <EntityType Name="Employee">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="Prenom" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="DemandeSpeciale" Relationship="garmuBDModel.Demande_remplit_par_Patrouilleur" FromRole="Employee" ToRole="DemandeSpeciale" />
+          <NavigationProperty Name="Patrouilleur" Relationship="garmuBDModel.Employee_est_Patrouilleur" FromRole="Employee" ToRole="Patrouilleur" />
+        </EntityType>
+        <EntityType Name="EndroitCible">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="DetailPlanificationMensuelle" Relationship="garmuBDModel.Detail_a_des_Endroit" FromRole="EndroitCible" ToRole="DetailPlanificationMensuelle" />
+        </EntityType>
+        <EntityType Name="Equipe">
+          <Key>
+            <PropertyRef Name="NoEquipe" />
+          </Key>
+          <Property Name="NoEquipe" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="JourMois" Relationship="garmuBDModel.JourMois_est_pour_Equipe" FromRole="Equipe" ToRole="JourMois" />
+          <NavigationProperty Name="Patrouilleur" Relationship="garmuBDModel.Patrouilleur_est_dans_Equipe" FromRole="Equipe" ToRole="Patrouilleur" />
+        </EntityType>
+        <EntityType Name="JourMois">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Date" Type="DateTime" Nullable="false" Precision="3" />
+          <Property Name="NoEquipe" Type="Int32" />
+          <Property Name="ReleveID" Type="Int32" />
+          <Property Name="PlanificationMensuelleAnnee" Type="Int32" />
+          <Property Name="PlanificationMensuelleMois" Type="Int32" />
+          <NavigationProperty Name="Assignation" Relationship="garmuBDModel.JourMois_a_Assignation" FromRole="JourMois" ToRole="Assignation" />
+          <NavigationProperty Name="Equipe" Relationship="garmuBDModel.JourMois_est_pour_Equipe" FromRole="JourMois" ToRole="Equipe" />
+          <NavigationProperty Name="TacheQuotidienne" Relationship="garmuBDModel.JourMois_a_des_Tache" FromRole="JourMois" ToRole="TacheQuotidienne" />
+          <NavigationProperty Name="Releve" Relationship="garmuBDModel.JourMois_a_une_Releve" FromRole="JourMois" ToRole="Releve" />
+          <NavigationProperty Name="PlanificationMensuelle" Relationship="garmuBDModel.JourMois_est_fait_a_partir_de_Planif_" FromRole="JourMois" ToRole="PlanificationMensuelle" />
+        </EntityType>
+        <EntityType Name="MarqueVehicule">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="ModeleVehicule" Relationship="garmuBDModel.Modele_a_une_Marque" FromRole="MarqueVehicule" ToRole="ModeleVehicule" />
+        </EntityType>
+        <EntityType Name="ModeleVehicule">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" Nullable="false" MaxLength="20" Unicode="false" FixedLength="false" />
+          <Property Name="MarqueVehiculeID" Type="Int32" />
+          <NavigationProperty Name="DemandeSpeciale" Relationship="garmuBDModel.Demande_a_Modele" FromRole="ModeleVehicule" ToRole="DemandeSpeciale" />
+          <NavigationProperty Name="MarqueVehicule" Relationship="garmuBDModel.Modele_a_une_Marque" FromRole="ModeleVehicule" ToRole="MarqueVehicule" />
+        </EntityType>
+        <EntityType Name="Patrouilleur">
+          <Key>
+            <PropertyRef Name="EmployeeID" />
+          </Key>
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+          <Property Name="Matricule" Type="Int32" Nullable="false" />
+          <Property Name="VehiculeId" Type="Int32" />
+          <Property Name="EquipeNoEquipe" Type="Int32" />
+          <NavigationProperty Name="Employee" Relationship="garmuBDModel.Employee_est_Patrouilleur" FromRole="Patrouilleur" ToRole="Employee" />
+          <NavigationProperty Name="Equipe" Relationship="garmuBDModel.Patrouilleur_est_dans_Equipe" FromRole="Patrouilleur" ToRole="Equipe" />
+          <NavigationProperty Name="Vehicule" Relationship="garmuBDModel.Patrouilleur_a_un_Veh" FromRole="Patrouilleur" ToRole="Vehicule" />
+          <NavigationProperty Name="SuiviDemande" Relationship="garmuBDModel.Suivi_est_traite_par_Patrouilleur" FromRole="Patrouilleur" ToRole="SuiviDemande" />
+          <NavigationProperty Name="TacheQuotidienne" Relationship="garmuBDModel.TacheQuotidienne_Patrouilleur" FromRole="Patrouilleur" ToRole="TacheQuotidienne" />
+        </EntityType>
+        <EntityType Name="PlanificationMensuelle">
+          <Key>
+            <PropertyRef Name="Annee" />
+            <PropertyRef Name="Mois" />
+          </Key>
+          <Property Name="Annee" Type="Int32" Nullable="false" />
+          <Property Name="Mois" Type="Int32" Nullable="false" />
+          <Property Name="Theme" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Poste" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="DetailPlanificationMensuelle" Relationship="garmuBDModel.Planif_a_des_Detail" FromRole="PlanificationMensuelle" ToRole="DetailPlanificationMensuelle" />
+          <NavigationProperty Name="JourMois" Relationship="garmuBDModel.JourMois_est_fait_a_partir_de_Planif_" FromRole="PlanificationMensuelle" ToRole="JourMois" />
+        </EntityType>
+        <EntityType Name="PrioriteLocale">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" Nullable="false" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="DetailPlanificationMensuelle" Relationship="garmuBDModel.Detail_a_des_Priorite" FromRole="PrioriteLocale" ToRole="DetailPlanificationMensuelle" />
+        </EntityType>
+        <EntityType Name="ProblemeSouleve">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" MaxLength="100" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="DemandeSpeciale" Relationship="garmuBDModel.ProblemeSouleve_DemandeSpeciale" FromRole="ProblemeSouleve" ToRole="DemandeSpeciale" />
+        </EntityType>
+        <EntityType Name="Releve">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" MaxLength="20" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="JourMois" Relationship="garmuBDModel.JourMois_a_une_Releve" FromRole="Releve" ToRole="JourMois" />
+        </EntityType>
+        <EntityType Name="Secteur">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="String" Nullable="false" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="Nom" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="TacheQuotidienne" Relationship="garmuBDModel.Tache_dans_Secteur" FromRole="Secteur" ToRole="TacheQuotidienne" />
+        </EntityType>
+        <EntityType Name="SuiviDemande">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="VerificationInfrastructure" Type="Boolean" Nullable="false" />
+          <Property Name="DureeSurveillance" Type="Int32" />
+          <Property Name="DateAgenda" Type="DateTime" Precision="3" />
+          <Property Name="NbConstatEmis" Type="Int32" />
+          <Property Name="NbPoliciers" Type="Int32" />
+          <Property Name="TypeSurveillance" Type="Boolean" Nullable="false" />
+          <Property Name="Commentaires" Type="String" MaxLength="1000" Unicode="false" FixedLength="false" />
+          <Property Name="Complete" Type="Boolean" />
+          <Property Name="Retourne" Type="Boolean" Nullable="false" />
+          <Property Name="RetourPar" Type="String" MaxLength="75" Unicode="false" FixedLength="false" />
+          <Property Name="RetourDate" Type="DateTime" Precision="3" />
+          <Property Name="RetourHeure" Type="DateTime" Precision="3" />
+          <Property Name="RetourMoyen" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <Property Name="Parl" Type="Boolean" Nullable="false" />
+          <Property Name="ParlPar" Type="String" MaxLength="75" Unicode="false" FixedLength="false" />
+          <Property Name="ControlePar" Type="String" Nullable="false" MaxLength="75" Unicode="false" FixedLength="false" />
+          <Property Name="DemandesSpecialesID" Type="Int32" Nullable="false" />
+          <Property Name="PatrouilleurEmployeeID" Type="Int32" />
+          <NavigationProperty Name="Action" Relationship="garmuBDModel.Suivi_comprend_Action" FromRole="SuiviDemande" ToRole="Action" />
+          <NavigationProperty Name="DemandeSpeciale" Relationship="garmuBDModel.Demande_a_un_Suivi" FromRole="SuiviDemande" ToRole="DemandeSpeciale" />
+          <NavigationProperty Name="Patrouilleur" Relationship="garmuBDModel.Suivi_est_traite_par_Patrouilleur" FromRole="SuiviDemande" ToRole="Patrouilleur" />
+        </EntityType>
+        <EntityType Name="Suspect">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="Nom" Type="String" MaxLength="55" Unicode="false" FixedLength="false" />
+          <Property Name="Prenom" Type="String" MaxLength="55" Unicode="false" FixedLength="false" />
+          <Property Name="DDN" Type="String" MaxLength="50" Unicode="false" FixedLength="false" />
+          <Property Name="DescriptionPhysique" Type="String" MaxLength="255" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="DemandeSpeciale" Relationship="garmuBDModel.Suspect_DemandeSpeciale" FromRole="Suspect" ToRole="DemandeSpeciale" />
+        </EntityType>
+        <EntityType Name="TacheQuotidienne">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="SecteurID" Type="String" MaxLength="5" Unicode="false" FixedLength="false" />
+          <Property Name="JourMoisID" Type="Int32" Nullable="false" />
+          <Property Name="DixVingt" Type="String" MaxLength="10" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="JourMois" Relationship="garmuBDModel.JourMois_a_des_Tache" FromRole="TacheQuotidienne" ToRole="JourMois" />
+          <NavigationProperty Name="Secteur" Relationship="garmuBDModel.Tache_dans_Secteur" FromRole="TacheQuotidienne" ToRole="Secteur" />
+          <NavigationProperty Name="TacheQuotidienne_Assignation" Relationship="garmuBDModel.Tache_comporte_une_ou_des_Assignation" FromRole="TacheQuotidienne" ToRole="TacheQuotidienne_Assignation" />
+          <NavigationProperty Name="DemandeSpeciale" Relationship="garmuBDModel.TacheQuotidienne_DemandeSpeciale" FromRole="TacheQuotidienne" ToRole="DemandeSpeciale" />
+          <NavigationProperty Name="Patrouilleur" Relationship="garmuBDModel.TacheQuotidienne_Patrouilleur" FromRole="TacheQuotidienne" ToRole="Patrouilleur" />
+        </EntityType>
+        <EntityType Name="TacheQuotidienne_Assignation">
+          <Key>
+            <PropertyRef Name="TacheQuotidienneID" />
+            <PropertyRef Name="AssignationDetailPlanID" />
+            <PropertyRef Name="AssignationJourMoisID" />
+          </Key>
+          <Property Name="TacheQuotidienneID" Type="Int32" Nullable="false" />
+          <Property Name="AssignationDetailPlanID" Type="Int32" Nullable="false" />
+          <Property Name="AssignationJourMoisID" Type="Int32" Nullable="false" />
+          <Property Name="Complete" Type="Boolean" Nullable="false" />
+          <NavigationProperty Name="Assignation" Relationship="garmuBDModel.Assignation_est_dans_une_ou_des_Tache" FromRole="TacheQuotidienne_Assignation" ToRole="Assignation" />
+          <NavigationProperty Name="TacheQuotidienne" Relationship="garmuBDModel.Tache_comporte_une_ou_des_Assignation" FromRole="TacheQuotidienne_Assignation" ToRole="TacheQuotidienne" />
+        </EntityType>
+        <EntityType Name="Vehicule">
+          <Key>
+            <PropertyRef Name="Id" />
+          </Key>
+          <Property Name="Id" Type="Int32" Nullable="false" p1:StoreGeneratedPattern="Identity" />
+          <Property Name="NoVehicule" Type="String" Nullable="false" MaxLength="50" Unicode="false" FixedLength="false" />
+          <NavigationProperty Name="Patrouilleur" Relationship="garmuBDModel.Patrouilleur_a_un_Veh" FromRole="Vehicule" ToRole="Patrouilleur" />
+        </EntityType>
+        <Association Name="Suivi_comprend_Action">
+          <End Role="SuiviDemande" Type="garmuBDModel.SuiviDemande" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Action" Type="garmuBDModel.Action" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="SuiviDemande">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Action">
+              <PropertyRef Name="SuiviDemandeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail_a_des_Action">
+          <End Role="ActionPrevue" Type="garmuBDModel.ActionPrevue" Multiplicity="1" />
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ActionPrevue">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="ActionsPrevuesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Assignation_est_dans_une_ou_des_Tache">
+          <End Role="Assignation" Type="garmuBDModel.Assignation" Multiplicity="1" />
+          <End Role="TacheQuotidienne_Assignation" Type="garmuBDModel.TacheQuotidienne_Assignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Assignation">
+              <PropertyRef Name="DetailPlanID" />
+              <PropertyRef Name="JourMoisID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne_Assignation">
+              <PropertyRef Name="AssignationDetailPlanID" />
+              <PropertyRef Name="AssignationJourMoisID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail_etablie_des_Assignation">
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.DetailPlanificationMensuelle" Multiplicity="1" />
+          <End Role="Assignation" Type="garmuBDModel.Assignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="DetailPlanID" />
+            </Principal>
+            <Dependent Role="Assignation">
+              <PropertyRef Name="DetailPlanID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois_a_Assignation">
+          <End Role="JourMois" Type="garmuBDModel.JourMois" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Assignation" Type="garmuBDModel.Assignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JourMois">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Assignation">
+              <PropertyRef Name="JourMoisID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Demande_a_Modele">
+          <End Role="ModeleVehicule" Type="garmuBDModel.ModeleVehicule" Multiplicity="0..1" />
+          <End Role="DemandeSpeciale" Type="garmuBDModel.DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="ModeleVehicule">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DemandeSpeciale">
+              <PropertyRef Name="ModeleVehiculeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Demande_a_un_Suivi">
+          <End Role="DemandeSpeciale" Type="garmuBDModel.DemandeSpeciale" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="SuiviDemande" Type="garmuBDModel.SuiviDemande" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="DemandeSpeciale">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="SuiviDemande">
+              <PropertyRef Name="DemandesSpecialesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Demande_remplit_par_Patrouilleur">
+          <End Role="Employee" Type="garmuBDModel.Employee" Multiplicity="1" />
+          <End Role="DemandeSpeciale" Type="garmuBDModel.DemandeSpeciale" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DemandeSpeciale">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail_a_des_Endroit">
+          <End Role="EndroitCible" Type="garmuBDModel.EndroitCible" Multiplicity="1" />
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="EndroitCible">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="EndroitsCiblesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail_a_des_Priorite">
+          <End Role="PrioriteLocale" Type="garmuBDModel.PrioriteLocale" Multiplicity="1" />
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PrioriteLocale">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="PrioritesLocalesID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Detail_a_un_Domaine">
+          <End Role="Domaine" Type="garmuBDModel.Domaine" Multiplicity="1" />
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Domaine">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="DomaineID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Planif_a_des_Detail">
+          <End Role="PlanificationMensuelle" Type="garmuBDModel.PlanificationMensuelle" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="DetailPlanificationMensuelle" Type="garmuBDModel.DetailPlanificationMensuelle" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlanificationMensuelle">
+              <PropertyRef Name="Annee" />
+              <PropertyRef Name="Mois" />
+            </Principal>
+            <Dependent Role="DetailPlanificationMensuelle">
+              <PropertyRef Name="PlanificationMensuelleAnnee" />
+              <PropertyRef Name="PlanificationMensuelleMois" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Employee_est_Patrouilleur">
+          <End Role="Employee" Type="garmuBDModel.Employee" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="Patrouilleur" Type="garmuBDModel.Patrouilleur" Multiplicity="0..1" />
+          <ReferentialConstraint>
+            <Principal Role="Employee">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Patrouilleur">
+              <PropertyRef Name="EmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois_est_pour_Equipe">
+          <End Role="Equipe" Type="garmuBDModel.Equipe" Multiplicity="0..1" />
+          <End Role="JourMois" Type="garmuBDModel.JourMois" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipe">
+              <PropertyRef Name="NoEquipe" />
+            </Principal>
+            <Dependent Role="JourMois">
+              <PropertyRef Name="NoEquipe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Patrouilleur_est_dans_Equipe">
+          <End Role="Equipe" Type="garmuBDModel.Equipe" Multiplicity="0..1" />
+          <End Role="Patrouilleur" Type="garmuBDModel.Patrouilleur" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Equipe">
+              <PropertyRef Name="NoEquipe" />
+            </Principal>
+            <Dependent Role="Patrouilleur">
+              <PropertyRef Name="EquipeNoEquipe" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois_a_des_Tache">
+          <End Role="JourMois" Type="garmuBDModel.JourMois" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TacheQuotidienne" Type="garmuBDModel.TacheQuotidienne" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="JourMois">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne">
+              <PropertyRef Name="JourMoisID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois_a_une_Releve">
+          <End Role="Releve" Type="garmuBDModel.Releve" Multiplicity="0..1" />
+          <End Role="JourMois" Type="garmuBDModel.JourMois" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Releve">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="JourMois">
+              <PropertyRef Name="ReleveID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="JourMois_est_fait_a_partir_de_Planif_">
+          <End Role="PlanificationMensuelle" Type="garmuBDModel.PlanificationMensuelle" Multiplicity="0..1" />
+          <End Role="JourMois" Type="garmuBDModel.JourMois" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="PlanificationMensuelle">
+              <PropertyRef Name="Annee" />
+              <PropertyRef Name="Mois" />
+            </Principal>
+            <Dependent Role="JourMois">
+              <PropertyRef Name="PlanificationMensuelleAnnee" />
+              <PropertyRef Name="PlanificationMensuelleMois" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Modele_a_une_Marque">
+          <End Role="MarqueVehicule" Type="garmuBDModel.MarqueVehicule" Multiplicity="0..1" />
+          <End Role="ModeleVehicule" Type="garmuBDModel.ModeleVehicule" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="MarqueVehicule">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="ModeleVehicule">
+              <PropertyRef Name="MarqueVehiculeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Patrouilleur_a_un_Veh">
+          <End Role="Vehicule" Type="garmuBDModel.Vehicule" Multiplicity="0..1" />
+          <End Role="Patrouilleur" Type="garmuBDModel.Patrouilleur" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Vehicule">
+              <PropertyRef Name="Id" />
+            </Principal>
+            <Dependent Role="Patrouilleur">
+              <PropertyRef Name="VehiculeId" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Suivi_est_traite_par_Patrouilleur">
+          <End Role="Patrouilleur" Type="garmuBDModel.Patrouilleur" Multiplicity="0..1" />
+          <End Role="SuiviDemande" Type="garmuBDModel.SuiviDemande" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Patrouilleur">
+              <PropertyRef Name="EmployeeID" />
+            </Principal>
+            <Dependent Role="SuiviDemande">
+              <PropertyRef Name="PatrouilleurEmployeeID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Tache_dans_Secteur">
+          <End Role="Secteur" Type="garmuBDModel.Secteur" Multiplicity="0..1" />
+          <End Role="TacheQuotidienne" Type="garmuBDModel.TacheQuotidienne" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Secteur">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne">
+              <PropertyRef Name="SecteurID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Tache_comporte_une_ou_des_Assignation">
+          <End Role="TacheQuotidienne" Type="garmuBDModel.TacheQuotidienne" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TacheQuotidienne_Assignation" Type="garmuBDModel.TacheQuotidienne_Assignation" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="TacheQuotidienne">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="TacheQuotidienne_Assignation">
+              <PropertyRef Name="TacheQuotidienneID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="ProblemeSouleve_DemandeSpeciale">
+          <End Role="DemandeSpeciale" Type="garmuBDModel.DemandeSpeciale" Multiplicity="*" />
+          <End Role="ProblemeSouleve" Type="garmuBDModel.ProblemeSouleve" Multiplicity="*" />
+        </Association>
+        <Association Name="Suspect_DemandeSpeciale">
+          <End Role="DemandeSpeciale" Type="garmuBDModel.DemandeSpeciale" Multiplicity="*" />
+          <End Role="Suspect" Type="garmuBDModel.Suspect" Multiplicity="*" />
+        </Association>
+        <Association Name="TacheQuotidienne_DemandeSpeciale">
+          <End Role="DemandeSpeciale" Type="garmuBDModel.DemandeSpeciale" Multiplicity="*" />
+          <End Role="TacheQuotidienne" Type="garmuBDModel.TacheQuotidienne" Multiplicity="*" />
+        </Association>
+        <Association Name="TacheQuotidienne_Patrouilleur">
+          <End Role="Patrouilleur" Type="garmuBDModel.Patrouilleur" Multiplicity="*" />
+          <End Role="TacheQuotidienne" Type="garmuBDModel.TacheQuotidienne" Multiplicity="*" />
+        </Association>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+      <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+        <EntityContainerMapping StorageEntityContainer="garmuBDModelStoreContainer" CdmEntityContainer="garmuBDEntities">
+          <EntitySetMapping Name="Action">
+            <EntityTypeMapping TypeName="garmuBDModel.Action">
+              <MappingFragment StoreEntitySet="Action">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="HeureDebut" ColumnName="HeureDebut" />
+                <ScalarProperty Name="HeureFin" ColumnName="HeureFin" />
+                <ScalarProperty Name="Constats" ColumnName="Constats" />
+                <ScalarProperty Name="Action1" ColumnName="Action" />
+                <ScalarProperty Name="SuiviDemandeID" ColumnName="SuiviDemandeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ActionPrevue">
+            <EntityTypeMapping TypeName="garmuBDModel.ActionPrevue">
+              <MappingFragment StoreEntitySet="ActionPrevue">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Assignation">
+            <EntityTypeMapping TypeName="garmuBDModel.Assignation">
+              <MappingFragment StoreEntitySet="Assignation">
+                <ScalarProperty Name="DetailPlanID" ColumnName="DetailPlanID" />
+                <ScalarProperty Name="JourMoisID" ColumnName="JourMoisID" />
+                <ScalarProperty Name="QuantitieJournee" ColumnName="QuantitieJournee" />
+                <ScalarProperty Name="NbCompleteJournee" ColumnName="NbCompleteJournee" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DemandeSpeciale">
+            <EntityTypeMapping TypeName="garmuBDModel.DemandeSpeciale">
+              <MappingFragment StoreEntitySet="DemandeSpeciale">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="NomDemandeur" ColumnName="NomDemandeur" />
+                <ScalarProperty Name="AdresseDemandeur" ColumnName="AdresseDemandeur" />
+                <ScalarProperty Name="TelephoneDemandeur" ColumnName="TelephoneDemandeur" />
+                <ScalarProperty Name="FaxDemandeur" ColumnName="FaxDemandeur" />
+                <ScalarProperty Name="CourrielDemandeur" ColumnName="CourrielDemandeur" />
+                <ScalarProperty Name="DemandeRetour" ColumnName="DemandeRetour" />
+                <ScalarProperty Name="DescriptionDemande" ColumnName="DescriptionDemande" />
+                <ScalarProperty Name="Localisation" ColumnName="Localisation" />
+                <ScalarProperty Name="DescriptionVehicule" ColumnName="DescriptionVehicule" />
+                <ScalarProperty Name="ModeleVehiculeID" ColumnName="ModeleVehiculeID" />
+                <ScalarProperty Name="Immatriculation" ColumnName="Immatriculation" />
+                <ScalarProperty Name="DescriptionSuspect" ColumnName="DescriptionSuspect" />
+                <ScalarProperty Name="SecteurContrevenant" ColumnName="SecteurContrevenant" />
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="DateDemande" ColumnName="DateDemande" />
+                <ScalarProperty Name="Provenance" ColumnName="Provenance" />
+                <ScalarProperty Name="Municipalite" ColumnName="Municipalite" />
+                <ScalarProperty Name="Releve" ColumnName="Releve" />
+                <ScalarProperty Name="JourSemaine" ColumnName="JourSemaine" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="DetailPlanificationMensuelle">
+            <EntityTypeMapping TypeName="garmuBDModel.DetailPlanificationMensuelle">
+              <MappingFragment StoreEntitySet="DetailPlanificationMensuelle">
+                <ScalarProperty Name="DetailPlanID" ColumnName="DetailPlanID" />
+                <ScalarProperty Name="PlanificationMensuelleAnnee" ColumnName="PlanificationMensuelleAnnee" />
+                <ScalarProperty Name="PlanificationMensuelleMois" ColumnName="PlanificationMensuelleMois" />
+                <ScalarProperty Name="DomaineID" ColumnName="DomaineID" />
+                <ScalarProperty Name="PrioritesLocalesID" ColumnName="PrioritesLocalesID" />
+                <ScalarProperty Name="EndroitsCiblesID" ColumnName="EndroitsCiblesID" />
+                <ScalarProperty Name="ActionsPrevuesID" ColumnName="ActionsPrevuesID" />
+                <ScalarProperty Name="Condition" ColumnName="Condition" />
+                <ScalarProperty Name="Quantite" ColumnName="Quantite" />
+                <ScalarProperty Name="Resultat" ColumnName="Resultat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Domaine">
+            <EntityTypeMapping TypeName="garmuBDModel.Domaine">
+              <MappingFragment StoreEntitySet="Domaine">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Employee">
+            <EntityTypeMapping TypeName="garmuBDModel.Employee">
+              <MappingFragment StoreEntitySet="Employee">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+                <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="EndroitCible">
+            <EntityTypeMapping TypeName="garmuBDModel.EndroitCible">
+              <MappingFragment StoreEntitySet="EndroitCible">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Equipe">
+            <EntityTypeMapping TypeName="garmuBDModel.Equipe">
+              <MappingFragment StoreEntitySet="Equipe">
+                <ScalarProperty Name="NoEquipe" ColumnName="NoEquipe" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="JourMois">
+            <EntityTypeMapping TypeName="garmuBDModel.JourMois">
+              <MappingFragment StoreEntitySet="JourMois">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Date" ColumnName="Date" />
+                <ScalarProperty Name="NoEquipe" ColumnName="NoEquipe" />
+                <ScalarProperty Name="ReleveID" ColumnName="ReleveID" />
+                <ScalarProperty Name="PlanificationMensuelleAnnee" ColumnName="PlanificationMensuelleAnnee" />
+                <ScalarProperty Name="PlanificationMensuelleMois" ColumnName="PlanificationMensuelleMois" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="MarqueVehicule">
+            <EntityTypeMapping TypeName="garmuBDModel.MarqueVehicule">
+              <MappingFragment StoreEntitySet="MarqueVehicule">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ModeleVehicule">
+            <EntityTypeMapping TypeName="garmuBDModel.ModeleVehicule">
+              <MappingFragment StoreEntitySet="ModeleVehicule">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+                <ScalarProperty Name="MarqueVehiculeID" ColumnName="MarqueVehiculeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Patrouilleur">
+            <EntityTypeMapping TypeName="garmuBDModel.Patrouilleur">
+              <MappingFragment StoreEntitySet="Patrouilleur">
+                <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+                <ScalarProperty Name="Matricule" ColumnName="Matricule" />
+                <ScalarProperty Name="VehiculeId" ColumnName="VehiculeId" />
+                <ScalarProperty Name="EquipeNoEquipe" ColumnName="EquipeNoEquipe" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PlanificationMensuelle">
+            <EntityTypeMapping TypeName="garmuBDModel.PlanificationMensuelle">
+              <MappingFragment StoreEntitySet="PlanificationMensuelle">
+                <ScalarProperty Name="Annee" ColumnName="Annee" />
+                <ScalarProperty Name="Mois" ColumnName="Mois" />
+                <ScalarProperty Name="Theme" ColumnName="Theme" />
+                <ScalarProperty Name="Poste" ColumnName="Poste" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="PrioriteLocale">
+            <EntityTypeMapping TypeName="garmuBDModel.PrioriteLocale">
+              <MappingFragment StoreEntitySet="PrioriteLocale">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ProblemeSouleve">
+            <EntityTypeMapping TypeName="garmuBDModel.ProblemeSouleve">
+              <MappingFragment StoreEntitySet="ProblemeSouleve">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Releve">
+            <EntityTypeMapping TypeName="garmuBDModel.Releve">
+              <MappingFragment StoreEntitySet="Releve">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Secteur">
+            <EntityTypeMapping TypeName="garmuBDModel.Secteur">
+              <MappingFragment StoreEntitySet="Secteur">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="SuiviDemande">
+            <EntityTypeMapping TypeName="garmuBDModel.SuiviDemande">
+              <MappingFragment StoreEntitySet="SuiviDemande">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="VerificationInfrastructure" ColumnName="VerificationInfrastructure" />
+                <ScalarProperty Name="DureeSurveillance" ColumnName="DureeSurveillance" />
+                <ScalarProperty Name="DateAgenda" ColumnName="DateAgenda" />
+                <ScalarProperty Name="NbConstatEmis" ColumnName="NbConstatEmis" />
+                <ScalarProperty Name="NbPoliciers" ColumnName="NbPoliciers" />
+                <ScalarProperty Name="TypeSurveillance" ColumnName="TypeSurveillance" />
+                <ScalarProperty Name="Commentaires" ColumnName="Commentaires" />
+                <ScalarProperty Name="Complete" ColumnName="Complete" />
+                <ScalarProperty Name="Retourne" ColumnName="Retourne" />
+                <ScalarProperty Name="RetourPar" ColumnName="RetourPar" />
+                <ScalarProperty Name="RetourDate" ColumnName="RetourDate" />
+                <ScalarProperty Name="RetourHeure" ColumnName="RetourHeure" />
+                <ScalarProperty Name="RetourMoyen" ColumnName="RetourMoyen" />
+                <ScalarProperty Name="Parl" ColumnName="Parl" />
+                <ScalarProperty Name="ParlPar" ColumnName="ParlPar" />
+                <ScalarProperty Name="ControlePar" ColumnName="ControlePar" />
+                <ScalarProperty Name="DemandesSpecialesID" ColumnName="DemandesSpecialesID" />
+                <ScalarProperty Name="PatrouilleurEmployeeID" ColumnName="PatrouilleurEmployeeID" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Suspect">
+            <EntityTypeMapping TypeName="garmuBDModel.Suspect">
+              <MappingFragment StoreEntitySet="Suspect">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="Nom" ColumnName="Nom" />
+                <ScalarProperty Name="Prenom" ColumnName="Prenom" />
+                <ScalarProperty Name="DDN" ColumnName="DDN" />
+                <ScalarProperty Name="DescriptionPhysique" ColumnName="DescriptionPhysique" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TacheQuotidienne">
+            <EntityTypeMapping TypeName="garmuBDModel.TacheQuotidienne">
+              <MappingFragment StoreEntitySet="TacheQuotidienne">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="SecteurID" ColumnName="SecteurID" />
+                <ScalarProperty Name="JourMoisID" ColumnName="JourMoisID" />
+                <ScalarProperty Name="DixVingt" ColumnName="DixVingt" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TacheQuotidienne_Assignation">
+            <EntityTypeMapping TypeName="garmuBDModel.TacheQuotidienne_Assignation">
+              <MappingFragment StoreEntitySet="TacheQuotidienne_Assignation">
+                <ScalarProperty Name="TacheQuotidienneID" ColumnName="TacheQuotidienneID" />
+                <ScalarProperty Name="AssignationDetailPlanID" ColumnName="AssignationDetailPlanID" />
+                <ScalarProperty Name="AssignationJourMoisID" ColumnName="AssignationJourMoisID" />
+                <ScalarProperty Name="Complete" ColumnName="Complete" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="Vehicule">
+            <EntityTypeMapping TypeName="garmuBDModel.Vehicule">
+              <MappingFragment StoreEntitySet="Vehicule">
+                <ScalarProperty Name="Id" ColumnName="Id" />
+                <ScalarProperty Name="NoVehicule" ColumnName="NoVehicule" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <AssociationSetMapping Name="ProblemeSouleve_DemandeSpeciale" TypeName="garmuBDModel.ProblemeSouleve_DemandeSpeciale" StoreEntitySet="ProblemeSouleve_DemandeSpeciale">
+            <EndProperty Name="DemandeSpeciale">
+              <ScalarProperty Name="ID" ColumnName="DemandesSpecialesID" />
+            </EndProperty>
+            <EndProperty Name="ProblemeSouleve">
+              <ScalarProperty Name="ID" ColumnName="ProblemeSouleveID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="Suspect_DemandeSpeciale" TypeName="garmuBDModel.Suspect_DemandeSpeciale" StoreEntitySet="Suspect_DemandeSpeciale">
+            <EndProperty Name="DemandeSpeciale">
+              <ScalarProperty Name="ID" ColumnName="DemandesSpecialesID" />
+            </EndProperty>
+            <EndProperty Name="Suspect">
+              <ScalarProperty Name="ID" ColumnName="SuspectID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="TacheQuotidienne_DemandeSpeciale" TypeName="garmuBDModel.TacheQuotidienne_DemandeSpeciale" StoreEntitySet="TacheQuotidienne_DemandeSpeciale">
+            <EndProperty Name="DemandeSpeciale">
+              <ScalarProperty Name="ID" ColumnName="DemandeSpecialeID" />
+            </EndProperty>
+            <EndProperty Name="TacheQuotidienne">
+              <ScalarProperty Name="ID" ColumnName="TacheQuotidienneID" />
+            </EndProperty>
+          </AssociationSetMapping>
+          <AssociationSetMapping Name="TacheQuotidienne_Patrouilleur" TypeName="garmuBDModel.TacheQuotidienne_Patrouilleur" StoreEntitySet="TacheQuotidienne_Patrouilleur">
+            <EndProperty Name="Patrouilleur">
+              <ScalarProperty Name="EmployeeID" ColumnName="PatrouilleurEmployeeID" />
+            </EndProperty>
+            <EndProperty Name="TacheQuotidienne">
+              <ScalarProperty Name="ID" ColumnName="TacheQuotidienneID" />
+            </EndProperty>
+          </AssociationSetMapping>
+        </EntityContainerMapping>
+      </Mapping>
+    </edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="False" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="True" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="Aucun" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>

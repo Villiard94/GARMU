@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c7c6bfe66a974f91bc753b913c31fd9e" Name="Diagramme1">
+        <EntityTypeShape EntityType="garmuBDModel.Action" Width="1.5" PointX="16.5" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.ActionPrevue" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.Assignation" Width="1.5" PointX="8.25" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.DemandeSpeciale" Width="1.5" PointX="9" PointY="11.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.DetailPlanificationMensuelle" Width="1.5" PointX="3" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.Domaine" Width="1.5" PointX="0.75" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.Employee" Width="1.5" PointX="6.75" PointY="12.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.EndroitCible" Width="1.5" PointX="0.75" PointY="10.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.Equipe" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.JourMois" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.MarqueVehicule" Width="1.5" PointX="4.5" PointY="15.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.ModeleVehicule" Width="1.5" PointX="6.75" PointY="15.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.Patrouilleur" Width="1.5" PointX="9" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.PlanificationMensuelle" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.PrioriteLocale" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.ProblemeSouleve" Width="1.5" PointX="11.25" PointY="12.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.Releve" Width="1.5" PointX="3.75" PointY="9.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.Secteur" Width="1.5" PointX="9" PointY="22" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.SuiviDemande" Width="1.5" PointX="14.25" PointY="13.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.Suspect" Width="1.5" PointX="11.25" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.TacheQuotidienne" Width="1.5" PointX="11.25" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.TacheQuotidienne_Assignation" Width="1.5" PointX="13.5" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="garmuBDModel.Vehicule" Width="1.5" PointX="6.75" PointY="19" IsExpanded="true" />
+        <AssociationConnector Association="garmuBDModel.Suivi_comprend_Action" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Detail_a_des_Action" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Assignation_est_dans_une_ou_des_Tache" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Detail_etablie_des_Assignation" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.JourMois_a_Assignation" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Demande_a_Modele" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Demande_a_un_Suivi" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Demande_remplit_par_Patrouilleur" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Detail_a_des_Endroit" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Detail_a_des_Priorite" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Detail_a_un_Domaine" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Planif_a_des_Detail" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Employee_est_Patrouilleur" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.JourMois_est_pour_Equipe" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Patrouilleur_est_dans_Equipe" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.JourMois_a_des_Tache" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.JourMois_a_une_Releve" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.JourMois_est_fait_a_partir_de_Planif_" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Modele_a_une_Marque" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Patrouilleur_a_un_Veh" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Suivi_est_traite_par_Patrouilleur" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Tache_dans_Secteur" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Tache_comporte_une_ou_des_Assignation" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.ProblemeSouleve_DemandeSpeciale" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.Suspect_DemandeSpeciale" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.TacheQuotidienne_DemandeSpeciale" ManuallyRouted="false" />
+        <AssociationConnector Association="garmuBDModel.TacheQuotidienne_Patrouilleur" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
