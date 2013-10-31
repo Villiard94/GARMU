@@ -71,92 +71,8 @@
     <Compile Include="Controleur\ManagerEmployee.cs" />
     <Compile Include="Controleur\ManagerPrioriteLocale.cs" />
     <Compile Include="Controleur\ManagerVehicule.cs" />
-    <Compile Include="Modele\Action.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\ActionPrevue.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\Assignation.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\DemandeSpeciale.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\DetailPlanificationMensuelle.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\Domaine.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\Employee.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\EndroitCible.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\Equipe.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
     <Compile Include="Modele\Extensions\Employee.cs" />
-    <Compile Include="Modele\GarmuEDM.Context.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GarmuEDM.Context.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\GarmuEDM.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\GarmuEDM.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>GarmuEDM.edmx</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\JourMois.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\MarqueVehicule.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
     <Compile Include="Modele\ModelBDGarmu.cs" />
-    <Compile Include="Modele\ModeleVehicule.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\Patrouilleur.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\PlanificationMensuelle.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\PrioriteLocale.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\ProblemeSouleve.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\Releve.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\Secteur.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\SuiviDemande.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\Suspect.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\TacheQuotidienne.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\TacheQuotidienne_Assignation.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
-    <Compile Include="Modele\Vehicule.cs">
-      <DependentUpon>GarmuEDM.tt</DependentUpon>
-    </Compile>
     <Compile Include="Vue\frmPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -195,23 +111,6 @@
     <EmbeddedResource Include="Vue\frmActionsRequete.resx">
       <DependentUpon>frmActionsRequete.cs</DependentUpon>
     </EmbeddedResource>
-    <EntityDeploy Include="Modele\GarmuEDM.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>GarmuEDM.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <None Include="Modele\GarmuEDM.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GarmuEDM.edmx</DependentUpon>
-      <LastGenOutput>GarmuEDM.Context.cs</LastGenOutput>
-    </None>
-    <None Include="Modele\GarmuEDM.edmx.diagram">
-      <DependentUpon>GarmuEDM.edmx</DependentUpon>
-    </None>
-    <None Include="Modele\GarmuEDM.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>GarmuEDM.edmx</DependentUpon>
-      <LastGenOutput>GarmuEDM.cs</LastGenOutput>
-    </None>
     <None Include="packages.config" />
     <None Include="Properties\DataSources\GARMU.Modele.Action.datasource" />
     <None Include="Properties\DataSources\GARMU.Modele.ActionPrevue.datasource" />
@@ -272,22 +171,6 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="garmuBD.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="garmuBD_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>garmuBD.mdf</DependentUpon>
-    </Content>
-    <Content Include="Modele\garmuBD.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Modele\garmuBD_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>garmuBD.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
