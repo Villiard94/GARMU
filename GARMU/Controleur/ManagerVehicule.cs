@@ -71,7 +71,7 @@ namespace GARMU.Controleur
         protected override string Add(Vehicule entity)
         {
             //S'il existe déja on sort et retourne null
-            if (Exists(entity.Id))
+            if (Exists(entity.NoVehicule))
             {
                 return AppCst.ERROR_VEHICULE_EXISTS;
             }
@@ -83,9 +83,9 @@ namespace GARMU.Controleur
         }
 
         //Vérifier si l'entité existe
-        private bool Exists(int VehId)
+        private bool Exists(string noVeh)
         {
-            if (Context.Vehicule.Any(x => x.Id == VehId))
+            if (Context.Vehicule.Any(x => x.NoVehicule == noVeh))
             {
                 return true;
             }
