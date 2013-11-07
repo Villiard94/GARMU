@@ -1215,7 +1215,7 @@
             // btnEnregistrerPlan
             // 
             this.btnEnregistrerPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEnregistrerPlan.Location = new System.Drawing.Point(1301, 5);
+            this.btnEnregistrerPlan.Location = new System.Drawing.Point(1302, 5);
             this.btnEnregistrerPlan.Name = "btnEnregistrerPlan";
             this.btnEnregistrerPlan.Size = new System.Drawing.Size(96, 28);
             this.btnEnregistrerPlan.TabIndex = 9;
@@ -1225,7 +1225,7 @@
             // btnRechercherPlan
             // 
             this.btnRechercherPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRechercherPlan.Location = new System.Drawing.Point(1187, 5);
+            this.btnRechercherPlan.Location = new System.Drawing.Point(1188, 5);
             this.btnRechercherPlan.Name = "btnRechercherPlan";
             this.btnRechercherPlan.Size = new System.Drawing.Size(96, 28);
             this.btnRechercherPlan.TabIndex = 8;

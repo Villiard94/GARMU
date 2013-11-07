@@ -17,8 +17,8 @@ namespace GARMU
         #region Membres
 
         //Les RichTextBox et TextBox des créations dynamiques de la planification mensuelle et du plan de travail. 
-        RichTextBox[,] _rtbsPlanif = new RichTextBox[6, 5];
-        RichTextBox[,] _rtbsPlanTrav = new RichTextBox[5, 7];
+        Vue.NumberedRichTextBox[,] _rtbsPlanif = new Vue.NumberedRichTextBox[6, 5];
+        Vue.NumberedRichTextBox[,] _rtbsPlanTrav = new Vue.NumberedRichTextBox[5, 7];
         TextBox[,] _tbsDatesPlanTravail = new TextBox[5, 7];
         TextBox[,] _tbsRelevePlanTravail = new TextBox[5, 7];
 
@@ -51,12 +51,9 @@ namespace GARMU
             {
                 for (int j = colIndexStartPlanif; j < tlpPlanifMensuelle.ColumnCount; j++)
                 {
-                    RichTextBox rtb = new RichTextBox();
-                    rtb.SelectionBullet = true;
-                    rtb.Anchor = AnchorStyles.Bottom;
-                    rtb.Anchor = AnchorStyles.Left;
-                    rtb.Anchor = AnchorStyles.Right;
-                    rtb.Anchor = AnchorStyles.Top;
+                    Vue.NumberedRichTextBox rtb = new Vue.NumberedRichTextBox();
+            
+
                     rtb.BorderStyle = BorderStyle.None;
                     rtb.Name = String.Format("tbPm{0}{1}", i - 2, j - 1);
 
@@ -105,18 +102,16 @@ namespace GARMU
                     //Section de la création des assignations
                     if (i % 2 == 0 && j % 3 == 0)
                     {
-                        RichTextBox rtb = new RichTextBox();
+                        Vue.NumberedRichTextBox rtb = new Vue.NumberedRichTextBox();
 
                         tlpPlanTravail.Controls.Add(rtb, j, i);
                         tlpPlanTravail.SetColumnSpan(rtb, 3);
 
                         rtb.Dock = DockStyle.Fill;
                         rtb.Margin = new Padding(0);
-                        rtb.SelectionBullet = true;
                         rtb.BorderStyle = BorderStyle.None;
 
                         _rtbsPlanTrav[i / 2 - 1, j / 3] = rtb;
-                        rtb.Text = String.Format("{0}, {1}", i / 2 - 1, j / 3);
                     }
 
                 }
@@ -125,7 +120,7 @@ namespace GARMU
 
             #endregion
 
-
+            
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
