@@ -14,6 +14,17 @@ namespace GARMU
 {
     public partial class frmPrincipal : Form
     {
+        #region Membres
+
+        //Les RichTextBox et TextBox des créations dynamiques de la planification mensuelle et du plan de travail. 
+        RichTextBox[,] _rtbsPlanif = new RichTextBox[6, 5];
+        RichTextBox[,] _rtbsPlanTrav = new RichTextBox[5, 7];
+        TextBox[,] _tbsDatesPlanTravail = new TextBox[5, 7];
+        TextBox[,] _tbsRelevePlanTravail = new TextBox[5, 7];
+
+
+        #endregion
+
 
         ModelBDGarmu _modelBDGarmu;
         ManagerVehicule _mVehicule;
@@ -32,8 +43,6 @@ namespace GARMU
             InitializeComponent();
 
             #region Génération de PlanifMensuelle
-            // 6 étant le nombre de row; 5 étant le nombre de col.
-            RichTextBox[,] rtbsPlanif = new RichTextBox[6, 5];
 
             const int colIndexStartPlanif = 1;
             const int rowIndexStartPlanif = 2;
@@ -51,7 +60,7 @@ namespace GARMU
                     rtb.BorderStyle = BorderStyle.None;
                     rtb.Name = String.Format("tbPm{0}{1}", i - 2, j - 1);
 
-                    rtbsPlanif[i - 2, j - 1] = rtb;
+                    _rtbsPlanif[i - 2, j - 1] = rtb;
 
                     tlpPlanifMensuelle.Controls.Add(rtb, j, i);
                     rtb.Dock = DockStyle.Fill;
@@ -68,16 +77,27 @@ namespace GARMU
             {
                 for (int j = colIndexStartPlan; j < tlpPlanTravail.ColumnCount; j++)
                 {
-                    //Section de la création des dates et relèves
+                    //Section de la création des dates
                     if (i % 2 != 0 && j % 3 != 2)
                     {
                         TextBox tb = new TextBox();
                         tb.Dock = DockStyle.Fill;
                         tb.Margin = new Padding(0);
                         tb.BorderStyle = BorderStyle.None;
-                        
-                        //Changement du Margin
-                        
+
+                        // Ajout des Dates
+                        if (j % 3 == 0)
+                        {
+                            _tbsDatesPlanTravail[(i - 1) / 2, j / 3] = tb;
+                            tb.Text = String.Format("{0}, {1}", (i - 1) / 2, j / 3);
+                        }
+                        // Ajout des Releves
+                        else if (j % 3 == 1)
+                        {
+                            _tbsRelevePlanTravail[(i - 1) / 2, j / 3] = tb;
+                            tb.Text = String.Format("{0}, {1}", (i - 1) / 2, j / 3);
+                        }
+
 
                         tlpPlanTravail.Controls.Add(tb, j, i);
                     }
@@ -94,6 +114,9 @@ namespace GARMU
                         rtb.Margin = new Padding(0);
                         rtb.SelectionBullet = true;
                         rtb.BorderStyle = BorderStyle.None;
+
+                        _rtbsPlanTrav[i / 2 - 1, j / 3] = rtb;
+                        rtb.Text = String.Format("{0}, {1}", i / 2 - 1, j / 3);
                     }
 
                 }
@@ -102,7 +125,7 @@ namespace GARMU
 
             #endregion
 
-            
+
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)

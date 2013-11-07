@@ -92,7 +92,6 @@
             this.lTheme = new System.Windows.Forms.Label();
             this.tlpPlanifMensuelle = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -104,6 +103,7 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.tabPlanEquipe = new System.Windows.Forms.TabPage();
             this.btnEnregistrerPlan = new System.Windows.Forms.Button();
             this.btnRechercherPlan = new System.Windows.Forms.Button();
@@ -114,6 +114,7 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tlpPlanTravail = new System.Windows.Forms.TableLayoutPanel();
+            this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -138,8 +139,8 @@
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label52 = new System.Windows.Forms.Label();
-            this.dtpRapQuot = new System.Windows.Forms.DateTimePicker();
             this.cbEquipeRapQuot = new System.Windows.Forms.ComboBox();
+            this.dtpRapQuot = new System.Windows.Forms.DateTimePicker();
             this.cboReqPlaintePriseNom = new System.Windows.Forms.TabPage();
             this.dtpDateRequete = new System.Windows.Forms.DateTimePicker();
             this.bRechercherNoRequete = new System.Windows.Forms.Button();
@@ -224,14 +225,13 @@
             this.bAddVeh = new System.Windows.Forms.Button();
             this.gbListeVeh = new System.Windows.Forms.GroupBox();
             this.dgvVeh = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.vehiculeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gbRechercheVehicule = new System.Windows.Forms.GroupBox();
             this.bAfficherToutVehicule = new System.Windows.Forms.Button();
             this.tbRechercherVehicule = new System.Windows.Forms.TextBox();
             this.bRechercherVehicule = new System.Windows.Forms.Button();
             this.tcMenu = new System.Windows.Forms.TabControl();
-            this.label19 = new System.Windows.Forms.Label();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vehiculeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
             this.tabRapports.SuspendLayout();
             this.tcRapports.SuspendLayout();
@@ -267,9 +267,9 @@
             this.gbEditVeh.SuspendLayout();
             this.gbListeVeh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVeh)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehiculeBindingSource)).BeginInit();
             this.gbRechercheVehicule.SuspendLayout();
             this.tcMenu.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.vehiculeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -996,31 +996,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label4.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(523, 1);
+            this.label4.Location = new System.Drawing.Point(524, 1);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
             this.tlpPlanifMensuelle.SetRowSpan(this.label4, 2);
-            this.label4.Size = new System.Drawing.Size(260, 39);
+            this.label4.Size = new System.Drawing.Size(261, 39);
             this.label4.TabIndex = 2;
             this.label4.Text = "ENDROITS CIBLÉS";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label1.Location = new System.Drawing.Point(1, 1);
-            this.label1.Margin = new System.Windows.Forms.Padding(0);
-            this.label1.Name = "label1";
-            this.tlpPlanifMensuelle.SetRowSpan(this.label1, 2);
-            this.label1.Size = new System.Drawing.Size(209, 39);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DOMAINES";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
             // 
@@ -1033,7 +1016,7 @@
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
             this.tlpPlanifMensuelle.SetRowSpan(this.label3, 2);
-            this.label3.Size = new System.Drawing.Size(311, 39);
+            this.label3.Size = new System.Drawing.Size(312, 39);
             this.label3.TabIndex = 1;
             this.label3.Text = "SITUATION";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1046,7 +1029,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tlpPlanifMensuelle.SetColumnSpan(this.label6, 2);
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(1045, 1);
+            this.label6.Location = new System.Drawing.Point(1048, 1);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(353, 19);
@@ -1061,10 +1044,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label7.BackColor = System.Drawing.SystemColors.Control;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(1045, 21);
+            this.label7.Location = new System.Drawing.Point(1048, 21);
             this.label7.Margin = new System.Windows.Forms.Padding(0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(260, 19);
+            this.label7.Size = new System.Drawing.Size(261, 19);
             this.label7.TabIndex = 5;
             this.label7.Text = "ATTENDUS";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1076,10 +1059,10 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label8.BackColor = System.Drawing.SystemColors.Control;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(1306, 21);
+            this.label8.Location = new System.Drawing.Point(1310, 21);
             this.label8.Margin = new System.Windows.Forms.Padding(0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(92, 19);
+            this.label8.Size = new System.Drawing.Size(91, 19);
             this.label8.TabIndex = 6;
             this.label8.Text = "OBTENUS";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1166,11 +1149,11 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label5.BackColor = System.Drawing.SystemColors.ControlLight;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(784, 1);
+            this.label5.Location = new System.Drawing.Point(786, 1);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
             this.tlpPlanifMensuelle.SetRowSpan(this.label5, 2);
-            this.label5.Size = new System.Drawing.Size(260, 39);
+            this.label5.Size = new System.Drawing.Size(261, 39);
             this.label5.TabIndex = 3;
             this.label5.Text = "ACTIONS PRÉVUES";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -1185,10 +1168,27 @@
             this.label15.Location = new System.Drawing.Point(1, 440);
             this.label15.Margin = new System.Windows.Forms.Padding(0);
             this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(209, 61);
+            this.label15.Size = new System.Drawing.Size(209, 62);
             this.label15.TabIndex = 12;
             this.label15.Text = "Divers";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.label1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label1.Location = new System.Drawing.Point(1, 1);
+            this.label1.Margin = new System.Windows.Forms.Padding(0);
+            this.label1.Name = "label1";
+            this.tlpPlanifMensuelle.SetRowSpan(this.label1, 2);
+            this.label1.Size = new System.Drawing.Size(209, 39);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "DOMAINES";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabPlanEquipe
             // 
@@ -1362,6 +1362,20 @@
             this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
             this.tlpPlanTravail.Size = new System.Drawing.Size(1407, 516);
             this.tlpPlanTravail.TabIndex = 0;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tlpPlanTravail.SetColumnSpan(this.label19, 3);
+            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(2, 2);
+            this.label19.Margin = new System.Windows.Forms.Padding(0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(197, 19);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "DIMANCHE";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
             // 
@@ -1686,15 +1700,6 @@
             this.label52.TabIndex = 0;
             this.label52.Text = "Date:";
             // 
-            // dtpRapQuot
-            // 
-            this.dtpRapQuot.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dtpRapQuot.Location = new System.Drawing.Point(118, 4);
-            this.dtpRapQuot.Name = "dtpRapQuot";
-            this.dtpRapQuot.Size = new System.Drawing.Size(231, 20);
-            this.dtpRapQuot.TabIndex = 1;
-            this.dtpRapQuot.ValueChanged += new System.EventHandler(this.dtpRapQuot_ValueChanged);
-            // 
             // cbEquipeRapQuot
             // 
             this.cbEquipeRapQuot.Anchor = System.Windows.Forms.AnchorStyles.Left;
@@ -1713,6 +1718,15 @@
             this.cbEquipeRapQuot.Name = "cbEquipeRapQuot";
             this.cbEquipeRapQuot.Size = new System.Drawing.Size(231, 21);
             this.cbEquipeRapQuot.TabIndex = 3;
+            // 
+            // dtpRapQuot
+            // 
+            this.dtpRapQuot.Anchor = System.Windows.Forms.AnchorStyles.Left;
+            this.dtpRapQuot.Location = new System.Drawing.Point(118, 4);
+            this.dtpRapQuot.Name = "dtpRapQuot";
+            this.dtpRapQuot.Size = new System.Drawing.Size(231, 20);
+            this.dtpRapQuot.TabIndex = 1;
+            this.dtpRapQuot.ValueChanged += new System.EventHandler(this.dtpRapQuot_ValueChanged);
             // 
             // cboReqPlaintePriseNom
             // 
@@ -2607,6 +2621,17 @@
             this.dgvVeh.TabIndex = 0;
             this.dgvVeh.SelectionChanged += new System.EventHandler(this.dgvVeh_SelectionChanged);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoVehicule";
+            this.dataGridViewTextBoxColumn1.HeaderText = "NoVehicule";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // vehiculeBindingSource
+            // 
+            this.vehiculeBindingSource.DataSource = typeof(GARMU.Modele.Vehicule);
+            // 
             // gbRechercheVehicule
             // 
             this.gbRechercheVehicule.Controls.Add(this.bAfficherToutVehicule);
@@ -2667,31 +2692,6 @@
             this.tcMenu.Size = new System.Drawing.Size(1451, 652);
             this.tcMenu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tcMenu.TabIndex = 0;
-            // 
-            // label19
-            // 
-            this.label19.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tlpPlanTravail.SetColumnSpan(this.label19, 3);
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(2, 2);
-            this.label19.Margin = new System.Windows.Forms.Padding(0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(197, 19);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "DIMANCHE";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoVehicule";
-            this.dataGridViewTextBoxColumn1.HeaderText = "NoVehicule";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // vehiculeBindingSource
-            // 
-            this.vehiculeBindingSource.DataSource = typeof(GARMU.Modele.Vehicule);
             // 
             // frmPrincipal
             // 
@@ -2756,10 +2756,10 @@
             this.gbEditVeh.PerformLayout();
             this.gbListeVeh.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvVeh)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.vehiculeBindingSource)).EndInit();
             this.gbRechercheVehicule.ResumeLayout(false);
             this.gbRechercheVehicule.PerformLayout();
             this.tcMenu.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.vehiculeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
