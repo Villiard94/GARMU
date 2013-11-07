@@ -33,37 +33,31 @@ namespace GARMU
 
             InitializeComponent();
 
-            rtbSituationSecurTransport.SelectionBullet = true;
-            rtbActionCrime.SelectionBullet = true;
-            rtbActionDivers.SelectionBullet = true;
-            rtbActionDrogue.SelectionBullet = true;
-            rtbActionSecurMilieu.SelectionBullet = true;
-            rtbActionSecurTransport.SelectionBullet = true;
-            rtbActionVisi.SelectionBullet = true;
-            rtbAttenduCrime.SelectionBullet = true;
-            rtbAttenduDivers.SelectionBullet = true;
-            rtbAttenduDrogue.SelectionBullet = true;
-            rtbAttenduSecurMilieu.SelectionBullet = true;
-            rtbAttenduSecurTransport.SelectionBullet = true;
-            rtbAttenduVisi.SelectionBullet = true;
-            rtbEndroitCrime.SelectionBullet = true;
-            rtbEndroitDivers.SelectionBullet = true;
-            rtbEndroitDrogue.SelectionBullet = true;
-            rtbEndroitSecurMilieu.SelectionBullet = true;
-            rtbEndroitSecurTransport.SelectionBullet = true;
-            rtbEndroitVisi.SelectionBullet = true;
-            rtbObtenuCrime.SelectionBullet = true;
-            rtbObtenuDivers.SelectionBullet = true;
-            rtbObtenuDrogue.SelectionBullet = true;
-            rtbObtenuSecurMilieu.SelectionBullet = true;
-            rtbObtenuSecurTransport.SelectionBullet = true;
-            rtbObtenuVisi.SelectionBullet = true;
-            rtbSituationCrime.SelectionBullet = true;
-            rtbSituationDivers.SelectionBullet = true;
-            rtbSituationDrogue.SelectionBullet = true;
-            rtbSituationSecurMilieu.SelectionBullet = true;
-            rtbSituationSecurTransport.SelectionBullet = true;
-            rtbSituationVisi.SelectionBullet = true;
+            #region Génération de PlanifMensuelle
+
+            const int colIndexStart = 1;
+            const int rowIndexStart = 2;
+
+            for (int i = rowIndexStart; i < tlpPlanifMensuelle.RowCount; i++)
+            {
+                for (int j = colIndexStart; j < tlpPlanifMensuelle.ColumnCount; j++)
+                {
+                    RichTextBox rtb = new RichTextBox();
+                    rtb.SelectionBullet = true;
+                    rtb.Anchor = AnchorStyles.Bottom;
+                    rtb.Anchor = AnchorStyles.Left;
+                    rtb.Anchor = AnchorStyles.Right;
+                    rtb.Anchor = AnchorStyles.Top;
+                    rtb.BorderStyle = BorderStyle.None;
+
+                    tlpPlanifMensuelle.Controls.Add(rtb, j, i);
+                    rtb.Dock = DockStyle.Fill;
+                }
+            }
+
+
+            #endregion
+
             rtbTravailDim1.SelectionBullet = true;
             rtbTravailDim2.SelectionBullet = true;
             rtbTravailDim3.SelectionBullet = true;
@@ -423,85 +417,7 @@ namespace GARMU
 
         private void bRechercherPlanif_Click(object sender, EventArgs e)
         {
-            if ((string)cbMoisPlanif.SelectedItem == "Mars" && (string)cbAnneePlanif.SelectedItem == "2013")
-            {
-                tbThemePlanif.Text = "Le cellulaire au volant!";
-
-                rtbSituationVisi.Text = "Plan de parrainage";
-                rtbSituationSecurMilieu.Text = "Attroupements dans les endroits publics";
-                rtbSituationSecurTransport.Text = "A) Vitesse sur l'ensemble du territoire \n B) Conduite capacités affaiblies";
-                rtbSituationCrime.Text = "A) Indroduction effraction secteurs commerciaux et industriels";
-                rtbSituationDrogue.Text = "Visites et présence près des bars";
-                rtbSituationDivers.Text = "A) Surveillance Circuit VTT et Motoneige-circulation sur la rivière";
-
-                rtbEndroitVisi.Text = "Toutes les municipalités";
-                rtbEndroitSecurMilieu.Text = "Maison des jeunes \n Piscines \n Arénas";
-                rtbEndroitSecurTransport.Text = "A) Sites accidentogênes \n B) Endroits stratégiques";
-                rtbEndroitCrime.Text = "A) Parcs et secteurs industriels";
-                rtbEndroitDrogue.Text = "Visites et présence près des bars";
-                rtbEndroitDivers.Text = "A) Croisement des circuits et des routes et la Yamaska";
-
-                rtbActionVisi.Text = "Rencontre avec les personnes désignées dans les défférentes municipalités";
-                rtbActionSecurMilieu.Text = "Application du G-200 \n Visibilité et prévention";
-                rtbActionSecurTransport.Text = "A) Opération radar \n B) Barrage routier contre l'alcool endroi au choix";
-                rtbActionCrime.Text = "A) Patrouille préventive et/ou banalisé";
-                rtbActionDrogue.Text = "Présence extérieur et/ou visites intérieurs";
-                rtbActionDivers.Text = "A)Opérations ciblés **(selon les conditions)";
-
-                rtbAttenduVisi.Text = "Selon le plan de parrainage";
-                rtbAttenduSecurMilieu.Text = "Assignations chaque relèves de soir et jours de classe (retour 518)";
-                rtbAttenduSecurTransport.Text = "A) 12 opérations par équipe (compléter PARL) \n B) 1 par équipe (compléter PARL)";
-                rtbAttenduCrime.Text = "A) Assignation de soir et nuit (retour 518)";
-                rtbAttenduDrogue.Text = "Assignation de soir et nuit (retour 518 et rapport de visite)";
-                rtbAttenduDivers.Text = "A) 1 opération par équipe \n 2 opérations pour l'équipe Multi (compléter PARL)";
-
-                rtbObtenuVisi.Text = "Oui";
-                rtbObtenuSecurMilieu.Text = "Non";
-                rtbObtenuSecurTransport.Text = "A) 8/12 \n B) 1/1";
-                rtbObtenuCrime.Text = "Oui";
-                rtbObtenuDrogue.Text = "Non";
-                rtbObtenuDivers.Text = "A) 1/1 \n 1/2";
-
-            }
-            else
-            {
-                tbThemePlanif.Text = "";
-
-                rtbSituationVisi.Text = "";
-                rtbSituationSecurMilieu.Text = "";
-                rtbSituationSecurTransport.Text = "";
-                rtbSituationCrime.Text = "";
-                rtbSituationDrogue.Text = "";
-                rtbSituationDivers.Text = "";
-
-                rtbEndroitVisi.Text = "";
-                rtbEndroitSecurMilieu.Text = "";
-                rtbEndroitSecurTransport.Text = "";
-                rtbEndroitCrime.Text = "";
-                rtbEndroitDrogue.Text = "";
-                rtbEndroitDivers.Text = "";
-
-                rtbActionVisi.Text = "";
-                rtbActionSecurMilieu.Text = "";
-                rtbActionSecurTransport.Text = "";
-                rtbActionCrime.Text = "";
-                rtbActionDrogue.Text = "";
-                rtbActionDivers.Text = "";
-
-                rtbAttenduVisi.Text = "";
-                rtbAttenduSecurMilieu.Text = "";
-                rtbAttenduSecurTransport.Text = "";
-                rtbAttenduCrime.Text = "";
-                rtbAttenduDrogue.Text = "";
-                rtbAttenduDivers.Text = "";
-
-                rtbObtenuVisi.Text = "";
-                rtbObtenuSecurMilieu.Text = "";
-                rtbObtenuSecurTransport.Text = "";
-                rtbObtenuCrime.Text = "";
-                rtbObtenuDrogue.Text = "";
-                rtbObtenuDivers.Text = "";
-            }
+            
         }
 
         private void bRechercherRequete_Click(object sender, EventArgs e)

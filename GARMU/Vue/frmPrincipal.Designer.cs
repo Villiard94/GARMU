@@ -90,8 +90,7 @@
             this.label9 = new System.Windows.Forms.Label();
             this.tbThemePlanif = new System.Windows.Forms.TextBox();
             this.lTheme = new System.Windows.Forms.Label();
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.rtbSituationDivers = new System.Windows.Forms.RichTextBox();
+            this.tlpPlanifMensuelle = new System.Windows.Forms.TableLayoutPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -104,36 +103,7 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.rtbSituationSecurTransport = new System.Windows.Forms.RichTextBox();
-            this.rtbSituationDrogue = new System.Windows.Forms.RichTextBox();
-            this.rtbEndroitDrogue = new System.Windows.Forms.RichTextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.rtbActionDrogue = new System.Windows.Forms.RichTextBox();
-            this.rtbAttenduDrogue = new System.Windows.Forms.RichTextBox();
-            this.rtbActionCrime = new System.Windows.Forms.RichTextBox();
-            this.rtbEndroitCrime = new System.Windows.Forms.RichTextBox();
-            this.rtbSituationCrime = new System.Windows.Forms.RichTextBox();
-            this.rtbEndroitSecurTransport = new System.Windows.Forms.RichTextBox();
-            this.rtbActionSecurTransport = new System.Windows.Forms.RichTextBox();
-            this.rtbAttenduSecurTransport = new System.Windows.Forms.RichTextBox();
-            this.rtbObtenuSecurTransport = new System.Windows.Forms.RichTextBox();
-            this.rtbEndroitDivers = new System.Windows.Forms.RichTextBox();
-            this.rtbActionDivers = new System.Windows.Forms.RichTextBox();
-            this.rtbAttenduDivers = new System.Windows.Forms.RichTextBox();
-            this.rtbAttenduCrime = new System.Windows.Forms.RichTextBox();
-            this.rtbObtenuDivers = new System.Windows.Forms.RichTextBox();
-            this.rtbObtenuDrogue = new System.Windows.Forms.RichTextBox();
-            this.rtbObtenuCrime = new System.Windows.Forms.RichTextBox();
-            this.rtbSituationSecurMilieu = new System.Windows.Forms.RichTextBox();
-            this.rtbEndroitSecurMilieu = new System.Windows.Forms.RichTextBox();
-            this.rtbActionSecurMilieu = new System.Windows.Forms.RichTextBox();
-            this.rtbAttenduSecurMilieu = new System.Windows.Forms.RichTextBox();
-            this.rtbObtenuSecurMilieu = new System.Windows.Forms.RichTextBox();
-            this.rtbSituationVisi = new System.Windows.Forms.RichTextBox();
-            this.rtbEndroitVisi = new System.Windows.Forms.RichTextBox();
-            this.rtbActionVisi = new System.Windows.Forms.RichTextBox();
-            this.rtbAttenduVisi = new System.Windows.Forms.RichTextBox();
-            this.rtbObtenuVisi = new System.Windows.Forms.RichTextBox();
             this.tabPlanEquipe = new System.Windows.Forms.TabPage();
             this.btnEnregistrerPlan = new System.Windows.Forms.Button();
             this.btnRechercherPlan = new System.Windows.Forms.Button();
@@ -360,7 +330,7 @@
             this.tabFormulaire.SuspendLayout();
             this.tcFormulaires.SuspendLayout();
             this.tabPlanif.SuspendLayout();
-            this.tableLayoutPanel1.SuspendLayout();
+            this.tlpPlanifMensuelle.SuspendLayout();
             this.tabPlanEquipe.SuspendLayout();
             this.tlpPlanTravail.SuspendLayout();
             this.tabRapportQuot.SuspendLayout();
@@ -925,6 +895,7 @@
             // 
             // tabFormulaire
             // 
+            this.tabFormulaire.AutoScroll = true;
             this.tabFormulaire.Controls.Add(this.tcFormulaires);
             this.tabFormulaire.Location = new System.Drawing.Point(4, 54);
             this.tabFormulaire.Name = "tabFormulaire";
@@ -953,6 +924,8 @@
             // 
             // tabPlanif
             // 
+            this.tabPlanif.AutoScroll = true;
+            this.tabPlanif.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPlanif.Controls.Add(this.bEnregistrerPlanif);
             this.tabPlanif.Controls.Add(this.bRechercherPlanif);
             this.tabPlanif.Controls.Add(this.cbAnneePlanif);
@@ -961,7 +934,7 @@
             this.tabPlanif.Controls.Add(this.label9);
             this.tabPlanif.Controls.Add(this.tbThemePlanif);
             this.tabPlanif.Controls.Add(this.lTheme);
-            this.tabPlanif.Controls.Add(this.tableLayoutPanel1);
+            this.tabPlanif.Controls.Add(this.tlpPlanifMensuelle);
             this.tabPlanif.Cursor = System.Windows.Forms.Cursors.Default;
             this.tabPlanif.Location = new System.Drawing.Point(4, 25);
             this.tabPlanif.Name = "tabPlanif";
@@ -974,9 +947,9 @@
             // bEnregistrerPlanif
             // 
             this.bEnregistrerPlanif.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bEnregistrerPlanif.Location = new System.Drawing.Point(1292, 12);
+            this.bEnregistrerPlanif.Location = new System.Drawing.Point(1254, 4);
             this.bEnregistrerPlanif.Name = "bEnregistrerPlanif";
-            this.bEnregistrerPlanif.Size = new System.Drawing.Size(112, 36);
+            this.bEnregistrerPlanif.Size = new System.Drawing.Size(112, 21);
             this.bEnregistrerPlanif.TabIndex = 8;
             this.bEnregistrerPlanif.Text = "Enregistrer";
             this.bEnregistrerPlanif.UseVisualStyleBackColor = true;
@@ -984,9 +957,9 @@
             // bRechercherPlanif
             // 
             this.bRechercherPlanif.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bRechercherPlanif.Location = new System.Drawing.Point(1159, 12);
+            this.bRechercherPlanif.Location = new System.Drawing.Point(1136, 4);
             this.bRechercherPlanif.Name = "bRechercherPlanif";
-            this.bRechercherPlanif.Size = new System.Drawing.Size(112, 36);
+            this.bRechercherPlanif.Size = new System.Drawing.Size(112, 20);
             this.bRechercherPlanif.TabIndex = 7;
             this.bRechercherPlanif.Text = "Rechercher";
             this.bRechercherPlanif.UseVisualStyleBackColor = true;
@@ -1001,7 +974,7 @@
             "2015",
             "2016",
             "2017"});
-            this.cbAnneePlanif.Location = new System.Drawing.Point(547, 21);
+            this.cbAnneePlanif.Location = new System.Drawing.Point(547, 3);
             this.cbAnneePlanif.Name = "cbAnneePlanif";
             this.cbAnneePlanif.Size = new System.Drawing.Size(121, 21);
             this.cbAnneePlanif.TabIndex = 6;
@@ -1021,7 +994,7 @@
             "Septembre",
             "Novembre",
             "Décembre"});
-            this.cbMoisPlanif.Location = new System.Drawing.Point(349, 21);
+            this.cbMoisPlanif.Location = new System.Drawing.Point(349, 3);
             this.cbMoisPlanif.Name = "cbMoisPlanif";
             this.cbMoisPlanif.Size = new System.Drawing.Size(121, 21);
             this.cbMoisPlanif.TabIndex = 5;
@@ -1029,7 +1002,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(500, 24);
+            this.label16.Location = new System.Drawing.Point(500, 8);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(41, 13);
             this.label16.TabIndex = 4;
@@ -1038,7 +1011,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(311, 24);
+            this.label9.Location = new System.Drawing.Point(311, 8);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(32, 13);
             this.label9.TabIndex = 3;
@@ -1047,7 +1020,7 @@
             // tbThemePlanif
             // 
             this.tbThemePlanif.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbThemePlanif.Location = new System.Drawing.Point(57, 21);
+            this.tbThemePlanif.Location = new System.Drawing.Point(57, 5);
             this.tbThemePlanif.Name = "tbThemePlanif";
             this.tbThemePlanif.Size = new System.Drawing.Size(211, 20);
             this.tbThemePlanif.TabIndex = 2;
@@ -1055,94 +1028,50 @@
             // lTheme
             // 
             this.lTheme.AutoSize = true;
-            this.lTheme.Location = new System.Drawing.Point(8, 24);
+            this.lTheme.Location = new System.Drawing.Point(8, 8);
             this.lTheme.Name = "lTheme";
             this.lTheme.Size = new System.Drawing.Size(43, 13);
             this.lTheme.TabIndex = 1;
             this.lTheme.Text = "Thème:";
             // 
-            // tableLayoutPanel1
+            // tlpPlanifMensuelle
             // 
-            this.tableLayoutPanel1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tableLayoutPanel1.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
-            this.tableLayoutPanel1.ColumnCount = 6;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.05047F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.40271F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.72659F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.72659F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.72659F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.367045F));
-            this.tableLayoutPanel1.Controls.Add(this.rtbSituationDivers, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.label4, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label3, 1, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label6, 4, 0);
-            this.tableLayoutPanel1.Controls.Add(this.label7, 4, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label8, 5, 1);
-            this.tableLayoutPanel1.Controls.Add(this.label10, 0, 2);
-            this.tableLayoutPanel1.Controls.Add(this.label11, 0, 3);
-            this.tableLayoutPanel1.Controls.Add(this.label12, 0, 4);
-            this.tableLayoutPanel1.Controls.Add(this.label13, 0, 5);
-            this.tableLayoutPanel1.Controls.Add(this.label14, 0, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label5, 3, 0);
-            this.tableLayoutPanel1.Controls.Add(this.rtbSituationSecurTransport, 1, 4);
-            this.tableLayoutPanel1.Controls.Add(this.rtbSituationDrogue, 1, 6);
-            this.tableLayoutPanel1.Controls.Add(this.rtbEndroitDrogue, 2, 6);
-            this.tableLayoutPanel1.Controls.Add(this.label15, 0, 7);
-            this.tableLayoutPanel1.Controls.Add(this.rtbActionDrogue, 3, 6);
-            this.tableLayoutPanel1.Controls.Add(this.rtbAttenduDrogue, 4, 6);
-            this.tableLayoutPanel1.Controls.Add(this.rtbActionCrime, 3, 5);
-            this.tableLayoutPanel1.Controls.Add(this.rtbEndroitCrime, 2, 5);
-            this.tableLayoutPanel1.Controls.Add(this.rtbSituationCrime, 1, 5);
-            this.tableLayoutPanel1.Controls.Add(this.rtbEndroitSecurTransport, 2, 4);
-            this.tableLayoutPanel1.Controls.Add(this.rtbActionSecurTransport, 3, 4);
-            this.tableLayoutPanel1.Controls.Add(this.rtbAttenduSecurTransport, 4, 4);
-            this.tableLayoutPanel1.Controls.Add(this.rtbObtenuSecurTransport, 5, 4);
-            this.tableLayoutPanel1.Controls.Add(this.rtbEndroitDivers, 2, 7);
-            this.tableLayoutPanel1.Controls.Add(this.rtbActionDivers, 3, 7);
-            this.tableLayoutPanel1.Controls.Add(this.rtbAttenduDivers, 4, 7);
-            this.tableLayoutPanel1.Controls.Add(this.rtbAttenduCrime, 4, 5);
-            this.tableLayoutPanel1.Controls.Add(this.rtbObtenuDivers, 5, 7);
-            this.tableLayoutPanel1.Controls.Add(this.rtbObtenuDrogue, 5, 6);
-            this.tableLayoutPanel1.Controls.Add(this.rtbObtenuCrime, 5, 5);
-            this.tableLayoutPanel1.Controls.Add(this.rtbSituationSecurMilieu, 1, 3);
-            this.tableLayoutPanel1.Controls.Add(this.rtbEndroitSecurMilieu, 2, 3);
-            this.tableLayoutPanel1.Controls.Add(this.rtbActionSecurMilieu, 3, 3);
-            this.tableLayoutPanel1.Controls.Add(this.rtbAttenduSecurMilieu, 4, 3);
-            this.tableLayoutPanel1.Controls.Add(this.rtbObtenuSecurMilieu, 5, 3);
-            this.tableLayoutPanel1.Controls.Add(this.rtbSituationVisi, 1, 2);
-            this.tableLayoutPanel1.Controls.Add(this.rtbEndroitVisi, 2, 2);
-            this.tableLayoutPanel1.Controls.Add(this.rtbActionVisi, 3, 2);
-            this.tableLayoutPanel1.Controls.Add(this.rtbAttenduVisi, 4, 2);
-            this.tableLayoutPanel1.Controls.Add(this.rtbObtenuVisi, 5, 2);
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(6, 61);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 8;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.032444F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.89239F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.4879F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1399, 502);
-            this.tableLayoutPanel1.TabIndex = 0;
-            // 
-            // rtbSituationDivers
-            // 
-            this.rtbSituationDivers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbSituationDivers.Location = new System.Drawing.Point(214, 443);
-            this.rtbSituationDivers.Name = "rtbSituationDivers";
-            this.rtbSituationDivers.Size = new System.Drawing.Size(305, 55);
-            this.rtbSituationDivers.TabIndex = 42;
-            this.rtbSituationDivers.Text = "";
+            this.tlpPlanifMensuelle.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.tlpPlanifMensuelle.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
+            this.tlpPlanifMensuelle.ColumnCount = 6;
+            this.tlpPlanifMensuelle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15.05047F));
+            this.tlpPlanifMensuelle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 22.40271F));
+            this.tlpPlanifMensuelle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.72659F));
+            this.tlpPlanifMensuelle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.72659F));
+            this.tlpPlanifMensuelle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 18.72659F));
+            this.tlpPlanifMensuelle.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 6.367045F));
+            this.tlpPlanifMensuelle.Controls.Add(this.label4, 2, 0);
+            this.tlpPlanifMensuelle.Controls.Add(this.label3, 1, 0);
+            this.tlpPlanifMensuelle.Controls.Add(this.label6, 4, 0);
+            this.tlpPlanifMensuelle.Controls.Add(this.label7, 4, 1);
+            this.tlpPlanifMensuelle.Controls.Add(this.label8, 5, 1);
+            this.tlpPlanifMensuelle.Controls.Add(this.label10, 0, 2);
+            this.tlpPlanifMensuelle.Controls.Add(this.label11, 0, 3);
+            this.tlpPlanifMensuelle.Controls.Add(this.label12, 0, 4);
+            this.tlpPlanifMensuelle.Controls.Add(this.label13, 0, 5);
+            this.tlpPlanifMensuelle.Controls.Add(this.label14, 0, 6);
+            this.tlpPlanifMensuelle.Controls.Add(this.label5, 3, 0);
+            this.tlpPlanifMensuelle.Controls.Add(this.label15, 0, 7);
+            this.tlpPlanifMensuelle.Controls.Add(this.label1, 0, 0);
+            this.tlpPlanifMensuelle.Location = new System.Drawing.Point(3, 49);
+            this.tlpPlanifMensuelle.Name = "tlpPlanifMensuelle";
+            this.tlpPlanifMensuelle.RowCount = 8;
+            this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.032444F));
+            this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.89239F));
+            this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
+            this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
+            this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 34.4879F));
+            this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
+            this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
+            this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 11.51745F));
+            this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tlpPlanifMensuelle.Size = new System.Drawing.Size(1402, 503);
+            this.tlpPlanifMensuelle.TabIndex = 0;
             // 
             // label4
             // 
@@ -1154,7 +1083,7 @@
             this.label4.Location = new System.Drawing.Point(523, 1);
             this.label4.Margin = new System.Windows.Forms.Padding(0);
             this.label4.Name = "label4";
-            this.tableLayoutPanel1.SetRowSpan(this.label4, 2);
+            this.tlpPlanifMensuelle.SetRowSpan(this.label4, 2);
             this.label4.Size = new System.Drawing.Size(260, 39);
             this.label4.TabIndex = 2;
             this.label4.Text = "ENDROITS CIBLÉS";
@@ -1171,7 +1100,7 @@
             this.label1.Location = new System.Drawing.Point(1, 1);
             this.label1.Margin = new System.Windows.Forms.Padding(0);
             this.label1.Name = "label1";
-            this.tableLayoutPanel1.SetRowSpan(this.label1, 2);
+            this.tlpPlanifMensuelle.SetRowSpan(this.label1, 2);
             this.label1.Size = new System.Drawing.Size(209, 39);
             this.label1.TabIndex = 0;
             this.label1.Text = "DOMAINES";
@@ -1187,7 +1116,7 @@
             this.label3.Location = new System.Drawing.Point(211, 1);
             this.label3.Margin = new System.Windows.Forms.Padding(0);
             this.label3.Name = "label3";
-            this.tableLayoutPanel1.SetRowSpan(this.label3, 2);
+            this.tlpPlanifMensuelle.SetRowSpan(this.label3, 2);
             this.label3.Size = new System.Drawing.Size(311, 39);
             this.label3.TabIndex = 1;
             this.label3.Text = "SITUATION";
@@ -1199,7 +1128,7 @@
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
             this.label6.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tableLayoutPanel1.SetColumnSpan(this.label6, 2);
+            this.tlpPlanifMensuelle.SetColumnSpan(this.label6, 2);
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.Location = new System.Drawing.Point(1045, 1);
             this.label6.Margin = new System.Windows.Forms.Padding(0);
@@ -1324,44 +1253,11 @@
             this.label5.Location = new System.Drawing.Point(784, 1);
             this.label5.Margin = new System.Windows.Forms.Padding(0);
             this.label5.Name = "label5";
-            this.tableLayoutPanel1.SetRowSpan(this.label5, 2);
+            this.tlpPlanifMensuelle.SetRowSpan(this.label5, 2);
             this.label5.Size = new System.Drawing.Size(260, 39);
             this.label5.TabIndex = 3;
             this.label5.Text = "ACTIONS PRÉVUES";
             this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // rtbSituationSecurTransport
-            // 
-            this.rtbSituationSecurTransport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbSituationSecurTransport.Location = new System.Drawing.Point(214, 158);
-            this.rtbSituationSecurTransport.Name = "rtbSituationSecurTransport";
-            this.rtbSituationSecurTransport.Size = new System.Drawing.Size(305, 164);
-            this.rtbSituationSecurTransport.TabIndex = 13;
-            this.rtbSituationSecurTransport.Text = "";
-            // 
-            // rtbSituationDrogue
-            // 
-            this.rtbSituationDrogue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbSituationDrogue.Location = new System.Drawing.Point(214, 386);
-            this.rtbSituationDrogue.Name = "rtbSituationDrogue";
-            this.rtbSituationDrogue.Size = new System.Drawing.Size(305, 50);
-            this.rtbSituationDrogue.TabIndex = 14;
-            this.rtbSituationDrogue.Text = "";
-            // 
-            // rtbEndroitDrogue
-            // 
-            this.rtbEndroitDrogue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbEndroitDrogue.Location = new System.Drawing.Point(526, 386);
-            this.rtbEndroitDrogue.Name = "rtbEndroitDrogue";
-            this.rtbEndroitDrogue.Size = new System.Drawing.Size(254, 50);
-            this.rtbEndroitDrogue.TabIndex = 16;
-            this.rtbEndroitDrogue.Text = "";
             // 
             // label15
             // 
@@ -1377,292 +1273,6 @@
             this.label15.TabIndex = 12;
             this.label15.Text = "Divers";
             this.label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // rtbActionDrogue
-            // 
-            this.rtbActionDrogue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbActionDrogue.Location = new System.Drawing.Point(787, 386);
-            this.rtbActionDrogue.Name = "rtbActionDrogue";
-            this.rtbActionDrogue.Size = new System.Drawing.Size(254, 50);
-            this.rtbActionDrogue.TabIndex = 20;
-            this.rtbActionDrogue.Text = "";
-            // 
-            // rtbAttenduDrogue
-            // 
-            this.rtbAttenduDrogue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbAttenduDrogue.Location = new System.Drawing.Point(1048, 386);
-            this.rtbAttenduDrogue.Name = "rtbAttenduDrogue";
-            this.rtbAttenduDrogue.Size = new System.Drawing.Size(254, 50);
-            this.rtbAttenduDrogue.TabIndex = 15;
-            this.rtbAttenduDrogue.Text = "";
-            // 
-            // rtbActionCrime
-            // 
-            this.rtbActionCrime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbActionCrime.Location = new System.Drawing.Point(787, 329);
-            this.rtbActionCrime.Name = "rtbActionCrime";
-            this.rtbActionCrime.Size = new System.Drawing.Size(254, 50);
-            this.rtbActionCrime.TabIndex = 18;
-            this.rtbActionCrime.Text = "";
-            // 
-            // rtbEndroitCrime
-            // 
-            this.rtbEndroitCrime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbEndroitCrime.Location = new System.Drawing.Point(526, 329);
-            this.rtbEndroitCrime.Name = "rtbEndroitCrime";
-            this.rtbEndroitCrime.Size = new System.Drawing.Size(254, 50);
-            this.rtbEndroitCrime.TabIndex = 17;
-            this.rtbEndroitCrime.Text = "";
-            // 
-            // rtbSituationCrime
-            // 
-            this.rtbSituationCrime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbSituationCrime.Location = new System.Drawing.Point(214, 329);
-            this.rtbSituationCrime.Name = "rtbSituationCrime";
-            this.rtbSituationCrime.Size = new System.Drawing.Size(305, 50);
-            this.rtbSituationCrime.TabIndex = 19;
-            this.rtbSituationCrime.Text = "";
-            // 
-            // rtbEndroitSecurTransport
-            // 
-            this.rtbEndroitSecurTransport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbEndroitSecurTransport.Location = new System.Drawing.Point(526, 158);
-            this.rtbEndroitSecurTransport.Name = "rtbEndroitSecurTransport";
-            this.rtbEndroitSecurTransport.Size = new System.Drawing.Size(254, 164);
-            this.rtbEndroitSecurTransport.TabIndex = 21;
-            this.rtbEndroitSecurTransport.Text = "";
-            // 
-            // rtbActionSecurTransport
-            // 
-            this.rtbActionSecurTransport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbActionSecurTransport.Location = new System.Drawing.Point(787, 158);
-            this.rtbActionSecurTransport.Name = "rtbActionSecurTransport";
-            this.rtbActionSecurTransport.Size = new System.Drawing.Size(254, 164);
-            this.rtbActionSecurTransport.TabIndex = 22;
-            this.rtbActionSecurTransport.Text = "";
-            // 
-            // rtbAttenduSecurTransport
-            // 
-            this.rtbAttenduSecurTransport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbAttenduSecurTransport.Location = new System.Drawing.Point(1048, 158);
-            this.rtbAttenduSecurTransport.Name = "rtbAttenduSecurTransport";
-            this.rtbAttenduSecurTransport.Size = new System.Drawing.Size(254, 164);
-            this.rtbAttenduSecurTransport.TabIndex = 23;
-            this.rtbAttenduSecurTransport.Text = "";
-            // 
-            // rtbObtenuSecurTransport
-            // 
-            this.rtbObtenuSecurTransport.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbObtenuSecurTransport.Location = new System.Drawing.Point(1309, 158);
-            this.rtbObtenuSecurTransport.Name = "rtbObtenuSecurTransport";
-            this.rtbObtenuSecurTransport.Size = new System.Drawing.Size(86, 164);
-            this.rtbObtenuSecurTransport.TabIndex = 24;
-            this.rtbObtenuSecurTransport.Text = "";
-            // 
-            // rtbEndroitDivers
-            // 
-            this.rtbEndroitDivers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbEndroitDivers.Location = new System.Drawing.Point(526, 443);
-            this.rtbEndroitDivers.Name = "rtbEndroitDivers";
-            this.rtbEndroitDivers.Size = new System.Drawing.Size(254, 55);
-            this.rtbEndroitDivers.TabIndex = 25;
-            this.rtbEndroitDivers.Text = "";
-            // 
-            // rtbActionDivers
-            // 
-            this.rtbActionDivers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbActionDivers.Location = new System.Drawing.Point(787, 443);
-            this.rtbActionDivers.Name = "rtbActionDivers";
-            this.rtbActionDivers.Size = new System.Drawing.Size(254, 55);
-            this.rtbActionDivers.TabIndex = 26;
-            this.rtbActionDivers.Text = "";
-            // 
-            // rtbAttenduDivers
-            // 
-            this.rtbAttenduDivers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbAttenduDivers.Location = new System.Drawing.Point(1048, 443);
-            this.rtbAttenduDivers.Name = "rtbAttenduDivers";
-            this.rtbAttenduDivers.Size = new System.Drawing.Size(254, 55);
-            this.rtbAttenduDivers.TabIndex = 27;
-            this.rtbAttenduDivers.Text = "";
-            // 
-            // rtbAttenduCrime
-            // 
-            this.rtbAttenduCrime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbAttenduCrime.Location = new System.Drawing.Point(1048, 329);
-            this.rtbAttenduCrime.Name = "rtbAttenduCrime";
-            this.rtbAttenduCrime.Size = new System.Drawing.Size(254, 50);
-            this.rtbAttenduCrime.TabIndex = 28;
-            this.rtbAttenduCrime.Text = "";
-            // 
-            // rtbObtenuDivers
-            // 
-            this.rtbObtenuDivers.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbObtenuDivers.Location = new System.Drawing.Point(1309, 443);
-            this.rtbObtenuDivers.Name = "rtbObtenuDivers";
-            this.rtbObtenuDivers.Size = new System.Drawing.Size(86, 55);
-            this.rtbObtenuDivers.TabIndex = 29;
-            this.rtbObtenuDivers.Text = "";
-            // 
-            // rtbObtenuDrogue
-            // 
-            this.rtbObtenuDrogue.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbObtenuDrogue.Location = new System.Drawing.Point(1309, 386);
-            this.rtbObtenuDrogue.Name = "rtbObtenuDrogue";
-            this.rtbObtenuDrogue.Size = new System.Drawing.Size(86, 50);
-            this.rtbObtenuDrogue.TabIndex = 30;
-            this.rtbObtenuDrogue.Text = "";
-            // 
-            // rtbObtenuCrime
-            // 
-            this.rtbObtenuCrime.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbObtenuCrime.Location = new System.Drawing.Point(1309, 329);
-            this.rtbObtenuCrime.Name = "rtbObtenuCrime";
-            this.rtbObtenuCrime.Size = new System.Drawing.Size(86, 50);
-            this.rtbObtenuCrime.TabIndex = 31;
-            this.rtbObtenuCrime.Text = "";
-            // 
-            // rtbSituationSecurMilieu
-            // 
-            this.rtbSituationSecurMilieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbSituationSecurMilieu.Location = new System.Drawing.Point(214, 101);
-            this.rtbSituationSecurMilieu.Name = "rtbSituationSecurMilieu";
-            this.rtbSituationSecurMilieu.Size = new System.Drawing.Size(305, 50);
-            this.rtbSituationSecurMilieu.TabIndex = 32;
-            this.rtbSituationSecurMilieu.Text = "";
-            // 
-            // rtbEndroitSecurMilieu
-            // 
-            this.rtbEndroitSecurMilieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbEndroitSecurMilieu.Location = new System.Drawing.Point(526, 101);
-            this.rtbEndroitSecurMilieu.Name = "rtbEndroitSecurMilieu";
-            this.rtbEndroitSecurMilieu.Size = new System.Drawing.Size(254, 50);
-            this.rtbEndroitSecurMilieu.TabIndex = 33;
-            this.rtbEndroitSecurMilieu.Text = "";
-            // 
-            // rtbActionSecurMilieu
-            // 
-            this.rtbActionSecurMilieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbActionSecurMilieu.Location = new System.Drawing.Point(787, 101);
-            this.rtbActionSecurMilieu.Name = "rtbActionSecurMilieu";
-            this.rtbActionSecurMilieu.Size = new System.Drawing.Size(254, 50);
-            this.rtbActionSecurMilieu.TabIndex = 34;
-            this.rtbActionSecurMilieu.Text = "";
-            // 
-            // rtbAttenduSecurMilieu
-            // 
-            this.rtbAttenduSecurMilieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbAttenduSecurMilieu.Location = new System.Drawing.Point(1048, 101);
-            this.rtbAttenduSecurMilieu.Name = "rtbAttenduSecurMilieu";
-            this.rtbAttenduSecurMilieu.Size = new System.Drawing.Size(254, 50);
-            this.rtbAttenduSecurMilieu.TabIndex = 35;
-            this.rtbAttenduSecurMilieu.Text = "";
-            // 
-            // rtbObtenuSecurMilieu
-            // 
-            this.rtbObtenuSecurMilieu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbObtenuSecurMilieu.Location = new System.Drawing.Point(1309, 101);
-            this.rtbObtenuSecurMilieu.Name = "rtbObtenuSecurMilieu";
-            this.rtbObtenuSecurMilieu.Size = new System.Drawing.Size(86, 50);
-            this.rtbObtenuSecurMilieu.TabIndex = 36;
-            this.rtbObtenuSecurMilieu.Text = "";
-            // 
-            // rtbSituationVisi
-            // 
-            this.rtbSituationVisi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbSituationVisi.Location = new System.Drawing.Point(214, 44);
-            this.rtbSituationVisi.Name = "rtbSituationVisi";
-            this.rtbSituationVisi.Size = new System.Drawing.Size(305, 50);
-            this.rtbSituationVisi.TabIndex = 37;
-            this.rtbSituationVisi.Text = "";
-            // 
-            // rtbEndroitVisi
-            // 
-            this.rtbEndroitVisi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbEndroitVisi.Location = new System.Drawing.Point(526, 44);
-            this.rtbEndroitVisi.Name = "rtbEndroitVisi";
-            this.rtbEndroitVisi.Size = new System.Drawing.Size(254, 50);
-            this.rtbEndroitVisi.TabIndex = 38;
-            this.rtbEndroitVisi.Text = "";
-            // 
-            // rtbActionVisi
-            // 
-            this.rtbActionVisi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbActionVisi.Location = new System.Drawing.Point(787, 44);
-            this.rtbActionVisi.Name = "rtbActionVisi";
-            this.rtbActionVisi.Size = new System.Drawing.Size(254, 50);
-            this.rtbActionVisi.TabIndex = 39;
-            this.rtbActionVisi.Text = "";
-            // 
-            // rtbAttenduVisi
-            // 
-            this.rtbAttenduVisi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbAttenduVisi.Location = new System.Drawing.Point(1048, 44);
-            this.rtbAttenduVisi.Name = "rtbAttenduVisi";
-            this.rtbAttenduVisi.Size = new System.Drawing.Size(254, 50);
-            this.rtbAttenduVisi.TabIndex = 40;
-            this.rtbAttenduVisi.Text = "";
-            // 
-            // rtbObtenuVisi
-            // 
-            this.rtbObtenuVisi.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.rtbObtenuVisi.Location = new System.Drawing.Point(1309, 44);
-            this.rtbObtenuVisi.Name = "rtbObtenuVisi";
-            this.rtbObtenuVisi.Size = new System.Drawing.Size(86, 50);
-            this.rtbObtenuVisi.TabIndex = 41;
-            this.rtbObtenuVisi.Text = "";
             // 
             // tabPlanEquipe
             // 
@@ -3190,7 +2800,7 @@
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 329F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 353F));
             this.tableLayoutPanel2.Controls.Add(this.cbReleveRapQuot, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.label54, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label53, 0, 1);
@@ -3216,7 +2826,7 @@
             "1",
             "2",
             "3"});
-            this.cbReleveRapQuot.Location = new System.Drawing.Point(26, 58);
+            this.cbReleveRapQuot.Location = new System.Drawing.Point(2, 58);
             this.cbReleveRapQuot.Name = "cbReleveRapQuot";
             this.cbReleveRapQuot.Size = new System.Drawing.Size(233, 21);
             this.cbReleveRapQuot.TabIndex = 5;
@@ -3225,9 +2835,9 @@
             // 
             this.label54.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(4, 55);
+            this.label54.Location = new System.Drawing.Point(4, 62);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(15, 27);
+            this.label54.Size = new System.Drawing.Size(1, 13);
             this.label54.TabIndex = 4;
             this.label54.Text = "Relève";
             // 
@@ -3235,9 +2845,9 @@
             // 
             this.label53.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(4, 28);
+            this.label53.Location = new System.Drawing.Point(4, 34);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(15, 26);
+            this.label53.Size = new System.Drawing.Size(1, 13);
             this.label53.TabIndex = 2;
             this.label53.Text = "Équipe:";
             // 
@@ -3245,16 +2855,16 @@
             // 
             this.label52.Anchor = System.Windows.Forms.AnchorStyles.Left;
             this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(4, 1);
+            this.label52.Location = new System.Drawing.Point(4, 7);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(15, 26);
+            this.label52.Size = new System.Drawing.Size(1, 13);
             this.label52.TabIndex = 0;
             this.label52.Text = "Date:";
             // 
             // dtpRapQuot
             // 
             this.dtpRapQuot.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dtpRapQuot.Location = new System.Drawing.Point(26, 4);
+            this.dtpRapQuot.Location = new System.Drawing.Point(2, 4);
             this.dtpRapQuot.Name = "dtpRapQuot";
             this.dtpRapQuot.Size = new System.Drawing.Size(233, 20);
             this.dtpRapQuot.TabIndex = 1;
@@ -3274,7 +2884,7 @@
             "5",
             "PAHV",
             "Équipe-Multi"});
-            this.cbEquipeRapQuot.Location = new System.Drawing.Point(26, 31);
+            this.cbEquipeRapQuot.Location = new System.Drawing.Point(2, 31);
             this.cbEquipeRapQuot.Name = "cbEquipeRapQuot";
             this.cbEquipeRapQuot.Size = new System.Drawing.Size(233, 21);
             this.cbEquipeRapQuot.TabIndex = 3;
@@ -4279,7 +3889,7 @@
             this.tcFormulaires.ResumeLayout(false);
             this.tabPlanif.ResumeLayout(false);
             this.tabPlanif.PerformLayout();
-            this.tableLayoutPanel1.ResumeLayout(false);
+            this.tlpPlanifMensuelle.ResumeLayout(false);
             this.tabPlanEquipe.ResumeLayout(false);
             this.tabPlanEquipe.PerformLayout();
             this.tlpPlanTravail.ResumeLayout(false);
@@ -4395,8 +4005,7 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbThemePlanif;
         private System.Windows.Forms.Label lTheme;
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.RichTextBox rtbSituationDivers;
+        private System.Windows.Forms.TableLayoutPanel tlpPlanifMensuelle;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
@@ -4409,36 +4018,7 @@
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.RichTextBox rtbSituationSecurTransport;
-        private System.Windows.Forms.RichTextBox rtbSituationDrogue;
-        private System.Windows.Forms.RichTextBox rtbEndroitDrogue;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.RichTextBox rtbActionDrogue;
-        private System.Windows.Forms.RichTextBox rtbAttenduDrogue;
-        private System.Windows.Forms.RichTextBox rtbActionCrime;
-        private System.Windows.Forms.RichTextBox rtbEndroitCrime;
-        private System.Windows.Forms.RichTextBox rtbSituationCrime;
-        private System.Windows.Forms.RichTextBox rtbEndroitSecurTransport;
-        private System.Windows.Forms.RichTextBox rtbActionSecurTransport;
-        private System.Windows.Forms.RichTextBox rtbAttenduSecurTransport;
-        private System.Windows.Forms.RichTextBox rtbObtenuSecurTransport;
-        private System.Windows.Forms.RichTextBox rtbEndroitDivers;
-        private System.Windows.Forms.RichTextBox rtbActionDivers;
-        private System.Windows.Forms.RichTextBox rtbAttenduDivers;
-        private System.Windows.Forms.RichTextBox rtbAttenduCrime;
-        private System.Windows.Forms.RichTextBox rtbObtenuDivers;
-        private System.Windows.Forms.RichTextBox rtbObtenuDrogue;
-        private System.Windows.Forms.RichTextBox rtbObtenuCrime;
-        private System.Windows.Forms.RichTextBox rtbSituationSecurMilieu;
-        private System.Windows.Forms.RichTextBox rtbEndroitSecurMilieu;
-        private System.Windows.Forms.RichTextBox rtbActionSecurMilieu;
-        private System.Windows.Forms.RichTextBox rtbAttenduSecurMilieu;
-        private System.Windows.Forms.RichTextBox rtbObtenuSecurMilieu;
-        private System.Windows.Forms.RichTextBox rtbSituationVisi;
-        private System.Windows.Forms.RichTextBox rtbEndroitVisi;
-        private System.Windows.Forms.RichTextBox rtbActionVisi;
-        private System.Windows.Forms.RichTextBox rtbAttenduVisi;
-        private System.Windows.Forms.RichTextBox rtbObtenuVisi;
         private System.Windows.Forms.TabPage tabPlanEquipe;
         private System.Windows.Forms.Button btnEnregistrerPlan;
         private System.Windows.Forms.Button btnRechercherPlan;
