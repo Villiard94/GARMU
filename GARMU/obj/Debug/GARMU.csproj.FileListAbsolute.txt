@@ -302,4 +302,3 @@ D:\Documents\GitHub\GARMU\GARMU\bin\Debug\GARMU.pdb
 D:\Documents\GitHub\GARMU\GARMU\bin\Debug\EntityFramework.dll
 D:\Documents\GitHub\GARMU\GARMU\bin\Debug\EntityFramework.xml
 D:\Documents\GitHub\GARMU\GARMU\bin\Debug\fr\EntityFramework.resources.dll
-D:\Documents\GitHub\GARMU\GARMU\obj\Debug\GARMU.csprojResolveAssemblyReference.cache

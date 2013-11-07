@@ -114,97 +114,12 @@
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tlpPlanTravail = new System.Windows.Forms.TableLayoutPanel();
-            this.tbReleveDim2 = new System.Windows.Forms.TextBox();
-            this.tbDateLun1 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.rtbTravailDim1 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailMardi1 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailMer1 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailJeu1 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailVen1 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailSam1 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailDim2 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailLun2 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailMardi2 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailMer2 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailJeu2 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailVen2 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailSam2 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailDim3 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailLun3 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailDim4 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailLun4 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailMardi3 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailMardi4 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailMer3 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailMer4 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailJeu3 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailJeu4 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailVen3 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailVen4 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailSam3 = new System.Windows.Forms.RichTextBox();
-            this.rtbTravailSam4 = new System.Windows.Forms.RichTextBox();
-            this.tbDateDim1 = new System.Windows.Forms.TextBox();
-            this.tbReleveDim1 = new System.Windows.Forms.TextBox();
-            this.tbReleveLun1 = new System.Windows.Forms.TextBox();
-            this.tbDateMar1 = new System.Windows.Forms.TextBox();
-            this.tbReleveMar1 = new System.Windows.Forms.TextBox();
-            this.tbDateMer1 = new System.Windows.Forms.TextBox();
-            this.tbReleveMer1 = new System.Windows.Forms.TextBox();
-            this.tbDateJeu1 = new System.Windows.Forms.TextBox();
-            this.tbReleveJeu1 = new System.Windows.Forms.TextBox();
-            this.tbDateVen1 = new System.Windows.Forms.TextBox();
-            this.tbReleveVen1 = new System.Windows.Forms.TextBox();
-            this.tbDateSam1 = new System.Windows.Forms.TextBox();
-            this.tbReleveSam1 = new System.Windows.Forms.TextBox();
-            this.tbDateDim2 = new System.Windows.Forms.TextBox();
-            this.tbDateLun2 = new System.Windows.Forms.TextBox();
-            this.tbReleveLun2 = new System.Windows.Forms.TextBox();
-            this.tbDateMar2 = new System.Windows.Forms.TextBox();
-            this.tbReleveMar2 = new System.Windows.Forms.TextBox();
-            this.tbDateMer2 = new System.Windows.Forms.TextBox();
-            this.tbReleveMer2 = new System.Windows.Forms.TextBox();
-            this.tbDateJeu2 = new System.Windows.Forms.TextBox();
-            this.tbReleveJeu2 = new System.Windows.Forms.TextBox();
-            this.tbDateVen2 = new System.Windows.Forms.TextBox();
-            this.tbReleveVen2 = new System.Windows.Forms.TextBox();
-            this.tbDateSam2 = new System.Windows.Forms.TextBox();
-            this.tbReleveSam2 = new System.Windows.Forms.TextBox();
-            this.tbDateDim3 = new System.Windows.Forms.TextBox();
-            this.tbReleveDim3 = new System.Windows.Forms.TextBox();
-            this.tbDateLun3 = new System.Windows.Forms.TextBox();
-            this.tbReleveLun3 = new System.Windows.Forms.TextBox();
-            this.tbDateMar3 = new System.Windows.Forms.TextBox();
-            this.tbReleveMar3 = new System.Windows.Forms.TextBox();
-            this.tbDateMer3 = new System.Windows.Forms.TextBox();
-            this.tbReleveMer3 = new System.Windows.Forms.TextBox();
-            this.tbDateJeu3 = new System.Windows.Forms.TextBox();
-            this.tbReleveJeu3 = new System.Windows.Forms.TextBox();
-            this.tbDateVen3 = new System.Windows.Forms.TextBox();
-            this.tbReleveVen3 = new System.Windows.Forms.TextBox();
-            this.tbDateSam3 = new System.Windows.Forms.TextBox();
-            this.tbReleveSam3 = new System.Windows.Forms.TextBox();
-            this.tbDateDim4 = new System.Windows.Forms.TextBox();
-            this.tbReleveDim4 = new System.Windows.Forms.TextBox();
-            this.tbDateLun4 = new System.Windows.Forms.TextBox();
-            this.tbReleveLun4 = new System.Windows.Forms.TextBox();
-            this.tbDateMar4 = new System.Windows.Forms.TextBox();
-            this.tbReleveMar4 = new System.Windows.Forms.TextBox();
-            this.tbDateMer4 = new System.Windows.Forms.TextBox();
-            this.tbReleveMer4 = new System.Windows.Forms.TextBox();
-            this.tbDateJeu4 = new System.Windows.Forms.TextBox();
-            this.tbReleveJeu4 = new System.Windows.Forms.TextBox();
-            this.tbDateVen4 = new System.Windows.Forms.TextBox();
-            this.tbReleveVen4 = new System.Windows.Forms.TextBox();
-            this.tbDateSam4 = new System.Windows.Forms.TextBox();
-            this.tbReleveSam4 = new System.Windows.Forms.TextBox();
-            this.rtbTravailLun1 = new System.Windows.Forms.RichTextBox();
             this.tabRapportQuot = new System.Windows.Forms.TabPage();
             this.bRapQuotVersRequ = new System.Windows.Forms.Button();
             this.bRapQuotVersSuiviRequ = new System.Windows.Forms.Button();
@@ -314,6 +229,7 @@
             this.tbRechercherVehicule = new System.Windows.Forms.TextBox();
             this.bRechercherVehicule = new System.Windows.Forms.Button();
             this.tcMenu = new System.Windows.Forms.TabControl();
+            this.label19 = new System.Windows.Forms.Label();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vehiculeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.menuStrip1.SuspendLayout();
@@ -362,7 +278,7 @@
             this.toolStripMenuItem1});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1453, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1466, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -386,7 +302,7 @@
             this.tabRapports.Controls.Add(this.tcRapports);
             this.tabRapports.Location = new System.Drawing.Point(4, 54);
             this.tabRapports.Name = "tabRapports";
-            this.tabRapports.Size = new System.Drawing.Size(1430, 602);
+            this.tabRapports.Size = new System.Drawing.Size(1443, 594);
             this.tabRapports.TabIndex = 2;
             this.tabRapports.Text = "Rapports";
             this.tabRapports.UseVisualStyleBackColor = true;
@@ -404,7 +320,7 @@
             this.tcRapports.Location = new System.Drawing.Point(3, 0);
             this.tcRapports.Name = "tcRapports";
             this.tcRapports.SelectedIndex = 0;
-            this.tcRapports.Size = new System.Drawing.Size(1422, 599);
+            this.tcRapports.Size = new System.Drawing.Size(1435, 591);
             this.tcRapports.TabIndex = 0;
             // 
             // tabRequeteVigueur
@@ -413,7 +329,7 @@
             this.tabRequeteVigueur.Location = new System.Drawing.Point(4, 25);
             this.tabRequeteVigueur.Name = "tabRequeteVigueur";
             this.tabRequeteVigueur.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRequeteVigueur.Size = new System.Drawing.Size(1414, 570);
+            this.tabRequeteVigueur.Size = new System.Drawing.Size(1427, 562);
             this.tabRequeteVigueur.TabIndex = 0;
             this.tabRequeteVigueur.Text = "Liste requête en vigueur";
             this.tabRequeteVigueur.UseVisualStyleBackColor = true;
@@ -436,7 +352,7 @@
             this.tabRequeteFerme.Location = new System.Drawing.Point(4, 25);
             this.tabRequeteFerme.Name = "tabRequeteFerme";
             this.tabRequeteFerme.Padding = new System.Windows.Forms.Padding(3);
-            this.tabRequeteFerme.Size = new System.Drawing.Size(1414, 570);
+            this.tabRequeteFerme.Size = new System.Drawing.Size(1427, 562);
             this.tabRequeteFerme.TabIndex = 1;
             this.tabRequeteFerme.Text = "Liste requête fermé";
             this.tabRequeteFerme.UseVisualStyleBackColor = true;
@@ -471,7 +387,7 @@
             this.tabSuiviRequete.Controls.Add(this.label64);
             this.tabSuiviRequete.Location = new System.Drawing.Point(4, 25);
             this.tabSuiviRequete.Name = "tabSuiviRequete";
-            this.tabSuiviRequete.Size = new System.Drawing.Size(1414, 570);
+            this.tabSuiviRequete.Size = new System.Drawing.Size(1427, 562);
             this.tabSuiviRequete.TabIndex = 2;
             this.tabSuiviRequete.Text = "Suivi d\'une requête";
             this.tabSuiviRequete.UseVisualStyleBackColor = true;
@@ -900,7 +816,7 @@
             this.tabFormulaire.Location = new System.Drawing.Point(4, 54);
             this.tabFormulaire.Name = "tabFormulaire";
             this.tabFormulaire.Padding = new System.Windows.Forms.Padding(3);
-            this.tabFormulaire.Size = new System.Drawing.Size(1430, 602);
+            this.tabFormulaire.Size = new System.Drawing.Size(1443, 594);
             this.tabFormulaire.TabIndex = 1;
             this.tabFormulaire.Text = "Formulaires";
             this.tabFormulaire.UseVisualStyleBackColor = true;
@@ -919,7 +835,7 @@
             this.tcFormulaires.Location = new System.Drawing.Point(3, 0);
             this.tcFormulaires.Name = "tcFormulaires";
             this.tcFormulaires.SelectedIndex = 0;
-            this.tcFormulaires.Size = new System.Drawing.Size(1419, 598);
+            this.tcFormulaires.Size = new System.Drawing.Size(1432, 590);
             this.tcFormulaires.TabIndex = 0;
             // 
             // tabPlanif
@@ -939,7 +855,7 @@
             this.tabPlanif.Location = new System.Drawing.Point(4, 25);
             this.tabPlanif.Name = "tabPlanif";
             this.tabPlanif.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPlanif.Size = new System.Drawing.Size(1411, 569);
+            this.tabPlanif.Size = new System.Drawing.Size(1424, 561);
             this.tabPlanif.TabIndex = 0;
             this.tabPlanif.Text = "Planification Mensuelle";
             this.tabPlanif.UseVisualStyleBackColor = true;
@@ -947,7 +863,7 @@
             // bEnregistrerPlanif
             // 
             this.bEnregistrerPlanif.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bEnregistrerPlanif.Location = new System.Drawing.Point(1254, 4);
+            this.bEnregistrerPlanif.Location = new System.Drawing.Point(1212, 6);
             this.bEnregistrerPlanif.Name = "bEnregistrerPlanif";
             this.bEnregistrerPlanif.Size = new System.Drawing.Size(112, 21);
             this.bEnregistrerPlanif.TabIndex = 8;
@@ -957,7 +873,7 @@
             // bRechercherPlanif
             // 
             this.bRechercherPlanif.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bRechercherPlanif.Location = new System.Drawing.Point(1136, 4);
+            this.bRechercherPlanif.Location = new System.Drawing.Point(1085, 6);
             this.bRechercherPlanif.Name = "bRechercherPlanif";
             this.bRechercherPlanif.Size = new System.Drawing.Size(112, 20);
             this.bRechercherPlanif.TabIndex = 7;
@@ -974,7 +890,7 @@
             "2015",
             "2016",
             "2017"});
-            this.cbAnneePlanif.Location = new System.Drawing.Point(547, 3);
+            this.cbAnneePlanif.Location = new System.Drawing.Point(534, 7);
             this.cbAnneePlanif.Name = "cbAnneePlanif";
             this.cbAnneePlanif.Size = new System.Drawing.Size(121, 21);
             this.cbAnneePlanif.TabIndex = 6;
@@ -994,7 +910,7 @@
             "Septembre",
             "Novembre",
             "Décembre"});
-            this.cbMoisPlanif.Location = new System.Drawing.Point(349, 3);
+            this.cbMoisPlanif.Location = new System.Drawing.Point(350, 6);
             this.cbMoisPlanif.Name = "cbMoisPlanif";
             this.cbMoisPlanif.Size = new System.Drawing.Size(121, 21);
             this.cbMoisPlanif.TabIndex = 5;
@@ -1002,7 +918,7 @@
             // label16
             // 
             this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(500, 8);
+            this.label16.Location = new System.Drawing.Point(488, 11);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(41, 13);
             this.label16.TabIndex = 4;
@@ -1011,7 +927,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(311, 8);
+            this.label9.Location = new System.Drawing.Point(312, 11);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(32, 13);
             this.label9.TabIndex = 3;
@@ -1020,7 +936,7 @@
             // tbThemePlanif
             // 
             this.tbThemePlanif.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbThemePlanif.Location = new System.Drawing.Point(57, 5);
+            this.tbThemePlanif.Location = new System.Drawing.Point(58, 6);
             this.tbThemePlanif.Name = "tbThemePlanif";
             this.tbThemePlanif.Size = new System.Drawing.Size(211, 20);
             this.tbThemePlanif.TabIndex = 2;
@@ -1028,7 +944,7 @@
             // lTheme
             // 
             this.lTheme.AutoSize = true;
-            this.lTheme.Location = new System.Drawing.Point(8, 8);
+            this.lTheme.Location = new System.Drawing.Point(9, 11);
             this.lTheme.Name = "lTheme";
             this.lTheme.Size = new System.Drawing.Size(43, 13);
             this.lTheme.TabIndex = 1;
@@ -1058,7 +974,7 @@
             this.tlpPlanifMensuelle.Controls.Add(this.label5, 3, 0);
             this.tlpPlanifMensuelle.Controls.Add(this.label15, 0, 7);
             this.tlpPlanifMensuelle.Controls.Add(this.label1, 0, 0);
-            this.tlpPlanifMensuelle.Location = new System.Drawing.Point(3, 49);
+            this.tlpPlanifMensuelle.Location = new System.Drawing.Point(7, 39);
             this.tlpPlanifMensuelle.Name = "tlpPlanifMensuelle";
             this.tlpPlanifMensuelle.RowCount = 8;
             this.tlpPlanifMensuelle.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 4.032444F));
@@ -1276,6 +1192,8 @@
             // 
             // tabPlanEquipe
             // 
+            this.tabPlanEquipe.AutoScroll = true;
+            this.tabPlanEquipe.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPlanEquipe.Controls.Add(this.btnEnregistrerPlan);
             this.tabPlanEquipe.Controls.Add(this.btnRechercherPlan);
             this.tabPlanEquipe.Controls.Add(this.cboPlanifAnne);
@@ -1289,7 +1207,7 @@
             this.tabPlanEquipe.Location = new System.Drawing.Point(4, 25);
             this.tabPlanEquipe.Name = "tabPlanEquipe";
             this.tabPlanEquipe.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPlanEquipe.Size = new System.Drawing.Size(1411, 569);
+            this.tabPlanEquipe.Size = new System.Drawing.Size(1424, 561);
             this.tabPlanEquipe.TabIndex = 1;
             this.tabPlanEquipe.Text = "Plan de travail d\'équipe";
             this.tabPlanEquipe.UseVisualStyleBackColor = true;
@@ -1297,7 +1215,7 @@
             // btnEnregistrerPlan
             // 
             this.btnEnregistrerPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEnregistrerPlan.Location = new System.Drawing.Point(1291, 5);
+            this.btnEnregistrerPlan.Location = new System.Drawing.Point(1301, 5);
             this.btnEnregistrerPlan.Name = "btnEnregistrerPlan";
             this.btnEnregistrerPlan.Size = new System.Drawing.Size(96, 28);
             this.btnEnregistrerPlan.TabIndex = 9;
@@ -1307,7 +1225,7 @@
             // btnRechercherPlan
             // 
             this.btnRechercherPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRechercherPlan.Location = new System.Drawing.Point(1177, 5);
+            this.btnRechercherPlan.Location = new System.Drawing.Point(1187, 5);
             this.btnRechercherPlan.Name = "btnRechercherPlan";
             this.btnRechercherPlan.Size = new System.Drawing.Size(96, 28);
             this.btnRechercherPlan.TabIndex = 8;
@@ -1397,34 +1315,30 @@
             // 
             // tlpPlanTravail
             // 
-            this.tlpPlanTravail.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tlpPlanTravail.BackColor = System.Drawing.SystemColors.Window;
             this.tlpPlanTravail.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tlpPlanTravail.ColumnCount = 21;
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48015F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.317389F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.484471F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.315645F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.315836F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.315836F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.31901F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.31901F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 3.48447F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 7.31901F));
-            this.tlpPlanTravail.Controls.Add(this.tbReleveDim2, 1, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbDateLun1, 3, 1);
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.524969F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.524969F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.238091F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.235889F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.236131F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.236131F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.240138F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.240138F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.240138F));
             this.tlpPlanTravail.Controls.Add(this.label19, 0, 0);
             this.tlpPlanTravail.Controls.Add(this.label20, 3, 0);
             this.tlpPlanTravail.Controls.Add(this.label21, 6, 0);
@@ -1432,1195 +1346,106 @@
             this.tlpPlanTravail.Controls.Add(this.label23, 12, 0);
             this.tlpPlanTravail.Controls.Add(this.label24, 15, 0);
             this.tlpPlanTravail.Controls.Add(this.label25, 18, 0);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailDim1, 0, 2);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailMardi1, 6, 2);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailMer1, 9, 2);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailJeu1, 12, 2);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailVen1, 15, 2);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailSam1, 18, 2);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailDim2, 0, 4);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailLun2, 3, 4);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailMardi2, 6, 4);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailMer2, 9, 4);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailJeu2, 12, 4);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailVen2, 15, 4);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailSam2, 18, 4);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailDim3, 0, 6);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailLun3, 3, 6);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailDim4, 0, 8);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailLun4, 3, 8);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailMardi3, 6, 6);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailMardi4, 6, 8);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailMer3, 9, 6);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailMer4, 9, 8);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailJeu3, 12, 6);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailJeu4, 12, 8);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailVen3, 15, 6);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailVen4, 15, 8);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailSam3, 18, 6);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailSam4, 18, 8);
-            this.tlpPlanTravail.Controls.Add(this.tbDateDim1, 0, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveDim1, 1, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveLun1, 4, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbDateMar1, 6, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveMar1, 7, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbDateMer1, 9, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveMer1, 10, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbDateJeu1, 12, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveJeu1, 13, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbDateVen1, 15, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveVen1, 16, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbDateSam1, 18, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveSam1, 19, 1);
-            this.tlpPlanTravail.Controls.Add(this.tbDateDim2, 0, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbDateLun2, 3, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveLun2, 4, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbDateMar2, 6, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveMar2, 7, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbDateMer2, 9, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveMer2, 10, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbDateJeu2, 12, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveJeu2, 13, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbDateVen2, 15, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveVen2, 16, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbDateSam2, 18, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveSam2, 19, 3);
-            this.tlpPlanTravail.Controls.Add(this.tbDateDim3, 0, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveDim3, 1, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbDateLun3, 3, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveLun3, 4, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbDateMar3, 6, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveMar3, 7, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbDateMer3, 9, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveMer3, 10, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbDateJeu3, 12, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveJeu3, 13, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbDateVen3, 15, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveVen3, 16, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbDateSam3, 18, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveSam3, 19, 5);
-            this.tlpPlanTravail.Controls.Add(this.tbDateDim4, 0, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveDim4, 1, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbDateLun4, 3, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveLun4, 4, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbDateMar4, 6, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveMar4, 7, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbDateMer4, 9, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveMer4, 10, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbDateJeu4, 12, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveJeu4, 13, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbDateVen4, 15, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveVen4, 16, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbDateSam4, 18, 7);
-            this.tlpPlanTravail.Controls.Add(this.tbReleveSam4, 19, 7);
-            this.tlpPlanTravail.Controls.Add(this.rtbTravailLun1, 3, 2);
-            this.tlpPlanTravail.Location = new System.Drawing.Point(6, 37);
+            this.tlpPlanTravail.Location = new System.Drawing.Point(11, 39);
             this.tlpPlanTravail.Name = "tlpPlanTravail";
-            this.tlpPlanTravail.RowCount = 9;
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 5F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.75F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.75F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.75F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.75F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tlpPlanTravail.Size = new System.Drawing.Size(1383, 526);
+            this.tlpPlanTravail.RowCount = 11;
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.911262F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
+            this.tlpPlanTravail.Size = new System.Drawing.Size(1407, 516);
             this.tlpPlanTravail.TabIndex = 0;
-            // 
-            // tbReleveDim2
-            // 
-            this.tbReleveDim2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveDim2.Location = new System.Drawing.Point(50, 152);
-            this.tbReleveDim2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveDim2.Name = "tbReleveDim2";
-            this.tbReleveDim2.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveDim2.TabIndex = 38;
-            // 
-            // tbDateLun1
-            // 
-            this.tbDateLun1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateLun1.Location = new System.Drawing.Point(197, 29);
-            this.tbDateLun1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateLun1.Name = "tbDateLun1";
-            this.tbDateLun1.Size = new System.Drawing.Size(46, 20);
-            this.tbDateLun1.TabIndex = 38;
-            // 
-            // label19
-            // 
-            this.label19.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.label19.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tlpPlanTravail.SetColumnSpan(this.label19, 3);
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(2, 2);
-            this.label19.Margin = new System.Windows.Forms.Padding(0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(193, 25);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "DIMANCHE";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
             // 
-            this.label20.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label20.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tlpPlanTravail.SetColumnSpan(this.label20, 3);
+            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label20.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(197, 2);
+            this.label20.Location = new System.Drawing.Point(201, 2);
             this.label20.Margin = new System.Windows.Forms.Padding(0);
             this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(193, 25);
+            this.label20.Size = new System.Drawing.Size(197, 19);
             this.label20.TabIndex = 3;
             this.label20.Text = "LUNDI";
             this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label21
             // 
-            this.label21.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label21.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tlpPlanTravail.SetColumnSpan(this.label21, 3);
+            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label21.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(392, 2);
+            this.label21.Location = new System.Drawing.Point(400, 2);
             this.label21.Margin = new System.Windows.Forms.Padding(0);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(193, 25);
+            this.label21.Size = new System.Drawing.Size(197, 19);
             this.label21.TabIndex = 4;
             this.label21.Text = "MARDI";
             this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label22
             // 
-            this.label22.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label22.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tlpPlanTravail.SetColumnSpan(this.label22, 3);
+            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label22.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(587, 2);
+            this.label22.Location = new System.Drawing.Point(599, 2);
             this.label22.Margin = new System.Windows.Forms.Padding(0);
             this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(193, 25);
+            this.label22.Size = new System.Drawing.Size(197, 19);
             this.label22.TabIndex = 5;
             this.label22.Text = "MERCREDI";
             this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label23
             // 
-            this.label23.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label23.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tlpPlanTravail.SetColumnSpan(this.label23, 3);
+            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label23.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(782, 2);
+            this.label23.Location = new System.Drawing.Point(798, 2);
             this.label23.Margin = new System.Windows.Forms.Padding(0);
             this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(194, 25);
+            this.label23.Size = new System.Drawing.Size(197, 19);
             this.label23.TabIndex = 6;
             this.label23.Text = "JEUDI";
             this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label24
             // 
-            this.label24.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label24.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tlpPlanTravail.SetColumnSpan(this.label24, 3);
+            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label24.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(978, 2);
+            this.label24.Location = new System.Drawing.Point(997, 2);
             this.label24.Margin = new System.Windows.Forms.Padding(0);
             this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(194, 25);
+            this.label24.Size = new System.Drawing.Size(197, 19);
             this.label24.TabIndex = 7;
             this.label24.Text = "VENDREDI";
             this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label25
             // 
-            this.label25.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
             this.label25.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tlpPlanTravail.SetColumnSpan(this.label25, 3);
+            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label25.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(1174, 2);
+            this.label25.Location = new System.Drawing.Point(1196, 2);
             this.label25.Margin = new System.Windows.Forms.Padding(0);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(207, 25);
+            this.label25.Size = new System.Drawing.Size(209, 19);
             this.label25.TabIndex = 8;
             this.label25.Text = "SAMEDI";
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // rtbTravailDim1
-            // 
-            this.rtbTravailDim1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailDim1, 3);
-            this.rtbTravailDim1.Location = new System.Drawing.Point(2, 49);
-            this.rtbTravailDim1.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailDim1.Name = "rtbTravailDim1";
-            this.rtbTravailDim1.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailDim1.TabIndex = 9;
-            this.rtbTravailDim1.Text = "";
-            // 
-            // rtbTravailMardi1
-            // 
-            this.rtbTravailMardi1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailMardi1, 3);
-            this.rtbTravailMardi1.Location = new System.Drawing.Point(392, 49);
-            this.rtbTravailMardi1.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailMardi1.Name = "rtbTravailMardi1";
-            this.rtbTravailMardi1.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailMardi1.TabIndex = 11;
-            this.rtbTravailMardi1.Text = "";
-            // 
-            // rtbTravailMer1
-            // 
-            this.rtbTravailMer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailMer1, 3);
-            this.rtbTravailMer1.Location = new System.Drawing.Point(587, 49);
-            this.rtbTravailMer1.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailMer1.Name = "rtbTravailMer1";
-            this.rtbTravailMer1.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailMer1.TabIndex = 12;
-            this.rtbTravailMer1.Text = "";
-            // 
-            // rtbTravailJeu1
-            // 
-            this.rtbTravailJeu1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailJeu1, 3);
-            this.rtbTravailJeu1.Location = new System.Drawing.Point(782, 49);
-            this.rtbTravailJeu1.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailJeu1.Name = "rtbTravailJeu1";
-            this.rtbTravailJeu1.Size = new System.Drawing.Size(194, 101);
-            this.rtbTravailJeu1.TabIndex = 13;
-            this.rtbTravailJeu1.Text = "";
-            // 
-            // rtbTravailVen1
-            // 
-            this.rtbTravailVen1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailVen1, 3);
-            this.rtbTravailVen1.Location = new System.Drawing.Point(978, 49);
-            this.rtbTravailVen1.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailVen1.Name = "rtbTravailVen1";
-            this.rtbTravailVen1.Size = new System.Drawing.Size(194, 101);
-            this.rtbTravailVen1.TabIndex = 14;
-            this.rtbTravailVen1.Text = "";
-            // 
-            // rtbTravailSam1
-            // 
-            this.rtbTravailSam1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailSam1, 3);
-            this.rtbTravailSam1.Location = new System.Drawing.Point(1174, 49);
-            this.rtbTravailSam1.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailSam1.Name = "rtbTravailSam1";
-            this.rtbTravailSam1.Size = new System.Drawing.Size(207, 101);
-            this.rtbTravailSam1.TabIndex = 15;
-            this.rtbTravailSam1.Text = "";
-            // 
-            // rtbTravailDim2
-            // 
-            this.rtbTravailDim2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailDim2, 3);
-            this.rtbTravailDim2.Location = new System.Drawing.Point(2, 172);
-            this.rtbTravailDim2.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailDim2.Name = "rtbTravailDim2";
-            this.rtbTravailDim2.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailDim2.TabIndex = 16;
-            this.rtbTravailDim2.Text = "";
-            // 
-            // rtbTravailLun2
-            // 
-            this.rtbTravailLun2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailLun2, 3);
-            this.rtbTravailLun2.Location = new System.Drawing.Point(197, 172);
-            this.rtbTravailLun2.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailLun2.Name = "rtbTravailLun2";
-            this.rtbTravailLun2.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailLun2.TabIndex = 17;
-            this.rtbTravailLun2.Text = "";
-            // 
-            // rtbTravailMardi2
-            // 
-            this.rtbTravailMardi2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailMardi2, 3);
-            this.rtbTravailMardi2.Location = new System.Drawing.Point(392, 172);
-            this.rtbTravailMardi2.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailMardi2.Name = "rtbTravailMardi2";
-            this.rtbTravailMardi2.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailMardi2.TabIndex = 18;
-            this.rtbTravailMardi2.Text = "";
-            // 
-            // rtbTravailMer2
-            // 
-            this.rtbTravailMer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailMer2, 3);
-            this.rtbTravailMer2.Location = new System.Drawing.Point(587, 172);
-            this.rtbTravailMer2.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailMer2.Name = "rtbTravailMer2";
-            this.rtbTravailMer2.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailMer2.TabIndex = 19;
-            this.rtbTravailMer2.Text = "";
-            // 
-            // rtbTravailJeu2
-            // 
-            this.rtbTravailJeu2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailJeu2, 3);
-            this.rtbTravailJeu2.Location = new System.Drawing.Point(782, 172);
-            this.rtbTravailJeu2.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailJeu2.Name = "rtbTravailJeu2";
-            this.rtbTravailJeu2.Size = new System.Drawing.Size(194, 101);
-            this.rtbTravailJeu2.TabIndex = 20;
-            this.rtbTravailJeu2.Text = "";
-            // 
-            // rtbTravailVen2
-            // 
-            this.rtbTravailVen2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailVen2, 3);
-            this.rtbTravailVen2.Location = new System.Drawing.Point(978, 172);
-            this.rtbTravailVen2.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailVen2.Name = "rtbTravailVen2";
-            this.rtbTravailVen2.Size = new System.Drawing.Size(194, 101);
-            this.rtbTravailVen2.TabIndex = 21;
-            this.rtbTravailVen2.Text = "";
-            // 
-            // rtbTravailSam2
-            // 
-            this.rtbTravailSam2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailSam2, 3);
-            this.rtbTravailSam2.Location = new System.Drawing.Point(1174, 172);
-            this.rtbTravailSam2.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailSam2.Name = "rtbTravailSam2";
-            this.rtbTravailSam2.Size = new System.Drawing.Size(207, 101);
-            this.rtbTravailSam2.TabIndex = 22;
-            this.rtbTravailSam2.Text = "";
-            // 
-            // rtbTravailDim3
-            // 
-            this.rtbTravailDim3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailDim3, 3);
-            this.rtbTravailDim3.Location = new System.Drawing.Point(2, 295);
-            this.rtbTravailDim3.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailDim3.Name = "rtbTravailDim3";
-            this.rtbTravailDim3.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailDim3.TabIndex = 23;
-            this.rtbTravailDim3.Text = "";
-            // 
-            // rtbTravailLun3
-            // 
-            this.rtbTravailLun3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailLun3, 3);
-            this.rtbTravailLun3.Location = new System.Drawing.Point(197, 295);
-            this.rtbTravailLun3.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailLun3.Name = "rtbTravailLun3";
-            this.rtbTravailLun3.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailLun3.TabIndex = 24;
-            this.rtbTravailLun3.Text = "";
-            // 
-            // rtbTravailDim4
-            // 
-            this.rtbTravailDim4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailDim4, 3);
-            this.rtbTravailDim4.Location = new System.Drawing.Point(2, 418);
-            this.rtbTravailDim4.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailDim4.Name = "rtbTravailDim4";
-            this.rtbTravailDim4.Size = new System.Drawing.Size(193, 106);
-            this.rtbTravailDim4.TabIndex = 25;
-            this.rtbTravailDim4.Text = "";
-            // 
-            // rtbTravailLun4
-            // 
-            this.rtbTravailLun4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailLun4, 3);
-            this.rtbTravailLun4.Location = new System.Drawing.Point(197, 418);
-            this.rtbTravailLun4.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailLun4.Name = "rtbTravailLun4";
-            this.rtbTravailLun4.Size = new System.Drawing.Size(193, 106);
-            this.rtbTravailLun4.TabIndex = 26;
-            this.rtbTravailLun4.Text = "";
-            // 
-            // rtbTravailMardi3
-            // 
-            this.rtbTravailMardi3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailMardi3, 3);
-            this.rtbTravailMardi3.Location = new System.Drawing.Point(392, 295);
-            this.rtbTravailMardi3.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailMardi3.Name = "rtbTravailMardi3";
-            this.rtbTravailMardi3.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailMardi3.TabIndex = 27;
-            this.rtbTravailMardi3.Text = "";
-            // 
-            // rtbTravailMardi4
-            // 
-            this.rtbTravailMardi4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailMardi4, 3);
-            this.rtbTravailMardi4.Location = new System.Drawing.Point(392, 418);
-            this.rtbTravailMardi4.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailMardi4.Name = "rtbTravailMardi4";
-            this.rtbTravailMardi4.Size = new System.Drawing.Size(193, 106);
-            this.rtbTravailMardi4.TabIndex = 28;
-            this.rtbTravailMardi4.Text = "";
-            // 
-            // rtbTravailMer3
-            // 
-            this.rtbTravailMer3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailMer3, 3);
-            this.rtbTravailMer3.Location = new System.Drawing.Point(587, 295);
-            this.rtbTravailMer3.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailMer3.Name = "rtbTravailMer3";
-            this.rtbTravailMer3.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailMer3.TabIndex = 29;
-            this.rtbTravailMer3.Text = "";
-            // 
-            // rtbTravailMer4
-            // 
-            this.rtbTravailMer4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailMer4, 3);
-            this.rtbTravailMer4.Location = new System.Drawing.Point(587, 418);
-            this.rtbTravailMer4.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailMer4.Name = "rtbTravailMer4";
-            this.rtbTravailMer4.Size = new System.Drawing.Size(193, 106);
-            this.rtbTravailMer4.TabIndex = 30;
-            this.rtbTravailMer4.Text = "";
-            // 
-            // rtbTravailJeu3
-            // 
-            this.rtbTravailJeu3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailJeu3, 3);
-            this.rtbTravailJeu3.Location = new System.Drawing.Point(782, 295);
-            this.rtbTravailJeu3.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailJeu3.Name = "rtbTravailJeu3";
-            this.rtbTravailJeu3.Size = new System.Drawing.Size(194, 101);
-            this.rtbTravailJeu3.TabIndex = 31;
-            this.rtbTravailJeu3.Text = "";
-            // 
-            // rtbTravailJeu4
-            // 
-            this.rtbTravailJeu4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailJeu4, 3);
-            this.rtbTravailJeu4.Location = new System.Drawing.Point(782, 418);
-            this.rtbTravailJeu4.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailJeu4.Name = "rtbTravailJeu4";
-            this.rtbTravailJeu4.Size = new System.Drawing.Size(194, 106);
-            this.rtbTravailJeu4.TabIndex = 32;
-            this.rtbTravailJeu4.Text = "";
-            // 
-            // rtbTravailVen3
-            // 
-            this.rtbTravailVen3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailVen3, 3);
-            this.rtbTravailVen3.Location = new System.Drawing.Point(978, 295);
-            this.rtbTravailVen3.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailVen3.Name = "rtbTravailVen3";
-            this.rtbTravailVen3.Size = new System.Drawing.Size(194, 101);
-            this.rtbTravailVen3.TabIndex = 33;
-            this.rtbTravailVen3.Text = "";
-            // 
-            // rtbTravailVen4
-            // 
-            this.rtbTravailVen4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailVen4, 3);
-            this.rtbTravailVen4.Location = new System.Drawing.Point(978, 418);
-            this.rtbTravailVen4.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailVen4.Name = "rtbTravailVen4";
-            this.rtbTravailVen4.Size = new System.Drawing.Size(194, 106);
-            this.rtbTravailVen4.TabIndex = 34;
-            this.rtbTravailVen4.Text = "";
-            // 
-            // rtbTravailSam3
-            // 
-            this.rtbTravailSam3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailSam3, 3);
-            this.rtbTravailSam3.Location = new System.Drawing.Point(1174, 295);
-            this.rtbTravailSam3.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailSam3.Name = "rtbTravailSam3";
-            this.rtbTravailSam3.Size = new System.Drawing.Size(207, 101);
-            this.rtbTravailSam3.TabIndex = 35;
-            this.rtbTravailSam3.Text = "";
-            // 
-            // rtbTravailSam4
-            // 
-            this.rtbTravailSam4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailSam4, 3);
-            this.rtbTravailSam4.Location = new System.Drawing.Point(1174, 418);
-            this.rtbTravailSam4.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailSam4.Name = "rtbTravailSam4";
-            this.rtbTravailSam4.Size = new System.Drawing.Size(207, 106);
-            this.rtbTravailSam4.TabIndex = 36;
-            this.rtbTravailSam4.Text = "";
-            // 
-            // tbDateDim1
-            // 
-            this.tbDateDim1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateDim1.Location = new System.Drawing.Point(2, 29);
-            this.tbDateDim1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateDim1.Name = "tbDateDim1";
-            this.tbDateDim1.Size = new System.Drawing.Size(46, 20);
-            this.tbDateDim1.TabIndex = 2;
-            // 
-            // tbReleveDim1
-            // 
-            this.tbReleveDim1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveDim1.Location = new System.Drawing.Point(50, 29);
-            this.tbReleveDim1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveDim1.Name = "tbReleveDim1";
-            this.tbReleveDim1.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveDim1.TabIndex = 37;
-            // 
-            // tbReleveLun1
-            // 
-            this.tbReleveLun1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveLun1.Location = new System.Drawing.Point(245, 29);
-            this.tbReleveLun1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveLun1.Name = "tbReleveLun1";
-            this.tbReleveLun1.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveLun1.TabIndex = 39;
-            // 
-            // tbDateMar1
-            // 
-            this.tbDateMar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateMar1.Location = new System.Drawing.Point(392, 29);
-            this.tbDateMar1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateMar1.Name = "tbDateMar1";
-            this.tbDateMar1.Size = new System.Drawing.Size(46, 20);
-            this.tbDateMar1.TabIndex = 40;
-            // 
-            // tbReleveMar1
-            // 
-            this.tbReleveMar1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveMar1.Location = new System.Drawing.Point(440, 29);
-            this.tbReleveMar1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveMar1.Name = "tbReleveMar1";
-            this.tbReleveMar1.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveMar1.TabIndex = 41;
-            // 
-            // tbDateMer1
-            // 
-            this.tbDateMer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateMer1.Location = new System.Drawing.Point(587, 29);
-            this.tbDateMer1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateMer1.Name = "tbDateMer1";
-            this.tbDateMer1.Size = new System.Drawing.Size(46, 20);
-            this.tbDateMer1.TabIndex = 42;
-            // 
-            // tbReleveMer1
-            // 
-            this.tbReleveMer1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveMer1.Location = new System.Drawing.Point(635, 29);
-            this.tbReleveMer1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveMer1.Name = "tbReleveMer1";
-            this.tbReleveMer1.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveMer1.TabIndex = 43;
-            // 
-            // tbDateJeu1
-            // 
-            this.tbDateJeu1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateJeu1.Location = new System.Drawing.Point(782, 29);
-            this.tbDateJeu1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateJeu1.Name = "tbDateJeu1";
-            this.tbDateJeu1.Size = new System.Drawing.Size(46, 20);
-            this.tbDateJeu1.TabIndex = 44;
-            // 
-            // tbReleveJeu1
-            // 
-            this.tbReleveJeu1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveJeu1.Location = new System.Drawing.Point(830, 29);
-            this.tbReleveJeu1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveJeu1.Name = "tbReleveJeu1";
-            this.tbReleveJeu1.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveJeu1.TabIndex = 45;
-            // 
-            // tbDateVen1
-            // 
-            this.tbDateVen1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateVen1.Location = new System.Drawing.Point(978, 29);
-            this.tbDateVen1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateVen1.Name = "tbDateVen1";
-            this.tbDateVen1.Size = new System.Drawing.Size(46, 20);
-            this.tbDateVen1.TabIndex = 46;
-            // 
-            // tbReleveVen1
-            // 
-            this.tbReleveVen1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveVen1.Location = new System.Drawing.Point(1026, 29);
-            this.tbReleveVen1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveVen1.Name = "tbReleveVen1";
-            this.tbReleveVen1.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveVen1.TabIndex = 47;
-            // 
-            // tbDateSam1
-            // 
-            this.tbDateSam1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateSam1.Location = new System.Drawing.Point(1174, 29);
-            this.tbDateSam1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateSam1.Name = "tbDateSam1";
-            this.tbDateSam1.Size = new System.Drawing.Size(46, 20);
-            this.tbDateSam1.TabIndex = 48;
-            // 
-            // tbReleveSam1
-            // 
-            this.tbReleveSam1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveSam1.Location = new System.Drawing.Point(1222, 29);
-            this.tbReleveSam1.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveSam1.Name = "tbReleveSam1";
-            this.tbReleveSam1.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveSam1.TabIndex = 49;
-            // 
-            // tbDateDim2
-            // 
-            this.tbDateDim2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateDim2.Location = new System.Drawing.Point(2, 152);
-            this.tbDateDim2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateDim2.Name = "tbDateDim2";
-            this.tbDateDim2.Size = new System.Drawing.Size(46, 20);
-            this.tbDateDim2.TabIndex = 50;
-            // 
-            // tbDateLun2
-            // 
-            this.tbDateLun2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateLun2.Location = new System.Drawing.Point(197, 152);
-            this.tbDateLun2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateLun2.Name = "tbDateLun2";
-            this.tbDateLun2.Size = new System.Drawing.Size(46, 20);
-            this.tbDateLun2.TabIndex = 51;
-            // 
-            // tbReleveLun2
-            // 
-            this.tbReleveLun2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveLun2.Location = new System.Drawing.Point(245, 152);
-            this.tbReleveLun2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveLun2.Name = "tbReleveLun2";
-            this.tbReleveLun2.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveLun2.TabIndex = 52;
-            // 
-            // tbDateMar2
-            // 
-            this.tbDateMar2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateMar2.Location = new System.Drawing.Point(392, 152);
-            this.tbDateMar2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateMar2.Name = "tbDateMar2";
-            this.tbDateMar2.Size = new System.Drawing.Size(46, 20);
-            this.tbDateMar2.TabIndex = 53;
-            // 
-            // tbReleveMar2
-            // 
-            this.tbReleveMar2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveMar2.Location = new System.Drawing.Point(440, 152);
-            this.tbReleveMar2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveMar2.Name = "tbReleveMar2";
-            this.tbReleveMar2.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveMar2.TabIndex = 54;
-            // 
-            // tbDateMer2
-            // 
-            this.tbDateMer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateMer2.Location = new System.Drawing.Point(587, 152);
-            this.tbDateMer2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateMer2.Name = "tbDateMer2";
-            this.tbDateMer2.Size = new System.Drawing.Size(46, 20);
-            this.tbDateMer2.TabIndex = 55;
-            // 
-            // tbReleveMer2
-            // 
-            this.tbReleveMer2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveMer2.Location = new System.Drawing.Point(635, 152);
-            this.tbReleveMer2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveMer2.Name = "tbReleveMer2";
-            this.tbReleveMer2.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveMer2.TabIndex = 56;
-            // 
-            // tbDateJeu2
-            // 
-            this.tbDateJeu2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateJeu2.Location = new System.Drawing.Point(782, 152);
-            this.tbDateJeu2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateJeu2.Name = "tbDateJeu2";
-            this.tbDateJeu2.Size = new System.Drawing.Size(46, 20);
-            this.tbDateJeu2.TabIndex = 57;
-            // 
-            // tbReleveJeu2
-            // 
-            this.tbReleveJeu2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveJeu2.Location = new System.Drawing.Point(830, 152);
-            this.tbReleveJeu2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveJeu2.Name = "tbReleveJeu2";
-            this.tbReleveJeu2.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveJeu2.TabIndex = 58;
-            // 
-            // tbDateVen2
-            // 
-            this.tbDateVen2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateVen2.Location = new System.Drawing.Point(978, 152);
-            this.tbDateVen2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateVen2.Name = "tbDateVen2";
-            this.tbDateVen2.Size = new System.Drawing.Size(46, 20);
-            this.tbDateVen2.TabIndex = 59;
-            // 
-            // tbReleveVen2
-            // 
-            this.tbReleveVen2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveVen2.Location = new System.Drawing.Point(1026, 152);
-            this.tbReleveVen2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveVen2.Name = "tbReleveVen2";
-            this.tbReleveVen2.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveVen2.TabIndex = 60;
-            // 
-            // tbDateSam2
-            // 
-            this.tbDateSam2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateSam2.Location = new System.Drawing.Point(1174, 152);
-            this.tbDateSam2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateSam2.Name = "tbDateSam2";
-            this.tbDateSam2.Size = new System.Drawing.Size(46, 20);
-            this.tbDateSam2.TabIndex = 61;
-            // 
-            // tbReleveSam2
-            // 
-            this.tbReleveSam2.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveSam2.Location = new System.Drawing.Point(1222, 152);
-            this.tbReleveSam2.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveSam2.Name = "tbReleveSam2";
-            this.tbReleveSam2.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveSam2.TabIndex = 62;
-            // 
-            // tbDateDim3
-            // 
-            this.tbDateDim3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateDim3.Location = new System.Drawing.Point(2, 275);
-            this.tbDateDim3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateDim3.Name = "tbDateDim3";
-            this.tbDateDim3.Size = new System.Drawing.Size(46, 20);
-            this.tbDateDim3.TabIndex = 63;
-            // 
-            // tbReleveDim3
-            // 
-            this.tbReleveDim3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveDim3.Location = new System.Drawing.Point(50, 275);
-            this.tbReleveDim3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveDim3.Name = "tbReleveDim3";
-            this.tbReleveDim3.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveDim3.TabIndex = 64;
-            // 
-            // tbDateLun3
-            // 
-            this.tbDateLun3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateLun3.Location = new System.Drawing.Point(197, 275);
-            this.tbDateLun3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateLun3.Name = "tbDateLun3";
-            this.tbDateLun3.Size = new System.Drawing.Size(46, 20);
-            this.tbDateLun3.TabIndex = 65;
-            // 
-            // tbReleveLun3
-            // 
-            this.tbReleveLun3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveLun3.Location = new System.Drawing.Point(245, 275);
-            this.tbReleveLun3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveLun3.Name = "tbReleveLun3";
-            this.tbReleveLun3.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveLun3.TabIndex = 66;
-            // 
-            // tbDateMar3
-            // 
-            this.tbDateMar3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateMar3.Location = new System.Drawing.Point(392, 275);
-            this.tbDateMar3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateMar3.Name = "tbDateMar3";
-            this.tbDateMar3.Size = new System.Drawing.Size(46, 20);
-            this.tbDateMar3.TabIndex = 67;
-            // 
-            // tbReleveMar3
-            // 
-            this.tbReleveMar3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveMar3.Location = new System.Drawing.Point(440, 275);
-            this.tbReleveMar3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveMar3.Name = "tbReleveMar3";
-            this.tbReleveMar3.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveMar3.TabIndex = 68;
-            // 
-            // tbDateMer3
-            // 
-            this.tbDateMer3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateMer3.Location = new System.Drawing.Point(587, 275);
-            this.tbDateMer3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateMer3.Name = "tbDateMer3";
-            this.tbDateMer3.Size = new System.Drawing.Size(46, 20);
-            this.tbDateMer3.TabIndex = 69;
-            // 
-            // tbReleveMer3
-            // 
-            this.tbReleveMer3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveMer3.Location = new System.Drawing.Point(635, 275);
-            this.tbReleveMer3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveMer3.Name = "tbReleveMer3";
-            this.tbReleveMer3.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveMer3.TabIndex = 70;
-            // 
-            // tbDateJeu3
-            // 
-            this.tbDateJeu3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateJeu3.Location = new System.Drawing.Point(782, 275);
-            this.tbDateJeu3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateJeu3.Name = "tbDateJeu3";
-            this.tbDateJeu3.Size = new System.Drawing.Size(46, 20);
-            this.tbDateJeu3.TabIndex = 71;
-            // 
-            // tbReleveJeu3
-            // 
-            this.tbReleveJeu3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveJeu3.Location = new System.Drawing.Point(830, 275);
-            this.tbReleveJeu3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveJeu3.Name = "tbReleveJeu3";
-            this.tbReleveJeu3.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveJeu3.TabIndex = 72;
-            // 
-            // tbDateVen3
-            // 
-            this.tbDateVen3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateVen3.Location = new System.Drawing.Point(978, 275);
-            this.tbDateVen3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateVen3.Name = "tbDateVen3";
-            this.tbDateVen3.Size = new System.Drawing.Size(46, 20);
-            this.tbDateVen3.TabIndex = 73;
-            // 
-            // tbReleveVen3
-            // 
-            this.tbReleveVen3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveVen3.Location = new System.Drawing.Point(1026, 275);
-            this.tbReleveVen3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveVen3.Name = "tbReleveVen3";
-            this.tbReleveVen3.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveVen3.TabIndex = 74;
-            // 
-            // tbDateSam3
-            // 
-            this.tbDateSam3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateSam3.Location = new System.Drawing.Point(1174, 275);
-            this.tbDateSam3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateSam3.Name = "tbDateSam3";
-            this.tbDateSam3.Size = new System.Drawing.Size(46, 20);
-            this.tbDateSam3.TabIndex = 75;
-            // 
-            // tbReleveSam3
-            // 
-            this.tbReleveSam3.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveSam3.Location = new System.Drawing.Point(1222, 275);
-            this.tbReleveSam3.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveSam3.Name = "tbReleveSam3";
-            this.tbReleveSam3.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveSam3.TabIndex = 76;
-            // 
-            // tbDateDim4
-            // 
-            this.tbDateDim4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateDim4.Location = new System.Drawing.Point(2, 398);
-            this.tbDateDim4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateDim4.Name = "tbDateDim4";
-            this.tbDateDim4.Size = new System.Drawing.Size(46, 20);
-            this.tbDateDim4.TabIndex = 77;
-            // 
-            // tbReleveDim4
-            // 
-            this.tbReleveDim4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveDim4.Location = new System.Drawing.Point(50, 398);
-            this.tbReleveDim4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveDim4.Name = "tbReleveDim4";
-            this.tbReleveDim4.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveDim4.TabIndex = 78;
-            // 
-            // tbDateLun4
-            // 
-            this.tbDateLun4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateLun4.Location = new System.Drawing.Point(197, 398);
-            this.tbDateLun4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateLun4.Name = "tbDateLun4";
-            this.tbDateLun4.Size = new System.Drawing.Size(46, 20);
-            this.tbDateLun4.TabIndex = 79;
-            // 
-            // tbReleveLun4
-            // 
-            this.tbReleveLun4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveLun4.Location = new System.Drawing.Point(245, 398);
-            this.tbReleveLun4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveLun4.Name = "tbReleveLun4";
-            this.tbReleveLun4.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveLun4.TabIndex = 80;
-            // 
-            // tbDateMar4
-            // 
-            this.tbDateMar4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateMar4.Location = new System.Drawing.Point(392, 398);
-            this.tbDateMar4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateMar4.Name = "tbDateMar4";
-            this.tbDateMar4.Size = new System.Drawing.Size(46, 20);
-            this.tbDateMar4.TabIndex = 81;
-            // 
-            // tbReleveMar4
-            // 
-            this.tbReleveMar4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveMar4.Location = new System.Drawing.Point(440, 398);
-            this.tbReleveMar4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveMar4.Name = "tbReleveMar4";
-            this.tbReleveMar4.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveMar4.TabIndex = 82;
-            // 
-            // tbDateMer4
-            // 
-            this.tbDateMer4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateMer4.Location = new System.Drawing.Point(587, 398);
-            this.tbDateMer4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateMer4.Name = "tbDateMer4";
-            this.tbDateMer4.Size = new System.Drawing.Size(46, 20);
-            this.tbDateMer4.TabIndex = 83;
-            // 
-            // tbReleveMer4
-            // 
-            this.tbReleveMer4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveMer4.Location = new System.Drawing.Point(635, 398);
-            this.tbReleveMer4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveMer4.Name = "tbReleveMer4";
-            this.tbReleveMer4.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveMer4.TabIndex = 84;
-            // 
-            // tbDateJeu4
-            // 
-            this.tbDateJeu4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateJeu4.Location = new System.Drawing.Point(782, 398);
-            this.tbDateJeu4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateJeu4.Name = "tbDateJeu4";
-            this.tbDateJeu4.Size = new System.Drawing.Size(46, 20);
-            this.tbDateJeu4.TabIndex = 85;
-            // 
-            // tbReleveJeu4
-            // 
-            this.tbReleveJeu4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveJeu4.Location = new System.Drawing.Point(830, 398);
-            this.tbReleveJeu4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveJeu4.Name = "tbReleveJeu4";
-            this.tbReleveJeu4.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveJeu4.TabIndex = 86;
-            // 
-            // tbDateVen4
-            // 
-            this.tbDateVen4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateVen4.Location = new System.Drawing.Point(978, 398);
-            this.tbDateVen4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateVen4.Name = "tbDateVen4";
-            this.tbDateVen4.Size = new System.Drawing.Size(46, 20);
-            this.tbDateVen4.TabIndex = 87;
-            // 
-            // tbReleveVen4
-            // 
-            this.tbReleveVen4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveVen4.Location = new System.Drawing.Point(1026, 398);
-            this.tbReleveVen4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveVen4.Name = "tbReleveVen4";
-            this.tbReleveVen4.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveVen4.TabIndex = 88;
-            // 
-            // tbDateSam4
-            // 
-            this.tbDateSam4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbDateSam4.Location = new System.Drawing.Point(1174, 398);
-            this.tbDateSam4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbDateSam4.Name = "tbDateSam4";
-            this.tbDateSam4.Size = new System.Drawing.Size(46, 20);
-            this.tbDateSam4.TabIndex = 89;
-            // 
-            // tbReleveSam4
-            // 
-            this.tbReleveSam4.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tbReleveSam4.Location = new System.Drawing.Point(1222, 398);
-            this.tbReleveSam4.Margin = new System.Windows.Forms.Padding(0);
-            this.tbReleveSam4.Name = "tbReleveSam4";
-            this.tbReleveSam4.Size = new System.Drawing.Size(46, 20);
-            this.tbReleveSam4.TabIndex = 90;
-            // 
-            // rtbTravailLun1
-            // 
-            this.rtbTravailLun1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.tlpPlanTravail.SetColumnSpan(this.rtbTravailLun1, 3);
-            this.rtbTravailLun1.Location = new System.Drawing.Point(197, 49);
-            this.rtbTravailLun1.Margin = new System.Windows.Forms.Padding(0);
-            this.rtbTravailLun1.Name = "rtbTravailLun1";
-            this.rtbTravailLun1.Size = new System.Drawing.Size(193, 101);
-            this.rtbTravailLun1.TabIndex = 10;
-            this.rtbTravailLun1.Text = "";
             // 
             // tabRapportQuot
             // 
@@ -2634,7 +1459,7 @@
             this.tabRapportQuot.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabRapportQuot.Location = new System.Drawing.Point(4, 25);
             this.tabRapportQuot.Name = "tabRapportQuot";
-            this.tabRapportQuot.Size = new System.Drawing.Size(1411, 569);
+            this.tabRapportQuot.Size = new System.Drawing.Size(1424, 561);
             this.tabRapportQuot.TabIndex = 2;
             this.tabRapportQuot.Text = "Rapport Quotidien";
             this.tabRapportQuot.UseVisualStyleBackColor = true;
@@ -2643,7 +1468,7 @@
             // 
             this.bRapQuotVersRequ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bRapQuotVersRequ.Enabled = false;
-            this.bRapQuotVersRequ.Location = new System.Drawing.Point(904, 539);
+            this.bRapQuotVersRequ.Location = new System.Drawing.Point(917, 531);
             this.bRapQuotVersRequ.Name = "bRapQuotVersRequ";
             this.bRapQuotVersRequ.Size = new System.Drawing.Size(164, 23);
             this.bRapQuotVersRequ.TabIndex = 8;
@@ -2655,7 +1480,7 @@
             // 
             this.bRapQuotVersSuiviRequ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bRapQuotVersSuiviRequ.Enabled = false;
-            this.bRapQuotVersSuiviRequ.Location = new System.Drawing.Point(1074, 539);
+            this.bRapQuotVersSuiviRequ.Location = new System.Drawing.Point(1087, 531);
             this.bRapQuotVersSuiviRequ.Name = "bRapQuotVersSuiviRequ";
             this.bRapQuotVersSuiviRequ.Size = new System.Drawing.Size(164, 23);
             this.bRapQuotVersSuiviRequ.TabIndex = 7;
@@ -2667,7 +1492,7 @@
             // 
             this.bRapQuotVersActionsRequ.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.bRapQuotVersActionsRequ.Enabled = false;
-            this.bRapQuotVersActionsRequ.Location = new System.Drawing.Point(1244, 539);
+            this.bRapQuotVersActionsRequ.Location = new System.Drawing.Point(1257, 531);
             this.bRapQuotVersActionsRequ.Name = "bRapQuotVersActionsRequ";
             this.bRapQuotVersActionsRequ.Size = new System.Drawing.Size(164, 23);
             this.bRapQuotVersActionsRequ.TabIndex = 6;
@@ -2691,7 +1516,7 @@
             this.dgvRapQuot.Location = new System.Drawing.Point(11, 100);
             this.dgvRapQuot.MultiSelect = false;
             this.dgvRapQuot.Name = "dgvRapQuot";
-            this.dgvRapQuot.Size = new System.Drawing.Size(1397, 433);
+            this.dgvRapQuot.Size = new System.Drawing.Size(1410, 425);
             this.dgvRapQuot.TabIndex = 3;
             this.dgvRapQuot.EditingControlShowing += new System.Windows.Forms.DataGridViewEditingControlShowingEventHandler(this.HandleEditShowing);
             this.dgvRapQuot.SelectionChanged += new System.EventHandler(this.dgvRapQuot_SelectionChanged);
@@ -2777,7 +1602,7 @@
             // bRechercherRapQuot
             // 
             this.bRechercherRapQuot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bRechercherRapQuot.Location = new System.Drawing.Point(1182, 10);
+            this.bRechercherRapQuot.Location = new System.Drawing.Point(1195, 10);
             this.bRechercherRapQuot.Name = "bRechercherRapQuot";
             this.bRechercherRapQuot.Size = new System.Drawing.Size(110, 42);
             this.bRechercherRapQuot.TabIndex = 2;
@@ -2787,7 +1612,7 @@
             // bEnregistrerRapQuot
             // 
             this.bEnregistrerRapQuot.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bEnregistrerRapQuot.Location = new System.Drawing.Point(1298, 10);
+            this.bEnregistrerRapQuot.Location = new System.Drawing.Point(1311, 10);
             this.bEnregistrerRapQuot.Name = "bEnregistrerRapQuot";
             this.bEnregistrerRapQuot.Size = new System.Drawing.Size(110, 42);
             this.bEnregistrerRapQuot.TabIndex = 1;
@@ -2799,14 +1624,14 @@
             this.tableLayoutPanel2.BackColor = System.Drawing.SystemColors.ControlLight;
             this.tableLayoutPanel2.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Single;
             this.tableLayoutPanel2.ColumnCount = 2;
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 353F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 32.3202F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 67.67979F));
             this.tableLayoutPanel2.Controls.Add(this.cbReleveRapQuot, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.label54, 0, 2);
             this.tableLayoutPanel2.Controls.Add(this.label53, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label52, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.dtpRapQuot, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.cbEquipeRapQuot, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.dtpRapQuot, 1, 0);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(11, 10);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 3;
@@ -2826,9 +1651,9 @@
             "1",
             "2",
             "3"});
-            this.cbReleveRapQuot.Location = new System.Drawing.Point(2, 58);
+            this.cbReleveRapQuot.Location = new System.Drawing.Point(118, 58);
             this.cbReleveRapQuot.Name = "cbReleveRapQuot";
-            this.cbReleveRapQuot.Size = new System.Drawing.Size(233, 21);
+            this.cbReleveRapQuot.Size = new System.Drawing.Size(231, 21);
             this.cbReleveRapQuot.TabIndex = 5;
             // 
             // label54
@@ -2837,7 +1662,7 @@
             this.label54.AutoSize = true;
             this.label54.Location = new System.Drawing.Point(4, 62);
             this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(1, 13);
+            this.label54.Size = new System.Drawing.Size(41, 13);
             this.label54.TabIndex = 4;
             this.label54.Text = "Relève";
             // 
@@ -2847,7 +1672,7 @@
             this.label53.AutoSize = true;
             this.label53.Location = new System.Drawing.Point(4, 34);
             this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(1, 13);
+            this.label53.Size = new System.Drawing.Size(43, 13);
             this.label53.TabIndex = 2;
             this.label53.Text = "Équipe:";
             // 
@@ -2857,16 +1682,16 @@
             this.label52.AutoSize = true;
             this.label52.Location = new System.Drawing.Point(4, 7);
             this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(1, 13);
+            this.label52.Size = new System.Drawing.Size(33, 13);
             this.label52.TabIndex = 0;
             this.label52.Text = "Date:";
             // 
             // dtpRapQuot
             // 
             this.dtpRapQuot.Anchor = System.Windows.Forms.AnchorStyles.Left;
-            this.dtpRapQuot.Location = new System.Drawing.Point(2, 4);
+            this.dtpRapQuot.Location = new System.Drawing.Point(118, 4);
             this.dtpRapQuot.Name = "dtpRapQuot";
-            this.dtpRapQuot.Size = new System.Drawing.Size(233, 20);
+            this.dtpRapQuot.Size = new System.Drawing.Size(231, 20);
             this.dtpRapQuot.TabIndex = 1;
             this.dtpRapQuot.ValueChanged += new System.EventHandler(this.dtpRapQuot_ValueChanged);
             // 
@@ -2884,9 +1709,9 @@
             "5",
             "PAHV",
             "Équipe-Multi"});
-            this.cbEquipeRapQuot.Location = new System.Drawing.Point(2, 31);
+            this.cbEquipeRapQuot.Location = new System.Drawing.Point(118, 31);
             this.cbEquipeRapQuot.Name = "cbEquipeRapQuot";
-            this.cbEquipeRapQuot.Size = new System.Drawing.Size(233, 21);
+            this.cbEquipeRapQuot.Size = new System.Drawing.Size(231, 21);
             this.cbEquipeRapQuot.TabIndex = 3;
             // 
             // cboReqPlaintePriseNom
@@ -2920,7 +1745,7 @@
             this.cboReqPlaintePriseNom.Location = new System.Drawing.Point(4, 25);
             this.cboReqPlaintePriseNom.Name = "cboReqPlaintePriseNom";
             this.cboReqPlaintePriseNom.Padding = new System.Windows.Forms.Padding(3);
-            this.cboReqPlaintePriseNom.Size = new System.Drawing.Size(1411, 569);
+            this.cboReqPlaintePriseNom.Size = new System.Drawing.Size(1424, 561);
             this.cboReqPlaintePriseNom.TabIndex = 3;
             this.cboReqPlaintePriseNom.Text = "Requête de circulation";
             this.cboReqPlaintePriseNom.UseVisualStyleBackColor = true;
@@ -3528,7 +2353,7 @@
             this.tabBD.Location = new System.Drawing.Point(4, 54);
             this.tabBD.Name = "tabBD";
             this.tabBD.Padding = new System.Windows.Forms.Padding(3);
-            this.tabBD.Size = new System.Drawing.Size(1430, 602);
+            this.tabBD.Size = new System.Drawing.Size(1443, 594);
             this.tabBD.TabIndex = 0;
             this.tabBD.Text = "Base de Données";
             this.tabBD.UseVisualStyleBackColor = true;
@@ -3547,7 +2372,7 @@
             this.tcBD.Location = new System.Drawing.Point(3, 0);
             this.tcBD.Name = "tcBD";
             this.tcBD.SelectedIndex = 0;
-            this.tcBD.Size = new System.Drawing.Size(1421, 596);
+            this.tcBD.Size = new System.Drawing.Size(1434, 588);
             this.tcBD.TabIndex = 0;
             // 
             // tabEmployes
@@ -3560,7 +2385,7 @@
             this.tabEmployes.Location = new System.Drawing.Point(4, 25);
             this.tabEmployes.Name = "tabEmployes";
             this.tabEmployes.Padding = new System.Windows.Forms.Padding(3);
-            this.tabEmployes.Size = new System.Drawing.Size(1413, 567);
+            this.tabEmployes.Size = new System.Drawing.Size(1426, 559);
             this.tabEmployes.TabIndex = 0;
             this.tabEmployes.Text = "Employés";
             this.tabEmployes.UseVisualStyleBackColor = true;
@@ -3568,7 +2393,7 @@
             // bSauvegarderEmploye
             // 
             this.bSauvegarderEmploye.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bSauvegarderEmploye.Location = new System.Drawing.Point(416, 137);
+            this.bSauvegarderEmploye.Location = new System.Drawing.Point(429, 137);
             this.bSauvegarderEmploye.Name = "bSauvegarderEmploye";
             this.bSauvegarderEmploye.Size = new System.Drawing.Size(113, 34);
             this.bSauvegarderEmploye.TabIndex = 23;
@@ -3578,7 +2403,7 @@
             // bAjouterEmploye
             // 
             this.bAjouterEmploye.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bAjouterEmploye.Location = new System.Drawing.Point(416, 57);
+            this.bAjouterEmploye.Location = new System.Drawing.Point(429, 57);
             this.bAjouterEmploye.Name = "bAjouterEmploye";
             this.bAjouterEmploye.Size = new System.Drawing.Size(113, 34);
             this.bAjouterEmploye.TabIndex = 21;
@@ -3589,7 +2414,7 @@
             // bRechercherEmploye
             // 
             this.bRechercherEmploye.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bRechercherEmploye.Location = new System.Drawing.Point(416, 18);
+            this.bRechercherEmploye.Location = new System.Drawing.Point(429, 18);
             this.bRechercherEmploye.Name = "bRechercherEmploye";
             this.bRechercherEmploye.Size = new System.Drawing.Size(113, 34);
             this.bRechercherEmploye.TabIndex = 3;
@@ -3606,7 +2431,7 @@
             this.tabPriorites.Location = new System.Drawing.Point(4, 25);
             this.tabPriorites.Name = "tabPriorites";
             this.tabPriorites.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPriorites.Size = new System.Drawing.Size(1413, 567);
+            this.tabPriorites.Size = new System.Drawing.Size(1426, 559);
             this.tabPriorites.TabIndex = 1;
             this.tabPriorites.Text = "Priorités Locales";
             this.tabPriorites.UseVisualStyleBackColor = true;
@@ -3641,7 +2466,7 @@
             this.tabTaches.Location = new System.Drawing.Point(4, 25);
             this.tabTaches.Name = "tabTaches";
             this.tabTaches.Padding = new System.Windows.Forms.Padding(3);
-            this.tabTaches.Size = new System.Drawing.Size(1413, 567);
+            this.tabTaches.Size = new System.Drawing.Size(1426, 559);
             this.tabTaches.TabIndex = 2;
             this.tabTaches.Text = "Tâches d\'un Patrouilleur";
             this.tabTaches.UseVisualStyleBackColor = true;
@@ -3665,7 +2490,7 @@
             this.tabVeh.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabVeh.Location = new System.Drawing.Point(4, 25);
             this.tabVeh.Name = "tabVeh";
-            this.tabVeh.Size = new System.Drawing.Size(1413, 567);
+            this.tabVeh.Size = new System.Drawing.Size(1426, 559);
             this.tabVeh.TabIndex = 3;
             this.tabVeh.Text = "Véhicules";
             this.tabVeh.UseVisualStyleBackColor = true;
@@ -3839,9 +2664,23 @@
             this.tcMenu.Name = "tcMenu";
             this.tcMenu.SelectedIndex = 0;
             this.tcMenu.ShowToolTips = true;
-            this.tcMenu.Size = new System.Drawing.Size(1438, 660);
+            this.tcMenu.Size = new System.Drawing.Size(1451, 652);
             this.tcMenu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tcMenu.TabIndex = 0;
+            // 
+            // label19
+            // 
+            this.label19.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tlpPlanTravail.SetColumnSpan(this.label19, 3);
+            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(2, 2);
+            this.label19.Margin = new System.Windows.Forms.Padding(0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(197, 19);
+            this.label19.TabIndex = 0;
+            this.label19.Text = "DIMANCHE";
+            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -3859,7 +2698,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.ClientSize = new System.Drawing.Size(1453, 700);
+            this.ClientSize = new System.Drawing.Size(1466, 692);
             this.Controls.Add(this.tcMenu);
             this.Controls.Add(this.menuStrip1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -3893,7 +2732,6 @@
             this.tabPlanEquipe.ResumeLayout(false);
             this.tabPlanEquipe.PerformLayout();
             this.tlpPlanTravail.ResumeLayout(false);
-            this.tlpPlanTravail.PerformLayout();
             this.tabRapportQuot.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRapQuot)).EndInit();
             this.tableLayoutPanel2.ResumeLayout(false);
@@ -4029,97 +2867,12 @@
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TableLayoutPanel tlpPlanTravail;
-        private System.Windows.Forms.TextBox tbReleveDim2;
-        private System.Windows.Forms.TextBox tbDateLun1;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.RichTextBox rtbTravailDim1;
-        private System.Windows.Forms.RichTextBox rtbTravailMardi1;
-        private System.Windows.Forms.RichTextBox rtbTravailMer1;
-        private System.Windows.Forms.RichTextBox rtbTravailJeu1;
-        private System.Windows.Forms.RichTextBox rtbTravailVen1;
-        private System.Windows.Forms.RichTextBox rtbTravailSam1;
-        private System.Windows.Forms.RichTextBox rtbTravailDim2;
-        private System.Windows.Forms.RichTextBox rtbTravailLun2;
-        private System.Windows.Forms.RichTextBox rtbTravailMardi2;
-        private System.Windows.Forms.RichTextBox rtbTravailMer2;
-        private System.Windows.Forms.RichTextBox rtbTravailJeu2;
-        private System.Windows.Forms.RichTextBox rtbTravailVen2;
-        private System.Windows.Forms.RichTextBox rtbTravailSam2;
-        private System.Windows.Forms.RichTextBox rtbTravailDim3;
-        private System.Windows.Forms.RichTextBox rtbTravailLun3;
-        private System.Windows.Forms.RichTextBox rtbTravailDim4;
-        private System.Windows.Forms.RichTextBox rtbTravailLun4;
-        private System.Windows.Forms.RichTextBox rtbTravailMardi3;
-        private System.Windows.Forms.RichTextBox rtbTravailMardi4;
-        private System.Windows.Forms.RichTextBox rtbTravailMer3;
-        private System.Windows.Forms.RichTextBox rtbTravailMer4;
-        private System.Windows.Forms.RichTextBox rtbTravailJeu3;
-        private System.Windows.Forms.RichTextBox rtbTravailJeu4;
-        private System.Windows.Forms.RichTextBox rtbTravailVen3;
-        private System.Windows.Forms.RichTextBox rtbTravailVen4;
-        private System.Windows.Forms.RichTextBox rtbTravailSam3;
-        private System.Windows.Forms.RichTextBox rtbTravailSam4;
-        private System.Windows.Forms.TextBox tbDateDim1;
-        private System.Windows.Forms.TextBox tbReleveDim1;
-        private System.Windows.Forms.TextBox tbReleveLun1;
-        private System.Windows.Forms.TextBox tbDateMar1;
-        private System.Windows.Forms.TextBox tbReleveMar1;
-        private System.Windows.Forms.TextBox tbDateMer1;
-        private System.Windows.Forms.TextBox tbReleveMer1;
-        private System.Windows.Forms.TextBox tbDateJeu1;
-        private System.Windows.Forms.TextBox tbReleveJeu1;
-        private System.Windows.Forms.TextBox tbDateVen1;
-        private System.Windows.Forms.TextBox tbReleveVen1;
-        private System.Windows.Forms.TextBox tbDateSam1;
-        private System.Windows.Forms.TextBox tbReleveSam1;
-        private System.Windows.Forms.TextBox tbDateDim2;
-        private System.Windows.Forms.TextBox tbDateLun2;
-        private System.Windows.Forms.TextBox tbReleveLun2;
-        private System.Windows.Forms.TextBox tbDateMar2;
-        private System.Windows.Forms.TextBox tbReleveMar2;
-        private System.Windows.Forms.TextBox tbDateMer2;
-        private System.Windows.Forms.TextBox tbReleveMer2;
-        private System.Windows.Forms.TextBox tbDateJeu2;
-        private System.Windows.Forms.TextBox tbReleveJeu2;
-        private System.Windows.Forms.TextBox tbDateVen2;
-        private System.Windows.Forms.TextBox tbReleveVen2;
-        private System.Windows.Forms.TextBox tbDateSam2;
-        private System.Windows.Forms.TextBox tbReleveSam2;
-        private System.Windows.Forms.TextBox tbDateDim3;
-        private System.Windows.Forms.TextBox tbReleveDim3;
-        private System.Windows.Forms.TextBox tbDateLun3;
-        private System.Windows.Forms.TextBox tbReleveLun3;
-        private System.Windows.Forms.TextBox tbDateMar3;
-        private System.Windows.Forms.TextBox tbReleveMar3;
-        private System.Windows.Forms.TextBox tbDateMer3;
-        private System.Windows.Forms.TextBox tbReleveMer3;
-        private System.Windows.Forms.TextBox tbDateJeu3;
-        private System.Windows.Forms.TextBox tbReleveJeu3;
-        private System.Windows.Forms.TextBox tbDateVen3;
-        private System.Windows.Forms.TextBox tbReleveVen3;
-        private System.Windows.Forms.TextBox tbDateSam3;
-        private System.Windows.Forms.TextBox tbReleveSam3;
-        private System.Windows.Forms.TextBox tbDateDim4;
-        private System.Windows.Forms.TextBox tbReleveDim4;
-        private System.Windows.Forms.TextBox tbDateLun4;
-        private System.Windows.Forms.TextBox tbReleveLun4;
-        private System.Windows.Forms.TextBox tbDateMar4;
-        private System.Windows.Forms.TextBox tbReleveMar4;
-        private System.Windows.Forms.TextBox tbDateMer4;
-        private System.Windows.Forms.TextBox tbReleveMer4;
-        private System.Windows.Forms.TextBox tbDateJeu4;
-        private System.Windows.Forms.TextBox tbReleveJeu4;
-        private System.Windows.Forms.TextBox tbDateVen4;
-        private System.Windows.Forms.TextBox tbReleveVen4;
-        private System.Windows.Forms.TextBox tbDateSam4;
-        private System.Windows.Forms.TextBox tbReleveSam4;
-        private System.Windows.Forms.RichTextBox rtbTravailLun1;
         private System.Windows.Forms.TabPage tabRapportQuot;
         private System.Windows.Forms.Button bRapQuotVersRequ;
         private System.Windows.Forms.Button bRapQuotVersSuiviRequ;
@@ -4230,6 +2983,7 @@
         private System.Windows.Forms.TabControl tcMenu;
         private System.Windows.Forms.DataGridView dgvVeh;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.Label label19;
     }
 }
 

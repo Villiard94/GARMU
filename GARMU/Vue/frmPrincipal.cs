@@ -27,20 +27,20 @@ namespace GARMU
             _mEmployee = new ManagerEmployee(_modelBDGarmu.Context);
             _mPriorite = new ManagerPrioriteLocale(_modelBDGarmu.Context);
 
-
-            #region Initialisation RTB
-
+            this.DoubleBuffered = true;
 
             InitializeComponent();
 
             #region Génération de PlanifMensuelle
+            // 6 étant le nombre de row; 5 étant le nombre de col.
+            RichTextBox[,] rtbsPlanif = new RichTextBox[6, 5];
 
-            const int colIndexStart = 1;
-            const int rowIndexStart = 2;
+            const int colIndexStartPlanif = 1;
+            const int rowIndexStartPlanif = 2;
 
-            for (int i = rowIndexStart; i < tlpPlanifMensuelle.RowCount; i++)
+            for (int i = rowIndexStartPlanif; i < tlpPlanifMensuelle.RowCount; i++)
             {
-                for (int j = colIndexStart; j < tlpPlanifMensuelle.ColumnCount; j++)
+                for (int j = colIndexStartPlanif; j < tlpPlanifMensuelle.ColumnCount; j++)
                 {
                     RichTextBox rtb = new RichTextBox();
                     rtb.SelectionBullet = true;
@@ -49,49 +49,60 @@ namespace GARMU
                     rtb.Anchor = AnchorStyles.Right;
                     rtb.Anchor = AnchorStyles.Top;
                     rtb.BorderStyle = BorderStyle.None;
+                    rtb.Name = String.Format("tbPm{0}{1}", i - 2, j - 1);
+
+                    rtbsPlanif[i - 2, j - 1] = rtb;
 
                     tlpPlanifMensuelle.Controls.Add(rtb, j, i);
                     rtb.Dock = DockStyle.Fill;
+                }
+            }
+            #endregion
+
+            #region Génération de PlanTravailEquipe
+
+            const int colIndexStartPlan = 0;
+            const int rowIndexStartPlan = 1;
+
+            for (int i = rowIndexStartPlan; i < tlpPlanTravail.RowCount; i++)
+            {
+                for (int j = colIndexStartPlan; j < tlpPlanTravail.ColumnCount; j++)
+                {
+                    //Section de la création des dates et relèves
+                    if (i % 2 != 0 && j % 3 != 2)
+                    {
+                        TextBox tb = new TextBox();
+                        tb.Dock = DockStyle.Fill;
+                        tb.Margin = new Padding(0);
+                        tb.BorderStyle = BorderStyle.None;
+                        
+                        //Changement du Margin
+                        
+
+                        tlpPlanTravail.Controls.Add(tb, j, i);
+                    }
+
+                    //Section de la création des assignations
+                    if (i % 2 == 0 && j % 3 == 0)
+                    {
+                        RichTextBox rtb = new RichTextBox();
+
+                        tlpPlanTravail.Controls.Add(rtb, j, i);
+                        tlpPlanTravail.SetColumnSpan(rtb, 3);
+
+                        rtb.Dock = DockStyle.Fill;
+                        rtb.Margin = new Padding(0);
+                        rtb.SelectionBullet = true;
+                        rtb.BorderStyle = BorderStyle.None;
+                    }
+
                 }
             }
 
 
             #endregion
 
-            rtbTravailDim1.SelectionBullet = true;
-            rtbTravailDim2.SelectionBullet = true;
-            rtbTravailDim3.SelectionBullet = true;
-            rtbTravailDim4.SelectionBullet = true;
-            rtbTravailJeu1.SelectionBullet = true;
-            rtbTravailJeu2.SelectionBullet = true;
-            rtbTravailJeu3.SelectionBullet = true;
-            rtbTravailJeu4.SelectionBullet = true;
-            rtbTravailLun1.SelectionBullet = true;
-            rtbTravailLun2.SelectionBullet = true;
-            rtbTravailLun3.SelectionBullet = true;
-            rtbTravailLun4.SelectionBullet = true;
-            rtbTravailMardi1.SelectionBullet = true;
-            rtbTravailMardi2.SelectionBullet = true;
-            rtbTravailMardi3.SelectionBullet = true;
-            rtbTravailMardi4.SelectionBullet = true;
-            rtbTravailMer1.SelectionBullet = true;
-            rtbTravailMer2.SelectionBullet = true;
-            rtbTravailMer3.SelectionBullet = true;
-            rtbTravailMer4.SelectionBullet = true;
-            rtbTravailSam1.SelectionBullet = true;
-            rtbTravailSam2.SelectionBullet = true;
-            rtbTravailSam3.SelectionBullet = true;
-            rtbTravailSam4.SelectionBullet = true;
-            rtbTravailMardi1.SelectionBullet = true;
-            rtbTravailMardi2.SelectionBullet = true;
-            rtbTravailMardi3.SelectionBullet = true;
-            rtbTravailMardi4.SelectionBullet = true;
-
-
-
-            #endregion
-
-
+            
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
@@ -119,13 +130,13 @@ namespace GARMU
         private void Form1_ResizeBegin(object sender, EventArgs e)
         {
             tcFormulaires.Visible = false;
-            this.Cursor = Cursors.WaitCursor;
+            //this.Cursor = Cursors.WaitCursor;
         }
 
         private void Form1_ResizeEnd(object sender, EventArgs e)
         {
             tcFormulaires.Visible = true;
-            this.Cursor = Cursors.Default;
+            //this.Cursor = Cursors.Default;
         }
 
         private void mnuAideItem_Click(object sender, EventArgs e)
@@ -417,7 +428,7 @@ namespace GARMU
 
         private void bRechercherPlanif_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void bRechercherRequete_Click(object sender, EventArgs e)
@@ -488,208 +499,8 @@ namespace GARMU
 
         private void btnRechercherPlan_Click(object sender, EventArgs e)
         {
-            if ((string)cboPlanifEquipe.SelectedItem == "2" && (string)cboPlanifMois.SelectedItem == "Mars" && (string)cboPlanifAnne.SelectedItem == "2013")
-            {
-                tbDateVen1.Text = "1";
-                tbDateVen2.Text = "8";
-                tbDateVen3.Text = "15";
-                tbDateVen4.Text = "22";
-                tbReleveVen1.Text = "2";
-                tbReleveVen2.Text = "H";
-                tbReleveVen3.Text = "1";
-                tbReleveVen4.Text = "1";
-
-                tbDateSam1.Text = "2";
-                tbDateSam2.Text = "9";
-                tbDateSam3.Text = "16";
-                tbDateSam4.Text = "23";
-                tbReleveSam1.Text = "H";
-                tbReleveSam2.Text = "2";
-                tbReleveSam3.Text = "1";
-                tbReleveSam4.Text = "1";
-
-                tbDateDim1.Text = "";
-                tbDateDim2.Text = "3";
-                tbDateDim3.Text = "10";
-                tbDateDim4.Text = "17";
-                tbReleveDim1.Text = "";
-                tbReleveDim2.Text = "H";
-                tbReleveDim3.Text = "2";
-                tbReleveDim4.Text = "H";
-
-                tbDateLun1.Text = "";
-                tbDateLun2.Text = "4";
-                tbDateLun3.Text = "11";
-                tbDateLun4.Text = "18";
-                tbReleveLun1.Text = "";
-                tbReleveLun2.Text = "3";
-                tbReleveLun3.Text = "2";
-                tbReleveLun4.Text = "H";
-
-                tbDateMar1.Text = "";
-                tbDateMar2.Text = "5";
-                tbDateMar3.Text = "12";
-                tbDateMar4.Text = "19";
-                tbReleveMar1.Text = "";
-                tbReleveMar2.Text = "3";
-                tbReleveMar3.Text = "2";
-                tbReleveMar4.Text = "2";
-
-                tbDateMer1.Text = "";
-                tbDateMer2.Text = "6";
-                tbDateMer3.Text = "13";
-                tbDateMer4.Text = "20";
-                tbReleveMer1.Text = "";
-                tbReleveMer2.Text = "3";
-                tbReleveMer3.Text = "H";
-                tbReleveMer4.Text = "2";
-
-                tbDateJeu1.Text = "";
-                tbDateJeu2.Text = "7";
-                tbDateJeu3.Text = "14";
-                tbDateJeu4.Text = "21";
-                tbReleveJeu1.Text = "";
-                tbReleveJeu2.Text = "H";
-                tbReleveJeu3.Text = "H";
-                tbReleveJeu4.Text = "H";
-
-                rtbTravailVen1.Text = "Attroupement end. Pub \n Cinémomètre (PARL) \n Présence près écoles";
-                rtbTravailVen2.Text = "";
-                rtbTravailVen3.Text = "Patrouille sect. Industriel \n Patrouille près des bars";
-                rtbTravailVen4.Text = "Cinémomètre (PARL) \n Opér Cellulaire (PARL)";
-
-                rtbTravailSam1.Text = "";
-                rtbTravailSam2.Text = "Cinémomètre (PARL) \n Croisement Vtt-Route";
-                rtbTravailSam3.Text = "Barrage Alcool(PARL) \n Patrouille Sect Industriel \n Patrouille près des bars";
-                rtbTravailSam4.Text = "Attroupement end. Pub \n Cinémomètre (PARL) \n Présence près écoles";
-
-                rtbTravailDim1.Text = "";
-                rtbTravailDim2.Text = "";
-                rtbTravailDim3.Text = " Cinémomètre (PARL)";
-                rtbTravailDim4.Text = "";
-
-                rtbTravailLun1.Text = "";
-                rtbTravailLun2.Text = "Attroupement end. Pub \n Cinémomètre (PARL)";
-                rtbTravailLun3.Text = "Attroupement end. Pub \n Cinémomètre (PARL) \n Présence près écoles";
-                rtbTravailLun4.Text = "";
-
-                rtbTravailMardi1.Text = "";
-                rtbTravailMardi2.Text = "Attroupement end. Pub \n Cinémomètre (PARL)";
-                rtbTravailMardi3.Text = "Attroupement end. Pub \n Cinémomètre (PARL) \n Opér Silencieux";
-                rtbTravailMardi4.Text = "Attroupement end. Pub \n Cinémomètre (PARL) \n Présence près écoles";
-
-                rtbTravailMer1.Text = "";
-                rtbTravailMer2.Text = "Attroupement end. Pub \n Cinémomètre (PARL) \n Opér cellulaire";
-                rtbTravailMer3.Text = "s";
-                rtbTravailMer4.Text = "Attroupement end. Pub \n Cinémomètre (PARL) \n Présence près écoles";
-
-                rtbTravailJeu1.Text = "";
-                rtbTravailJeu2.Text = "";
-                rtbTravailJeu3.Text = "";
-                rtbTravailJeu4.Text = "";
 
 
-            }
-            else
-            {
-                tbDateVen1.Text = "";
-                tbDateVen2.Text = "";
-                tbDateVen3.Text = "";
-                tbDateVen4.Text = "";
-                tbReleveVen1.Text = "";
-                tbReleveVen2.Text = "";
-                tbReleveVen3.Text = "";
-                tbReleveVen4.Text = "";
-
-                tbDateSam1.Text = "";
-                tbDateSam2.Text = "";
-                tbDateSam3.Text = "";
-                tbDateSam4.Text = "";
-                tbReleveSam1.Text = "";
-                tbReleveSam2.Text = "";
-                tbReleveSam3.Text = "";
-                tbReleveSam4.Text = "";
-
-                tbDateDim1.Text = "";
-                tbDateDim2.Text = "";
-                tbDateDim3.Text = "";
-                tbDateDim4.Text = "";
-                tbReleveDim1.Text = "";
-                tbReleveDim2.Text = "";
-                tbReleveDim3.Text = "";
-                tbReleveDim4.Text = "";
-
-                tbDateLun1.Text = "";
-                tbDateLun2.Text = "";
-                tbDateLun3.Text = "";
-                tbDateLun4.Text = "";
-                tbReleveLun1.Text = "";
-                tbReleveLun2.Text = "";
-                tbReleveLun3.Text = "";
-                tbReleveLun4.Text = "";
-
-                tbDateMar1.Text = "";
-                tbDateMar2.Text = "";
-                tbDateMar3.Text = "";
-                tbDateMar4.Text = "";
-                tbReleveMar1.Text = "";
-                tbReleveMar2.Text = "";
-                tbReleveMar3.Text = "";
-                tbReleveMar4.Text = "";
-
-                tbDateMer1.Text = "";
-                tbDateMer2.Text = "";
-                tbDateMer3.Text = "";
-                tbDateMer4.Text = "";
-                tbReleveMer1.Text = "";
-                tbReleveMer2.Text = "";
-                tbReleveMer3.Text = "";
-                tbReleveMer4.Text = "";
-
-                tbDateJeu1.Text = "";
-                tbDateJeu2.Text = "";
-                tbDateJeu3.Text = "";
-                tbDateJeu4.Text = "";
-                tbReleveJeu1.Text = "";
-                tbReleveJeu2.Text = "";
-                tbReleveJeu3.Text = "";
-                tbReleveJeu4.Text = "";
-
-                rtbTravailVen1.Text = "";
-                rtbTravailVen2.Text = "";
-                rtbTravailVen3.Text = "";
-                rtbTravailVen4.Text = "";
-
-                rtbTravailSam1.Text = "";
-                rtbTravailSam2.Text = "";
-                rtbTravailSam3.Text = "";
-                rtbTravailSam4.Text = "";
-
-                rtbTravailDim1.Text = "";
-                rtbTravailDim2.Text = "";
-                rtbTravailDim3.Text = ""; ;
-                rtbTravailDim4.Text = "";
-
-                rtbTravailLun1.Text = "";
-                rtbTravailLun2.Text = "";
-                rtbTravailLun3.Text = "";
-                rtbTravailLun4.Text = "";
-
-                rtbTravailMardi1.Text = "";
-                rtbTravailMardi2.Text = "";
-                rtbTravailMardi3.Text = "";
-                rtbTravailMardi4.Text = "";
-
-                rtbTravailMer1.Text = "";
-                rtbTravailMer2.Text = "";
-                rtbTravailMer3.Text = "";
-                rtbTravailMer4.Text = "";
-
-                rtbTravailJeu1.Text = "";
-                rtbTravailJeu2.Text = "";
-                rtbTravailJeu3.Text = "";
-                rtbTravailJeu4.Text = "";
-            }
         }
 
         private void btnSuiviRecherche_Click(object sender, EventArgs e)
@@ -990,9 +801,9 @@ namespace GARMU
             string newNoVeh = "";
 
             //S'assurer que ce sont des numéros valide
-            try 
-            { 
-                int.Parse(dgvVeh.SelectedRows[0].Cells[0].Value.ToString()); 
+            try
+            {
+                int.Parse(dgvVeh.SelectedRows[0].Cells[0].Value.ToString());
                 int.Parse(tbNoVeh.Text);
             }
             catch
@@ -1011,7 +822,7 @@ namespace GARMU
             //Modifier le véhicule
             string msg = _mVehicule.Modify(v, newNoVeh);
 
-            if(msg != AppCst.SUCCESS)
+            if (msg != AppCst.SUCCESS)
                 MessageBox.Show(msg);
 
             //Refresh du gridView
@@ -1020,9 +831,9 @@ namespace GARMU
 
         private void dgvVeh_SelectionChanged(object sender, EventArgs e)
         {
-            if(dgvVeh.SelectedRows.Count != 0)
+            if (dgvVeh.SelectedRows.Count != 0)
                 tbNoVeh.Text = dgvVeh.SelectedRows[0].Cells[0].Value.ToString();
-            
+
         }
 
         private void bDeleteVeh_Click(object sender, EventArgs e)
