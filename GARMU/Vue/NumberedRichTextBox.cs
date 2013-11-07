@@ -12,7 +12,7 @@ namespace GARMU.Vue
 {
     public partial class NumberedRichTextBox : UserControl
     {
-        public string Text 
+        public override string Text 
         { 
             get {return richTextBox1.Text; }
             set { richTextBox1.Text = value; }
@@ -22,7 +22,7 @@ namespace GARMU.Vue
         {
             InitializeComponent();
 
-            numberLabel.Font = new Font(richTextBox1.Font.FontFamily, richTextBox1.Font.Size + 1.019f);
+            numberLabel.Font = new Font(richTextBox1.Font.FontFamily, richTextBox1.Font.Size );
         }
 
 
