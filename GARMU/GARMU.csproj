@@ -99,6 +99,7 @@
       <DependentUpon>GarmuModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Modele\Extensions\Employee.cs" />
+    <Compile Include="Modele\Extensions\Patrouilleur.cs" />
     <Compile Include="Modele\GarmuModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>

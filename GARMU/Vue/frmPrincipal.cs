@@ -127,7 +127,14 @@ namespace GARMU
         {
 
             vehiculeBindingSource.DataSource = _mVehicule.GetList();
+            employeeBindingSource.DataSource = _mEmployee.GetList();
+            patrouilleurBindingSource.DataSource = _modelBDGarmu.Context.Patrouilleur.ToList();
+            PatrouilleurDataGridView.Location = employeeDataGridView.Location;
+            PatrouilleurDataGridView.Size = employeeDataGridView.Size;
+            PatrouilleurDataGridView.Visible = false;
 
+            employeeDataGridView.AutoGenerateColumns = false;
+            PatrouilleurDataGridView.AutoGenerateColumns = false;
 
             //Etc
             #region Elenver l'auto-génération des colonnes des GridViews pour nous permetter de les gerer nous mem
@@ -870,6 +877,26 @@ namespace GARMU
 
         #endregion
 
+
+
+        #region Évenements de BD employé
+
+
+        private void rbEmployeeTout_CheckedChanged_1(object sender, EventArgs e)
+        {
+            employeeDataGridView.Visible = true;
+            PatrouilleurDataGridView.Visible = false;
+        }
+
+        private void rbEployeePat_CheckedChanged_1(object sender, EventArgs e)
+        {
+            employeeDataGridView.Visible = false;
+            PatrouilleurDataGridView.Visible = true;
+        }
+
+
+
+        #endregion
 
 
 
