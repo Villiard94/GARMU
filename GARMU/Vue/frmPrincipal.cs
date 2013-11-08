@@ -913,7 +913,14 @@ namespace GARMU
 
         private void bAffEmp_Click(object sender, EventArgs e)
         {
-
+            if (rbEmployeeTout.Checked)
+            {
+                employeeBindingSource.DataSource = _mEmployee.GetList();
+            }
+            else if (rbEployeePat.Checked)
+            {
+                patrouilleurBindingSource.DataSource = _mPatrouilleur.GetList();
+            }
         }
 
         private void bEmpRec_Click(object sender, EventArgs e)

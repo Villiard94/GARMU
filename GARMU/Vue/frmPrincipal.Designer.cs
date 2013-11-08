@@ -2952,7 +2952,7 @@
             // 
             // patrouilleurBindingSource
             // 
-            this.patrouilleurBindingSource.DataSource = typeof(GARMU.Modele.Patrouilleur);
+           this.patrouilleurBindingSource.DataSource = typeof(GARMU.Modele.Patrouilleur);
             // 
             // iDDataGridViewTextBoxColumn
             // 

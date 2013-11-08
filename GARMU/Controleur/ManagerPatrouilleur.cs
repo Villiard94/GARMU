@@ -89,19 +89,19 @@ namespace GARMU.Controleur
             int noVehicule = 0;
 
 
-            if (Matricule != "" && NoEquipe == null && NoVehicule == null)
+            if (Matricule != null && NoEquipe == null && NoVehicule == null)
             {
                 matricule = int.Parse(Matricule);
                 noEquipe = 0;
                 noVehicule = 0;
             }
-            else if (Matricule == null && NoEquipe != "" && NoVehicule == null)
+            else if (Matricule == null && NoEquipe != null && NoVehicule == null)
             {
                 matricule = 0;
                 noEquipe = int.Parse(NoEquipe);
                 noVehicule = 0;
             }
-            else if (Matricule == null && NoEquipe == null && NoVehicule != "")
+            else if (Matricule == null && NoEquipe == null && NoVehicule != null)
             {
                 matricule = 0;
                 noEquipe = 0;
