@@ -453,7 +453,7 @@ namespace GARMU
 
         private void bRechercherPlanif_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void bRechercherRequete_Click(object sender, EventArgs e)

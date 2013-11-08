@@ -18,6 +18,11 @@ namespace GARMU.Vue
             set { richTextBox1.Text = value; }
         }
 
+        public string[] Lines
+        {
+            get { return richTextBox1.Text.Split(new string[] { "\n" }, StringSplitOptions.None); }
+        }
+
         public NumberedRichTextBox()
         {
             InitializeComponent();
@@ -41,7 +46,9 @@ namespace GARMU.Vue
 
             // Small correction (JS)
             if (richTextBox1.Text.EndsWith("\n"))
+            {
                 lastLine++;
+            }
 
             // Finally, renumber label (JS: slightly corrected) 
             StringBuilder sb = new StringBuilder();
