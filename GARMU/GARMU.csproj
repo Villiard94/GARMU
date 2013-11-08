@@ -69,6 +69,7 @@
     <Compile Include="AppCst.cs" />
     <Compile Include="Controleur\Manager.cs" />
     <Compile Include="Controleur\ManagerEmployee.cs" />
+    <Compile Include="Controleur\ManagerPatrouilleur.cs" />
     <Compile Include="Controleur\ManagerPrioriteLocale.cs" />
     <Compile Include="Controleur\ManagerVehicule.cs" />
     <Compile Include="Modele\Action.cs">

@@ -89,23 +89,23 @@ namespace GARMU.Controleur
         //    return true;
         //}
 
-        //internal List<Employee> SearchFor(string Nom, string Prenom, string Matricule, string NoEquipe, string NoVehicule)
-        //{
-        //    Employee[] employees = Context.Employees.ToArray();
+        internal List<Employee> SearchFor(string Nom, string Prenom, string Matricule, string NoEquipe, string NoVehicule)
+        {
+            Employee[] employees = Context.Employee.ToArray();
 
-        //    return employees.Where(x => x.Nom == Nom || x.Prenom == Prenom ||
-        //        x.Matricule == Matricule || x.NoEquipe == NoEquipe || x.NoVehicule == NoVehicule).ToList<Employee>();
+            return employees.Where(x => x.Nom == Nom || x.Prenom == Prenom ||
+                x.Matricule == Matricule || x.NoEquipe == NoEquipe || x.NoVehicule == NoVehicule).ToList<Employee>();
 
-        //  //PROBLEME ICI MATIRCUL NO EQUIPE NO VEHICULE
+            //PROBLEME ICI MATIRCUL NO EQUIPE NO VEHICULE
 
-        //    //return Context.Employees.Where(x => x.Nom == Nom  || x.Prenom == Prenom || 
-        //    //    x.Matricule == Matricule || x.NoEquipe == NoEquipe || x.NoVehicule == NoVehicule).ToList<Employee>();
+            //return Context.Employees.Where(x => x.Nom == Nom  || x.Prenom == Prenom || 
+            //    x.Matricule == Matricule || x.NoEquipe == NoEquipe || x.NoVehicule == NoVehicule).ToList<Employee>();
 
 
 
-            
 
-        //}
+
+        }
 
         protected override string Add(Employee entity)
         {

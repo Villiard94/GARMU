@@ -245,20 +245,20 @@
             this.bAffEmp = new System.Windows.Forms.Button();
             this.tbRechercheEmp = new System.Windows.Forms.TextBox();
             this.bEmpRec = new System.Windows.Forms.Button();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cbRechercheEMp = new System.Windows.Forms.ComboBox();
             this.lblRechercheEmp = new System.Windows.Forms.Label();
+            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Equipe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Vehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.vehiculeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.matriculeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.patrouilleurBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.matriculeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Equipe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Vehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabRapports.SuspendLayout();
@@ -2845,13 +2845,14 @@
             this.employeeDataGridView.Location = new System.Drawing.Point(23, 52);
             this.employeeDataGridView.Name = "employeeDataGridView";
             this.employeeDataGridView.ReadOnly = true;
+            this.employeeDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.employeeDataGridView.Size = new System.Drawing.Size(809, 266);
             this.employeeDataGridView.TabIndex = 0;
             // 
             // groupBox5
             // 
             this.groupBox5.Controls.Add(this.lblRechercheEmp);
-            this.groupBox5.Controls.Add(this.comboBox1);
+            this.groupBox5.Controls.Add(this.cbRechercheEMp);
             this.groupBox5.Controls.Add(this.bAffEmp);
             this.groupBox5.Controls.Add(this.tbRechercheEmp);
             this.groupBox5.Controls.Add(this.bEmpRec);
@@ -2865,16 +2866,17 @@
             // bAffEmp
             // 
             this.bAffEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bAffEmp.Location = new System.Drawing.Point(186, 19);
+            this.bAffEmp.Location = new System.Drawing.Point(222, 19);
             this.bAffEmp.Name = "bAffEmp";
             this.bAffEmp.Size = new System.Drawing.Size(113, 22);
             this.bAffEmp.TabIndex = 32;
             this.bAffEmp.Text = "Afficher Tout";
             this.bAffEmp.UseVisualStyleBackColor = true;
+            this.bAffEmp.Click += new System.EventHandler(this.bAffEmp_Click);
             // 
             // tbRechercheEmp
             // 
-            this.tbRechercheEmp.Location = new System.Drawing.Point(56, 52);
+            this.tbRechercheEmp.Location = new System.Drawing.Point(80, 54);
             this.tbRechercheEmp.Name = "tbRechercheEmp";
             this.tbRechercheEmp.Size = new System.Drawing.Size(124, 20);
             this.tbRechercheEmp.TabIndex = 31;
@@ -2882,83 +2884,32 @@
             // bEmpRec
             // 
             this.bEmpRec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bEmpRec.Location = new System.Drawing.Point(186, 50);
+            this.bEmpRec.Location = new System.Drawing.Point(222, 52);
             this.bEmpRec.Name = "bEmpRec";
             this.bEmpRec.Size = new System.Drawing.Size(113, 22);
             this.bEmpRec.TabIndex = 30;
             this.bEmpRec.Text = "Rechercher";
             this.bEmpRec.UseVisualStyleBackColor = true;
+            this.bEmpRec.Click += new System.EventHandler(this.bEmpRec_Click);
             // 
-            // comboBox1
+            // cbRechercheEMp
             // 
-            this.comboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
-            "Nom",
-            "Prénom",
-            "Numéro de Véhicule",
-            "Matricule",
-            "Équipe"});
-            this.comboBox1.Location = new System.Drawing.Point(56, 19);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(121, 21);
-            this.comboBox1.TabIndex = 33;
+            this.cbRechercheEMp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRechercheEMp.FormattingEnabled = true;
+            this.cbRechercheEMp.Location = new System.Drawing.Point(83, 21);
+            this.cbRechercheEMp.Name = "cbRechercheEMp";
+            this.cbRechercheEMp.Size = new System.Drawing.Size(121, 21);
+            this.cbRechercheEMp.TabIndex = 33;
+            this.cbRechercheEMp.SelectedIndexChanged += new System.EventHandler(this.cbRechercheEMp_SelectedIndexChanged);
             // 
             // lblRechercheEmp
             // 
             this.lblRechercheEmp.AutoSize = true;
-            this.lblRechercheEmp.Location = new System.Drawing.Point(6, 59);
+            this.lblRechercheEmp.Location = new System.Drawing.Point(6, 57);
             this.lblRechercheEmp.Name = "lblRechercheEmp";
             this.lblRechercheEmp.Size = new System.Drawing.Size(35, 13);
             this.lblRechercheEmp.TabIndex = 34;
             this.lblRechercheEmp.Text = "Nom :";
-            // 
-            // vehiculeBindingSource
-            // 
-            this.vehiculeBindingSource.DataSource = typeof(GARMU.Modele.Vehicule);
-            // 
-            // patrouilleurBindingSource
-            // 
-            this.patrouilleurBindingSource.DataSource = typeof(GARMU.Modele.Patrouilleur);
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // nomDataGridViewTextBoxColumn
-            // 
-            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
-            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
-            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
-            this.nomDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // prenomDataGridViewTextBoxColumn
-            // 
-            this.prenomDataGridViewTextBoxColumn.DataPropertyName = "Prenom";
-            this.prenomDataGridViewTextBoxColumn.HeaderText = "Prenom";
-            this.prenomDataGridViewTextBoxColumn.Name = "prenomDataGridViewTextBoxColumn";
-            this.prenomDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(GARMU.Modele.Employee);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoVehicule";
-            this.dataGridViewTextBoxColumn1.HeaderText = "NoVehicule";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // matriculeDataGridViewTextBoxColumn
-            // 
-            this.matriculeDataGridViewTextBoxColumn.DataPropertyName = "Matricule";
-            this.matriculeDataGridViewTextBoxColumn.HeaderText = "Matricule";
-            this.matriculeDataGridViewTextBoxColumn.Name = "matriculeDataGridViewTextBoxColumn";
-            this.matriculeDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // Nom
             // 
@@ -2987,6 +2938,54 @@
             this.Vehicule.HeaderText = "Vehicule";
             this.Vehicule.Name = "Vehicule";
             this.Vehicule.ReadOnly = true;
+            // 
+            // vehiculeBindingSource
+            // 
+            this.vehiculeBindingSource.DataSource = typeof(GARMU.Modele.Vehicule);
+            // 
+            // matriculeDataGridViewTextBoxColumn
+            // 
+            this.matriculeDataGridViewTextBoxColumn.DataPropertyName = "Matricule";
+            this.matriculeDataGridViewTextBoxColumn.HeaderText = "Matricule";
+            this.matriculeDataGridViewTextBoxColumn.Name = "matriculeDataGridViewTextBoxColumn";
+            this.matriculeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // patrouilleurBindingSource
+            // 
+            this.patrouilleurBindingSource.DataSource = typeof(GARMU.Modele.Patrouilleur);
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nomDataGridViewTextBoxColumn
+            // 
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            this.nomDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prenomDataGridViewTextBoxColumn
+            // 
+            this.prenomDataGridViewTextBoxColumn.DataPropertyName = "Prenom";
+            this.prenomDataGridViewTextBoxColumn.HeaderText = "Prenom";
+            this.prenomDataGridViewTextBoxColumn.Name = "prenomDataGridViewTextBoxColumn";
+            this.prenomDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(GARMU.Modele.Employee);
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoVehicule";
+            this.dataGridViewTextBoxColumn1.HeaderText = "NoVehicule";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
             // 
             // frmPrincipal
             // 
@@ -3303,18 +3302,18 @@
         private System.Windows.Forms.Button bAffEmp;
         private System.Windows.Forms.TextBox tbRechercheEmp;
         private System.Windows.Forms.Button bEmpRec;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cbRechercheEMp;
         private System.Windows.Forms.Label lblRechercheEmp;
         private System.Windows.Forms.BindingSource patrouilleurBindingSource;
         private System.Windows.Forms.BindingSource employeeBindingSource;
-        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn prenomDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn matriculeDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn Nom;
         private System.Windows.Forms.DataGridViewTextBoxColumn Prenom;
         private System.Windows.Forms.DataGridViewTextBoxColumn Equipe;
         private System.Windows.Forms.DataGridViewTextBoxColumn Vehicule;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn prenomDataGridViewTextBoxColumn;
     }
 }
 

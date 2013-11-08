@@ -26,10 +26,17 @@ namespace GARMU
         #endregion
 
 
-        ModelBDGarmu _modelBDGarmu;
-        ManagerVehicule _mVehicule;
-        ManagerEmployee _mEmployee;
-        ManagerPrioriteLocale _mPriorite;
+        private ModelBDGarmu _modelBDGarmu;
+        private ManagerVehicule _mVehicule;
+        private ManagerEmployee _mEmployee;
+        private ManagerPatrouilleur _mPatrouilleur;
+        private ManagerPrioriteLocale _mPriorite;
+
+        private readonly List<string> _critRechercheEmp = new List<string>() { "Nom", "Prénom" };
+        private readonly List<string> _critRecherchePat = new List<string>() { "Matricule", "Nom", "Prénom", "Équipe", "Véhicule" };
+
+        // private BindingSource _bsCritRechercheEmp = new BindingSource(
+
 
         public frmPrincipal()
         {
@@ -37,6 +44,7 @@ namespace GARMU
             _mVehicule = new ManagerVehicule(_modelBDGarmu.Context);
             _mEmployee = new ManagerEmployee(_modelBDGarmu.Context);
             _mPriorite = new ManagerPrioriteLocale(_modelBDGarmu.Context);
+            _mPatrouilleur = new ManagerPatrouilleur(_modelBDGarmu.Context);
 
             this.DoubleBuffered = true;
 
@@ -52,7 +60,7 @@ namespace GARMU
                 for (int j = colIndexStartPlanif; j < tlpPlanifMensuelle.ColumnCount; j++)
                 {
                     Vue.NumberedRichTextBox rtb = new Vue.NumberedRichTextBox();
-            
+
 
                     rtb.BorderStyle = BorderStyle.None;
                     rtb.Name = String.Format("tbPm{0}{1}", i - 2, j - 1);
@@ -120,7 +128,7 @@ namespace GARMU
 
             #endregion
 
-            
+
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
@@ -135,6 +143,8 @@ namespace GARMU
 
             employeeDataGridView.AutoGenerateColumns = false;
             PatrouilleurDataGridView.AutoGenerateColumns = false;
+
+            cbRechercheEMp.DataSource = _critRechercheEmp;
 
             //Etc
             #region Elenver l'auto-génération des colonnes des GridViews pour nous permetter de les gerer nous mem
@@ -886,17 +896,106 @@ namespace GARMU
         {
             employeeDataGridView.Visible = true;
             PatrouilleurDataGridView.Visible = false;
+            cbRechercheEMp.DataSource = _critRechercheEmp;
         }
 
         private void rbEployeePat_CheckedChanged_1(object sender, EventArgs e)
         {
             employeeDataGridView.Visible = false;
             PatrouilleurDataGridView.Visible = true;
+            cbRechercheEMp.DataSource = _critRecherchePat;
         }
 
+        private void cbRechercheEMp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lblRechercheEmp.Text = cbRechercheEMp.SelectedItem.ToString() + " : ";
+        }
 
+        private void bAffEmp_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bEmpRec_Click(object sender, EventArgs e)
+        {
+            if (rbEmployeeTout.Checked)
+            {
+                if (tbRechercheEmp.Text == "")
+                {
+                    employeeBindingSource.DataSource = _mEmployee.GetList();
+                    return;
+                }
+
+                string nom;
+                string prenom;
+
+                switch (cbRechercheEMp.SelectedItem.ToString())
+                {
+                    case "Nom":
+                        nom = tbRechercheEmp.Text;
+                        employeeBindingSource.DataSource = _mEmployee.SearchFor(nom, null, null, null, null);
+                        break;
+                    case "Prénom":
+                        prenom = tbRechercheEmp.Text;
+                        employeeBindingSource.DataSource = _mEmployee.SearchFor(null, prenom, null, null, null);
+                        break;
+                    default:
+                        break;
+                }
+
+
+
+            }
+            else if (rbEployeePat.Checked)
+            {
+                if (tbRechercheEmp.Text == "")
+                {
+                    
+                    patrouilleurBindingSource.DataSource = _mEmployee.GetList();
+                    return;
+                }
+
+                string nom;
+                string prenom;
+                string matricule;
+                string noEquipe;
+                string noVechicule;
+              
+
+                switch (cbRechercheEMp.SelectedItem.ToString())
+                {
+                       
+                    case "Nom":
+                        nom = tbRechercheEmp.Text;
+                        patrouilleurBindingSource.DataSource = _mPatrouilleur.SearchFor(nom, null, null, null, null);
+                        break;
+                    case "Prénom":
+                        prenom = tbRechercheEmp.Text;
+                        patrouilleurBindingSource.DataSource = _mPatrouilleur.SearchFor(null, prenom, null, null, null);
+                        break;
+                    case "Matricule":
+                        matricule = tbRechercheEmp.Text;
+                        patrouilleurBindingSource.DataSource = _mPatrouilleur.SearchFor(null, null, matricule, null, null);
+                        break;
+                    case "Véchiule":
+                        noVechicule = tbRechercheEmp.Text;
+                        patrouilleurBindingSource.DataSource = _mPatrouilleur.SearchFor(null, null, null, noVechicule, null);
+                        break;
+                    case "Équipe":
+                        noEquipe = tbRechercheEmp.Text;
+                        patrouilleurBindingSource.DataSource = _mPatrouilleur.SearchFor(null, null, null, noEquipe, null);
+                        break;
+                    default:
+                        break;
+                }
+            }
+        }
 
         #endregion
+
+
+
+
 
 
 
