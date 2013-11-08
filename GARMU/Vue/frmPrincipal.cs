@@ -128,7 +128,6 @@ namespace GARMU
 
             #endregion
 
-
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)
@@ -158,8 +157,25 @@ namespace GARMU
 
             // cbRechercheTacheQuotPat.SelectedIndex = 0;
 
-            _modelBDGarmu.Context.Database.Connection.Open();
+            #region Gérer Critères de recherche Tache Patrouilleur
+
+            //Remplir la liste
+            ddlSearchCritTachePat.Items.Add("Nom");
+            ddlSearchCritTachePat.Items.Add("Prénom");
+            ddlSearchCritTachePat.Items.Add("Matricule");
+
+            //Abonné l'event à la méthode
+            ddlSearchCritTachePat.SelectedIndexChanged += ddlSearchCritTachePat_SelectedIndexChanged;
+
+            //Remettre l'index à zéro
+            ddlSearchCritTachePat.SelectedIndex = 0;
+
+            #endregion
+
+            dgvPrio.DataSource = _mPriorite.GetList();
         }
+
+
 
 
         private void Form1_ResizeBegin(object sender, EventArgs e)
@@ -463,7 +479,7 @@ namespace GARMU
 
         private void bRechercherPlanif_Click(object sender, EventArgs e)
         {
-            
+
         }
 
         private void bRechercherRequete_Click(object sender, EventArgs e)
@@ -687,35 +703,18 @@ namespace GARMU
         private void bRechercherTachePatrouilleur_Click(object sender, EventArgs e)
         {
 
-            //lRechercheParTachePat.ForeColor = Color.Black;
-
-            //if (cbRechercheTacheQuotPat.SelectedIndex == -1)
-            //{
-            //    MessageBox.Show("Sélectionnez une recherche existante.");
-            //    lRechercheParTachePat.ForeColor = Color.Red;
-            //    return;
-            //}
-
-            //string recherche = "";
-            //int selectedIndex = -1;
-
-            //switch (cbRechercheTacheQuotPat.SelectedIndex)
-            //{
-            //    case 0:
-            //        recherche = tbNomPatrouilleurTache.Text;
-            //        break;
-            //    case 1:
-            //        recherche = tbPrenomPatrouilleurTache.Text;
-            //        break;
-            //    case 2:
-            //        recherche = tbMatriculePatrouilleurTache.Text;
-            //        break;
-            //    default:
-            //        break;
-            //}
 
             //dgvListeTache.DataSource = _cTacheQuotPat.SearchFor(recherche, selectedIndex);
         }
+
+        #region Méthodes spécifiques à BD Tâches Patrouilleur
+
+        private void ddlSearchCritTachePat_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            lSearchCriteraTachePat.Text = String.Format(ddlSearchCritTachePat.SelectedItem as string + ":");
+        }
+
+        #endregion
 
         #region Évenements de BD Véhicule
 
@@ -828,7 +827,7 @@ namespace GARMU
 
         private void bModVeh_Click(object sender, EventArgs e)
         {
-            //Mesure de sécurité^pour s'assurer qu'il y ait au moin une rangé de sélectionnée
+            //Mesure de sécurité pour s'assurer qu'il y ait au moin une rangé de sélectionnée
             if (dgvVeh.SelectedRows.Count < 0)
                 return;
 
@@ -886,8 +885,6 @@ namespace GARMU
         }
 
         #endregion
-
-
 
         #region Évenements de BD employé
 
@@ -957,7 +954,7 @@ namespace GARMU
             {
                 if (tbRechercheEmp.Text == "")
                 {
-                    
+
                     patrouilleurBindingSource.DataSource = _mEmployee.GetList();
                     return;
                 }
@@ -967,11 +964,11 @@ namespace GARMU
                 string matricule;
                 string noEquipe;
                 string noVechicule;
-              
+
 
                 switch (cbRechercheEMp.SelectedItem.ToString())
                 {
-                       
+
                     case "Nom":
                         nom = tbRechercheEmp.Text;
                         patrouilleurBindingSource.DataSource = _mPatrouilleur.SearchFor(nom, null, null, null, null);
@@ -999,6 +996,135 @@ namespace GARMU
         }
 
         #endregion
+
+        #region Méthodes spécifiques à BD Priorités locales
+
+        private void bSearchPrio_Click(object sender, EventArgs e)
+        {
+            //Si le tb est vide on sort
+            if ((tbSearchPrio.Text == ""))
+            {
+                prioriteLocaleBindingSource.DataSource = _mPriorite.GetList();
+                return;
+            }
+
+            string nomPrio = tbSearchPrio.Text;
+
+            //Recherche le Véhicule
+            dgvPrio.DataSource = _mPriorite.SearchFor(nomPrio);
+        }
+
+        private void bShowAllPrio_Click(object sender, EventArgs e)
+        {
+            dgvPrio.DataSource = _mPriorite.GetList();
+        }
+
+        private void bModPrio_Click(object sender, EventArgs e)
+        {
+            //On s'assure qu'il y a au moins une rangée de sélectionné
+            if (dgvPrio.SelectedRows.Count < 1)
+                return;
+
+            PrioriteLocale pl = new PrioriteLocale();
+            pl.Nom = tbEditPrio.Text;
+
+            _mPriorite.Modify(_mPriorite.SearchFor(dgvPrio.SelectedRows[0].Cells[0].Value.ToString()).First(), pl);
+
+            //Refresh du GridView
+            dgvPrio.Refresh();
+        }
+
+        private void bDeletePrio_Click(object sender, EventArgs e)
+        {
+            if (dgvPrio.SelectedRows.Count < 1)
+                return;
+
+            _mPriorite.Delete(dgvPrio.SelectedRows[0].Cells[0].Value.ToString(), null);
+
+            dgvPrio.DataSource = _mPriorite.GetList();
+        }
+
+        private void bAddPrio_Click(object sender, EventArgs e)
+        {
+            //Vers l'interface d'ajout
+            tbEditPrio.Clear();
+
+            gbSearchPrio.Enabled = false;
+            gbListPrio.Enabled = false;
+            bModPrio.Enabled = false;
+            bDeletePrio.Enabled = false;
+            dgvPrio.Visible = false;
+            bAddPrio.Enabled = false;
+            bSavePrio.Visible = true;
+            bCancelPrio.Visible = true;
+        }
+
+        private void bSavePrio_Click(object sender, EventArgs e)
+        {
+            //Si le tb est vide on demande un numéro valide
+            if (tbEditPrio.Text == "")
+            {
+                MessageBox.Show("Veuillez entrer un nom valide.");
+                return;
+            }
+
+            string msg = _mPriorite.Add(tbEditPrio.Text);
+
+            if (msg == AppCst.SUCCESS)
+            {
+                //Vers l'interface éditoriale
+                gbSearchPrio.Enabled = true;
+                gbListPrio.Enabled = true;
+                bModPrio.Enabled = true;
+                bDeletePrio.Enabled = true;
+                dgvPrio.Visible = true;
+                bAddPrio.Enabled = true;
+                bSavePrio.Visible = false;
+                bCancelPrio.Visible = false;
+
+                //Refresh du GridView
+                dgvPrio.DataSource = _mPriorite.GetList();
+                dgvPrio_SelectionChanged(null, EventArgs.Empty);
+            }
+        }
+
+        private void bCancelPrio_Click(object sender, EventArgs e)
+        {
+            if(dgvPrio.SelectedRows.Count > 0)
+                tbEditPrio.Text = dgvPrio.SelectedRows[0].Cells[0].Value.ToString();
+
+            //Vers l'interface éditoriale
+            gbSearchPrio.Enabled = true;
+            gbListPrio.Enabled = true;
+            bModPrio.Enabled = true;
+            bDeletePrio.Enabled = true;
+            dgvPrio.Visible = true;
+            bAddPrio.Enabled = true;
+            bSavePrio.Visible = false;
+            bCancelPrio.Visible = false;
+        }
+
+        private void dgvPrio_SelectionChanged(object sender, EventArgs e)
+        {
+            if (dgvPrio.SelectedRows.Count > 0)
+                tbEditPrio.Text = dgvPrio.SelectedRows[0].Cells[0].Value as string;
+        }
+
+        #endregion
+
+        
+
+        
+
+        
+
+        
+
+
+
+
+
+
 
 
 

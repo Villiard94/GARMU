@@ -17,7 +17,7 @@
         <EntityTypeShape EntityType="GarmuModel.JourMois" Width="1.5" PointX="6" PointY="4.25" IsExpanded="true" />
         <EntityTypeShape EntityType="GarmuModel.MarqueVehicule" Width="1.5" PointX="4.5" PointY="15.25" IsExpanded="true" />
         <EntityTypeShape EntityType="GarmuModel.ModeleVehicule" Width="1.5" PointX="6.75" PointY="15.125" IsExpanded="true" />
-        <EntityTypeShape EntityType="GarmuModel.Patrouilleur" Width="1.5" PointX="9" PointY="18.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="GarmuModel.Patrouilleur" Width="1.5" PointX="9" PointY="18.75" IsExpanded="true" />
         <EntityTypeShape EntityType="GarmuModel.PlanificationMensuelle" Width="1.5" PointX="0.75" PointY="4.75" IsExpanded="true" />
         <EntityTypeShape EntityType="GarmuModel.PrioriteLocale" Width="1.5" PointX="0.75" PointY="12.5" IsExpanded="true" />
         <EntityTypeShape EntityType="GarmuModel.ProblemeSouleve" Width="1.5" PointX="11.25" PointY="12.5" IsExpanded="true" />

@@ -23,9 +23,9 @@ namespace GARMU.Controleur
             return Add(prio);
         }
 
-        public string Delete(int prioriteId, PrioriteLocale newPrioriteLocale)
+        public string Delete(string prioriteNom, PrioriteLocale newPrioriteLocale)
         {
-            PrioriteLocale Priorite = Context.PrioriteLocale.FirstOrDefault(x => x.ID == prioriteId);
+            PrioriteLocale Priorite = Context.PrioriteLocale.FirstOrDefault(x => x.Nom.ToLower() == prioriteNom.ToLower());
 
             if (Priorite == null)
             {
@@ -50,16 +50,16 @@ namespace GARMU.Controleur
         {
             if (Exists(entity.Nom))
             {
-                return "La priorité locale existe déja. Impossible de l'ajoutée.";
+                return AppCst.ERROR;
             }
 
             Context.PrioriteLocale.Add(entity);
-            return "Réussite. La priorité locale à été ajoutée";
+            return Save();
         }
 
         private bool Exists(string priorite)
         {
-            if (Context.PrioriteLocale.Where(x => x.Nom == priorite) == null)
+            if (Context.PrioriteLocale.Any(x => x.Nom == priorite) == false)
             {
                 return false;
             }
@@ -71,5 +71,12 @@ namespace GARMU.Controleur
             return Context.PrioriteLocale.Where(x => x.Nom == priorite).ToList<PrioriteLocale>();
         }
 
+
+        internal string Modify(PrioriteLocale prioriteLocale, PrioriteLocale newPrioriteLocale)
+        {
+            prioriteLocale.Nom = newPrioriteLocale.Nom;
+
+            return Save();
+        }
     }
 }

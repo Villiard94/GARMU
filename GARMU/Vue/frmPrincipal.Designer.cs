@@ -207,10 +207,69 @@
             this.tabBD = new System.Windows.Forms.TabPage();
             this.tcBD = new System.Windows.Forms.TabControl();
             this.tabEmployes = new System.Windows.Forms.TabPage();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.bSuppEmp = new System.Windows.Forms.Button();
+            this.bCancelEmp = new System.Windows.Forms.Button();
+            this.bSaveEmp = new System.Windows.Forms.Button();
+            this.bModEmp = new System.Windows.Forms.Button();
+            this.bAjoutEmp = new System.Windows.Forms.Button();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.vehiculeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.PatrouilleurDataGridView = new System.Windows.Forms.DataGridView();
+            this.matriculeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Equipe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Vehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.patrouilleurBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.rbEployeePat = new System.Windows.Forms.RadioButton();
+            this.rbEmployeeTout = new System.Windows.Forms.RadioButton();
+            this.employeeDataGridView = new System.Windows.Forms.DataGridView();
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.prenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.lblRechercheEmp = new System.Windows.Forms.Label();
+            this.cbRechercheEMp = new System.Windows.Forms.ComboBox();
+            this.bAffEmp = new System.Windows.Forms.Button();
+            this.tbRechercheEmp = new System.Windows.Forms.TextBox();
+            this.bEmpRec = new System.Windows.Forms.Button();
             this.tabPriorites = new System.Windows.Forms.TabPage();
-            this.bAjouterPriorite = new System.Windows.Forms.Button();
-            this.bRechercherPriorite = new System.Windows.Forms.Button();
+            this.gbEditPrio = new System.Windows.Forms.GroupBox();
+            this.tbEditPrio = new System.Windows.Forms.TextBox();
+            this.lNomPrio = new System.Windows.Forms.Label();
+            this.bDeletePrio = new System.Windows.Forms.Button();
+            this.bCancelPrio = new System.Windows.Forms.Button();
+            this.bSavePrio = new System.Windows.Forms.Button();
+            this.bModPrio = new System.Windows.Forms.Button();
+            this.bAddPrio = new System.Windows.Forms.Button();
+            this.gbListPrio = new System.Windows.Forms.GroupBox();
+            this.dgvPrio = new System.Windows.Forms.DataGridView();
+            this.prioriteLocaleBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.gbSearchPrio = new System.Windows.Forms.GroupBox();
+            this.bShowAllPrio = new System.Windows.Forms.Button();
+            this.tbSearchPrio = new System.Windows.Forms.TextBox();
+            this.bSearchPrio = new System.Windows.Forms.Button();
             this.tabTaches = new System.Windows.Forms.TabPage();
+            this.dgvTacheQuot = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn13 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn16 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tacheQuotidienneBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.grpbxRecherceTachePat = new System.Windows.Forms.GroupBox();
+            this.tbSearchTachePat = new System.Windows.Forms.TextBox();
+            this.lSearchCriteraTachePat = new System.Windows.Forms.Label();
+            this.ddlSearchCritTachePat = new System.Windows.Forms.ComboBox();
+            this.lRechercheParTachePat = new System.Windows.Forms.Label();
             this.bRechercherTachePatrouilleur = new System.Windows.Forms.Button();
             this.tabVeh = new System.Windows.Forms.TabPage();
             this.gbEditVeh = new System.Windows.Forms.GroupBox();
@@ -223,42 +282,13 @@
             this.bAddVeh = new System.Windows.Forms.Button();
             this.gbListeVeh = new System.Windows.Forms.GroupBox();
             this.dgvVeh = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.gbRechercheVehicule = new System.Windows.Forms.GroupBox();
             this.bAfficherToutVehicule = new System.Windows.Forms.Button();
             this.tbRechercherVehicule = new System.Windows.Forms.TextBox();
             this.bRechercherVehicule = new System.Windows.Forms.Button();
             this.tcMenu = new System.Windows.Forms.TabControl();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.bSuppEmp = new System.Windows.Forms.Button();
-            this.bCancelEmp = new System.Windows.Forms.Button();
-            this.bSaveEmp = new System.Windows.Forms.Button();
-            this.bModEmp = new System.Windows.Forms.Button();
-            this.bAjoutEmp = new System.Windows.Forms.Button();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.PatrouilleurDataGridView = new System.Windows.Forms.DataGridView();
-            this.rbEployeePat = new System.Windows.Forms.RadioButton();
-            this.rbEmployeeTout = new System.Windows.Forms.RadioButton();
-            this.employeeDataGridView = new System.Windows.Forms.DataGridView();
-            this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.bAffEmp = new System.Windows.Forms.Button();
-            this.tbRechercheEmp = new System.Windows.Forms.TextBox();
-            this.bEmpRec = new System.Windows.Forms.Button();
-            this.cbRechercheEMp = new System.Windows.Forms.ComboBox();
-            this.lblRechercheEmp = new System.Windows.Forms.Label();
-            this.Nom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Prenom = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Equipe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Vehicule = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.vehiculeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.matriculeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.patrouilleurBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.nomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.prenomDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabRapports.SuspendLayout();
@@ -289,23 +319,40 @@
             this.tabBD.SuspendLayout();
             this.tcBD.SuspendLayout();
             this.tabEmployes.SuspendLayout();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vehiculeBindingSource)).BeginInit();
+            this.groupBox4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PatrouilleurDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patrouilleurBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            this.groupBox5.SuspendLayout();
             this.tabPriorites.SuspendLayout();
+            this.gbEditPrio.SuspendLayout();
+            this.gbListPrio.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrio)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prioriteLocaleBindingSource)).BeginInit();
+            this.gbSearchPrio.SuspendLayout();
             this.tabTaches.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTacheQuot)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tacheQuotidienneBindingSource)).BeginInit();
+            this.grpbxRecherceTachePat.SuspendLayout();
             this.tabVeh.SuspendLayout();
             this.gbEditVeh.SuspendLayout();
             this.gbListeVeh.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvVeh)).BeginInit();
             this.gbRechercheVehicule.SuspendLayout();
             this.tcMenu.SuspendLayout();
-            this.groupBox3.SuspendLayout();
-            this.groupBox4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PatrouilleurDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
-            this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.vehiculeBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patrouilleurBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.SuspendLayout();
+            // 
+            // label2
+            // 
+            label2.AutoSize = true;
+            label2.Location = new System.Drawing.Point(6, 30);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(68, 13);
+            label2.TabIndex = 0;
+            label2.Text = "No Vehicule:";
             // 
             // menuStrip1
             // 
@@ -1250,7 +1297,7 @@
             // btnEnregistrerPlan
             // 
             this.btnEnregistrerPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEnregistrerPlan.Location = new System.Drawing.Point(1303, 5);
+            this.btnEnregistrerPlan.Location = new System.Drawing.Point(1305, 5);
             this.btnEnregistrerPlan.Name = "btnEnregistrerPlan";
             this.btnEnregistrerPlan.Size = new System.Drawing.Size(96, 28);
             this.btnEnregistrerPlan.TabIndex = 9;
@@ -1260,7 +1307,7 @@
             // btnRechercherPlan
             // 
             this.btnRechercherPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRechercherPlan.Location = new System.Drawing.Point(1189, 5);
+            this.btnRechercherPlan.Location = new System.Drawing.Point(1191, 5);
             this.btnRechercherPlan.Name = "btnRechercherPlan";
             this.btnRechercherPlan.Size = new System.Drawing.Size(96, 28);
             this.btnRechercherPlan.TabIndex = 8;
@@ -2439,11 +2486,298 @@
             this.tabEmployes.Text = "Employés";
             this.tabEmployes.UseVisualStyleBackColor = true;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.textBox7);
+            this.groupBox3.Controls.Add(this.bSuppEmp);
+            this.groupBox3.Controls.Add(this.bCancelEmp);
+            this.groupBox3.Controls.Add(this.bSaveEmp);
+            this.groupBox3.Controls.Add(this.bModEmp);
+            this.groupBox3.Controls.Add(this.bAjoutEmp);
+            this.groupBox3.Controls.Add(label2);
+            this.groupBox3.Controls.Add(this.textBox8);
+            this.groupBox3.Location = new System.Drawing.Point(22, 175);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(406, 204);
+            this.groupBox3.TabIndex = 46;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Éditer";
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(80, 27);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(100, 20);
+            this.textBox7.TabIndex = 6;
+            this.textBox7.Visible = false;
+            // 
+            // bSuppEmp
+            // 
+            this.bSuppEmp.Location = new System.Drawing.Point(325, 53);
+            this.bSuppEmp.Name = "bSuppEmp";
+            this.bSuppEmp.Size = new System.Drawing.Size(75, 23);
+            this.bSuppEmp.TabIndex = 5;
+            this.bSuppEmp.Text = "Supprimer";
+            this.bSuppEmp.UseVisualStyleBackColor = true;
+            // 
+            // bCancelEmp
+            // 
+            this.bCancelEmp.Location = new System.Drawing.Point(314, 175);
+            this.bCancelEmp.Name = "bCancelEmp";
+            this.bCancelEmp.Size = new System.Drawing.Size(86, 23);
+            this.bCancelEmp.TabIndex = 4;
+            this.bCancelEmp.Text = "Annuler";
+            this.bCancelEmp.UseVisualStyleBackColor = true;
+            this.bCancelEmp.Visible = false;
+            // 
+            // bSaveEmp
+            // 
+            this.bSaveEmp.Location = new System.Drawing.Point(222, 175);
+            this.bSaveEmp.Name = "bSaveEmp";
+            this.bSaveEmp.Size = new System.Drawing.Size(86, 23);
+            this.bSaveEmp.TabIndex = 3;
+            this.bSaveEmp.Text = "Sauvegarder";
+            this.bSaveEmp.UseVisualStyleBackColor = true;
+            this.bSaveEmp.Visible = false;
+            // 
+            // bModEmp
+            // 
+            this.bModEmp.Location = new System.Drawing.Point(325, 24);
+            this.bModEmp.Name = "bModEmp";
+            this.bModEmp.Size = new System.Drawing.Size(75, 23);
+            this.bModEmp.TabIndex = 3;
+            this.bModEmp.Text = "Modifier";
+            this.bModEmp.UseVisualStyleBackColor = true;
+            // 
+            // bAjoutEmp
+            // 
+            this.bAjoutEmp.Location = new System.Drawing.Point(325, 80);
+            this.bAjoutEmp.Name = "bAjoutEmp";
+            this.bAjoutEmp.Size = new System.Drawing.Size(75, 23);
+            this.bAjoutEmp.TabIndex = 2;
+            this.bAjoutEmp.Text = "Ajouter";
+            this.bAjoutEmp.UseVisualStyleBackColor = true;
+            // 
+            // textBox8
+            // 
+            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehiculeBindingSource, "NoVehicule", true));
+            this.textBox8.Location = new System.Drawing.Point(80, 27);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(100, 20);
+            this.textBox8.TabIndex = 1;
+            // 
+            // vehiculeBindingSource
+            // 
+            this.vehiculeBindingSource.DataSource = typeof(GARMU.Modele.Vehicule);
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.PatrouilleurDataGridView);
+            this.groupBox4.Controls.Add(this.rbEployeePat);
+            this.groupBox4.Controls.Add(this.rbEmployeeTout);
+            this.groupBox4.Controls.Add(this.employeeDataGridView);
+            this.groupBox4.Location = new System.Drawing.Point(494, 19);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(832, 526);
+            this.groupBox4.TabIndex = 45;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Liste";
+            // 
+            // PatrouilleurDataGridView
+            // 
+            this.PatrouilleurDataGridView.AllowUserToAddRows = false;
+            this.PatrouilleurDataGridView.AllowUserToDeleteRows = false;
+            this.PatrouilleurDataGridView.AutoGenerateColumns = false;
+            this.PatrouilleurDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PatrouilleurDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.matriculeDataGridViewTextBoxColumn,
+            this.Nom,
+            this.Prenom,
+            this.Equipe,
+            this.Vehicule});
+            this.PatrouilleurDataGridView.DataSource = this.patrouilleurBindingSource;
+            this.PatrouilleurDataGridView.Location = new System.Drawing.Point(23, 324);
+            this.PatrouilleurDataGridView.Name = "PatrouilleurDataGridView";
+            this.PatrouilleurDataGridView.ReadOnly = true;
+            this.PatrouilleurDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.PatrouilleurDataGridView.Size = new System.Drawing.Size(809, 181);
+            this.PatrouilleurDataGridView.TabIndex = 44;
+            // 
+            // matriculeDataGridViewTextBoxColumn
+            // 
+            this.matriculeDataGridViewTextBoxColumn.DataPropertyName = "Matricule";
+            this.matriculeDataGridViewTextBoxColumn.HeaderText = "Matricule";
+            this.matriculeDataGridViewTextBoxColumn.Name = "matriculeDataGridViewTextBoxColumn";
+            this.matriculeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Nom
+            // 
+            this.Nom.DataPropertyName = "Nom";
+            this.Nom.HeaderText = "Nom";
+            this.Nom.Name = "Nom";
+            this.Nom.ReadOnly = true;
+            // 
+            // Prenom
+            // 
+            this.Prenom.DataPropertyName = "Prenom";
+            this.Prenom.HeaderText = "Prenom";
+            this.Prenom.Name = "Prenom";
+            this.Prenom.ReadOnly = true;
+            // 
+            // Equipe
+            // 
+            this.Equipe.DataPropertyName = "EquipeNoEquipe";
+            this.Equipe.HeaderText = "Equipe";
+            this.Equipe.Name = "Equipe";
+            this.Equipe.ReadOnly = true;
+            // 
+            // Vehicule
+            // 
+            this.Vehicule.DataPropertyName = "VehiculeID";
+            this.Vehicule.HeaderText = "Vehicule";
+            this.Vehicule.Name = "Vehicule";
+            this.Vehicule.ReadOnly = true;
+            // 
+            // patrouilleurBindingSource
+            // 
+            this.patrouilleurBindingSource.DataSource = typeof(GARMU.Modele.Patrouilleur);
+            // 
+            // rbEployeePat
+            // 
+            this.rbEployeePat.AutoSize = true;
+            this.rbEployeePat.Location = new System.Drawing.Point(191, 29);
+            this.rbEployeePat.Name = "rbEployeePat";
+            this.rbEployeePat.Size = new System.Drawing.Size(135, 17);
+            this.rbEployeePat.TabIndex = 2;
+            this.rbEployeePat.Text = "Patrouilleurs Seulement";
+            this.rbEployeePat.UseVisualStyleBackColor = true;
+            this.rbEployeePat.CheckedChanged += new System.EventHandler(this.rbEployeePat_CheckedChanged_1);
+            // 
+            // rbEmployeeTout
+            // 
+            this.rbEmployeeTout.AutoSize = true;
+            this.rbEmployeeTout.Checked = true;
+            this.rbEmployeeTout.Location = new System.Drawing.Point(53, 29);
+            this.rbEmployeeTout.Name = "rbEmployeeTout";
+            this.rbEmployeeTout.Size = new System.Drawing.Size(112, 17);
+            this.rbEmployeeTout.TabIndex = 1;
+            this.rbEmployeeTout.TabStop = true;
+            this.rbEmployeeTout.Text = "Tous les employés";
+            this.rbEmployeeTout.UseVisualStyleBackColor = true;
+            this.rbEmployeeTout.CheckedChanged += new System.EventHandler(this.rbEmployeeTout_CheckedChanged_1);
+            // 
+            // employeeDataGridView
+            // 
+            this.employeeDataGridView.AllowUserToAddRows = false;
+            this.employeeDataGridView.AllowUserToDeleteRows = false;
+            this.employeeDataGridView.AutoGenerateColumns = false;
+            this.employeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.employeeDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.nomDataGridViewTextBoxColumn,
+            this.prenomDataGridViewTextBoxColumn});
+            this.employeeDataGridView.DataSource = this.employeeBindingSource;
+            this.employeeDataGridView.Location = new System.Drawing.Point(23, 52);
+            this.employeeDataGridView.Name = "employeeDataGridView";
+            this.employeeDataGridView.ReadOnly = true;
+            this.employeeDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.employeeDataGridView.Size = new System.Drawing.Size(809, 266);
+            this.employeeDataGridView.TabIndex = 0;
+            // 
+            // iDDataGridViewTextBoxColumn
+            // 
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
+            this.iDDataGridViewTextBoxColumn.Visible = false;
+            // 
+            // nomDataGridViewTextBoxColumn
+            // 
+            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
+            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
+            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
+            this.nomDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // prenomDataGridViewTextBoxColumn
+            // 
+            this.prenomDataGridViewTextBoxColumn.DataPropertyName = "Prenom";
+            this.prenomDataGridViewTextBoxColumn.HeaderText = "Prenom";
+            this.prenomDataGridViewTextBoxColumn.Name = "prenomDataGridViewTextBoxColumn";
+            this.prenomDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // employeeBindingSource
+            // 
+            this.employeeBindingSource.DataSource = typeof(GARMU.Modele.Employee);
+            // 
+            // groupBox5
+            // 
+            this.groupBox5.Controls.Add(this.lblRechercheEmp);
+            this.groupBox5.Controls.Add(this.cbRechercheEMp);
+            this.groupBox5.Controls.Add(this.bAffEmp);
+            this.groupBox5.Controls.Add(this.tbRechercheEmp);
+            this.groupBox5.Controls.Add(this.bEmpRec);
+            this.groupBox5.Location = new System.Drawing.Point(22, 19);
+            this.groupBox5.Name = "groupBox5";
+            this.groupBox5.Size = new System.Drawing.Size(406, 96);
+            this.groupBox5.TabIndex = 44;
+            this.groupBox5.TabStop = false;
+            this.groupBox5.Text = "Rechercher par :";
+            // 
+            // lblRechercheEmp
+            // 
+            this.lblRechercheEmp.AutoSize = true;
+            this.lblRechercheEmp.Location = new System.Drawing.Point(6, 57);
+            this.lblRechercheEmp.Name = "lblRechercheEmp";
+            this.lblRechercheEmp.Size = new System.Drawing.Size(35, 13);
+            this.lblRechercheEmp.TabIndex = 34;
+            this.lblRechercheEmp.Text = "Nom :";
+            // 
+            // cbRechercheEMp
+            // 
+            this.cbRechercheEMp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbRechercheEMp.FormattingEnabled = true;
+            this.cbRechercheEMp.Location = new System.Drawing.Point(83, 21);
+            this.cbRechercheEMp.Name = "cbRechercheEMp";
+            this.cbRechercheEMp.Size = new System.Drawing.Size(121, 21);
+            this.cbRechercheEMp.TabIndex = 33;
+            this.cbRechercheEMp.SelectedIndexChanged += new System.EventHandler(this.cbRechercheEMp_SelectedIndexChanged);
+            // 
+            // bAffEmp
+            // 
+            this.bAffEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bAffEmp.Location = new System.Drawing.Point(222, 19);
+            this.bAffEmp.Name = "bAffEmp";
+            this.bAffEmp.Size = new System.Drawing.Size(113, 22);
+            this.bAffEmp.TabIndex = 32;
+            this.bAffEmp.Text = "Afficher Tout";
+            this.bAffEmp.UseVisualStyleBackColor = true;
+            this.bAffEmp.Click += new System.EventHandler(this.bAffEmp_Click);
+            // 
+            // tbRechercheEmp
+            // 
+            this.tbRechercheEmp.Location = new System.Drawing.Point(80, 54);
+            this.tbRechercheEmp.Name = "tbRechercheEmp";
+            this.tbRechercheEmp.Size = new System.Drawing.Size(124, 20);
+            this.tbRechercheEmp.TabIndex = 31;
+            // 
+            // bEmpRec
+            // 
+            this.bEmpRec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bEmpRec.Location = new System.Drawing.Point(222, 52);
+            this.bEmpRec.Name = "bEmpRec";
+            this.bEmpRec.Size = new System.Drawing.Size(113, 22);
+            this.bEmpRec.TabIndex = 30;
+            this.bEmpRec.Text = "Rechercher";
+            this.bEmpRec.UseVisualStyleBackColor = true;
+            this.bEmpRec.Click += new System.EventHandler(this.bEmpRec_Click);
+            // 
             // tabPriorites
             // 
             this.tabPriorites.AutoScroll = true;
-            this.tabPriorites.Controls.Add(this.bAjouterPriorite);
-            this.tabPriorites.Controls.Add(this.bRechercherPriorite);
+            this.tabPriorites.Controls.Add(this.gbEditPrio);
+            this.tabPriorites.Controls.Add(this.gbListPrio);
+            this.tabPriorites.Controls.Add(this.gbSearchPrio);
             this.tabPriorites.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabPriorites.Location = new System.Drawing.Point(4, 25);
             this.tabPriorites.Name = "tabPriorites";
@@ -2453,32 +2787,169 @@
             this.tabPriorites.Text = "Priorités Locales";
             this.tabPriorites.UseVisualStyleBackColor = true;
             // 
-            // bAjouterPriorite
+            // gbEditPrio
             // 
-            this.bAjouterPriorite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bAjouterPriorite.Location = new System.Drawing.Point(209, 46);
-            this.bAjouterPriorite.Name = "bAjouterPriorite";
-            this.bAjouterPriorite.Size = new System.Drawing.Size(113, 34);
-            this.bAjouterPriorite.TabIndex = 21;
-            this.bAjouterPriorite.Text = "Ajouter";
-            this.bAjouterPriorite.UseVisualStyleBackColor = true;
-            this.bAjouterPriorite.Click += new System.EventHandler(this.bAjouterPriorite_Click);
+            this.gbEditPrio.Controls.Add(this.tbEditPrio);
+            this.gbEditPrio.Controls.Add(this.lNomPrio);
+            this.gbEditPrio.Controls.Add(this.bDeletePrio);
+            this.gbEditPrio.Controls.Add(this.bCancelPrio);
+            this.gbEditPrio.Controls.Add(this.bSavePrio);
+            this.gbEditPrio.Controls.Add(this.bModPrio);
+            this.gbEditPrio.Controls.Add(this.bAddPrio);
+            this.gbEditPrio.Location = new System.Drawing.Point(6, 60);
+            this.gbEditPrio.Name = "gbEditPrio";
+            this.gbEditPrio.Size = new System.Drawing.Size(406, 204);
+            this.gbEditPrio.TabIndex = 43;
+            this.gbEditPrio.TabStop = false;
+            this.gbEditPrio.Text = "Éditer";
             // 
-            // bRechercherPriorite
+            // tbEditPrio
             // 
-            this.bRechercherPriorite.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bRechercherPriorite.Location = new System.Drawing.Point(209, 6);
-            this.bRechercherPriorite.Name = "bRechercherPriorite";
-            this.bRechercherPriorite.Size = new System.Drawing.Size(113, 34);
-            this.bRechercherPriorite.TabIndex = 20;
-            this.bRechercherPriorite.Text = "Rechercher";
-            this.bRechercherPriorite.UseVisualStyleBackColor = true;
-            this.bRechercherPriorite.Click += new System.EventHandler(this.bRechercherPriorite_Click);
+            this.tbEditPrio.Location = new System.Drawing.Point(118, 21);
+            this.tbEditPrio.Name = "tbEditPrio";
+            this.tbEditPrio.Size = new System.Drawing.Size(100, 20);
+            this.tbEditPrio.TabIndex = 7;
+            // 
+            // lNomPrio
+            // 
+            this.lNomPrio.AutoSize = true;
+            this.lNomPrio.Location = new System.Drawing.Point(6, 24);
+            this.lNomPrio.Name = "lNomPrio";
+            this.lNomPrio.Size = new System.Drawing.Size(92, 13);
+            this.lNomPrio.TabIndex = 6;
+            this.lNomPrio.Text = "Nom de la priorité:";
+            // 
+            // bDeletePrio
+            // 
+            this.bDeletePrio.Location = new System.Drawing.Point(325, 48);
+            this.bDeletePrio.Name = "bDeletePrio";
+            this.bDeletePrio.Size = new System.Drawing.Size(75, 23);
+            this.bDeletePrio.TabIndex = 5;
+            this.bDeletePrio.Text = "Supprimer";
+            this.bDeletePrio.UseVisualStyleBackColor = true;
+            this.bDeletePrio.Click += new System.EventHandler(this.bDeletePrio_Click);
+            // 
+            // bCancelPrio
+            // 
+            this.bCancelPrio.Location = new System.Drawing.Point(314, 175);
+            this.bCancelPrio.Name = "bCancelPrio";
+            this.bCancelPrio.Size = new System.Drawing.Size(86, 23);
+            this.bCancelPrio.TabIndex = 4;
+            this.bCancelPrio.Text = "Annuler";
+            this.bCancelPrio.UseVisualStyleBackColor = true;
+            this.bCancelPrio.Visible = false;
+            this.bCancelPrio.Click += new System.EventHandler(this.bCancelPrio_Click);
+            // 
+            // bSavePrio
+            // 
+            this.bSavePrio.Location = new System.Drawing.Point(222, 175);
+            this.bSavePrio.Name = "bSavePrio";
+            this.bSavePrio.Size = new System.Drawing.Size(86, 23);
+            this.bSavePrio.TabIndex = 3;
+            this.bSavePrio.Text = "Sauvegarder";
+            this.bSavePrio.UseVisualStyleBackColor = true;
+            this.bSavePrio.Visible = false;
+            this.bSavePrio.Click += new System.EventHandler(this.bSavePrio_Click);
+            // 
+            // bModPrio
+            // 
+            this.bModPrio.Location = new System.Drawing.Point(325, 19);
+            this.bModPrio.Name = "bModPrio";
+            this.bModPrio.Size = new System.Drawing.Size(75, 23);
+            this.bModPrio.TabIndex = 3;
+            this.bModPrio.Text = "Modifier";
+            this.bModPrio.UseVisualStyleBackColor = true;
+            this.bModPrio.Click += new System.EventHandler(this.bModPrio_Click);
+            // 
+            // bAddPrio
+            // 
+            this.bAddPrio.Location = new System.Drawing.Point(325, 77);
+            this.bAddPrio.Name = "bAddPrio";
+            this.bAddPrio.Size = new System.Drawing.Size(75, 23);
+            this.bAddPrio.TabIndex = 2;
+            this.bAddPrio.Text = "Ajouter";
+            this.bAddPrio.UseVisualStyleBackColor = true;
+            this.bAddPrio.Click += new System.EventHandler(this.bAddPrio_Click);
+            // 
+            // gbListPrio
+            // 
+            this.gbListPrio.Controls.Add(this.dgvPrio);
+            this.gbListPrio.Location = new System.Drawing.Point(419, 6);
+            this.gbListPrio.Name = "gbListPrio";
+            this.gbListPrio.Size = new System.Drawing.Size(161, 258);
+            this.gbListPrio.TabIndex = 42;
+            this.gbListPrio.TabStop = false;
+            this.gbListPrio.Text = "Liste";
+            // 
+            // dgvPrio
+            // 
+            this.dgvPrio.AllowUserToAddRows = false;
+            this.dgvPrio.AllowUserToDeleteRows = false;
+            this.dgvPrio.AutoGenerateColumns = false;
+            this.dgvPrio.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPrio.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn18});
+            this.dgvPrio.DataSource = this.prioriteLocaleBindingSource;
+            this.dgvPrio.Location = new System.Drawing.Point(6, 15);
+            this.dgvPrio.MultiSelect = false;
+            this.dgvPrio.Name = "dgvPrio";
+            this.dgvPrio.ReadOnly = true;
+            this.dgvPrio.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dgvPrio.Size = new System.Drawing.Size(149, 237);
+            this.dgvPrio.TabIndex = 0;
+            this.dgvPrio.SelectionChanged += new System.EventHandler(this.dgvPrio_SelectionChanged);
+            // 
+            // prioriteLocaleBindingSource
+            // 
+            this.prioriteLocaleBindingSource.DataSource = typeof(GARMU.Modele.PrioriteLocale);
+            // 
+            // gbSearchPrio
+            // 
+            this.gbSearchPrio.Controls.Add(this.bShowAllPrio);
+            this.gbSearchPrio.Controls.Add(this.tbSearchPrio);
+            this.gbSearchPrio.Controls.Add(this.bSearchPrio);
+            this.gbSearchPrio.Location = new System.Drawing.Point(6, 6);
+            this.gbSearchPrio.Name = "gbSearchPrio";
+            this.gbSearchPrio.Size = new System.Drawing.Size(406, 47);
+            this.gbSearchPrio.TabIndex = 41;
+            this.gbSearchPrio.TabStop = false;
+            this.gbSearchPrio.Text = "Rechercher par nom de priorité locale";
+            // 
+            // bShowAllPrio
+            // 
+            this.bShowAllPrio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bShowAllPrio.Location = new System.Drawing.Point(287, 15);
+            this.bShowAllPrio.Name = "bShowAllPrio";
+            this.bShowAllPrio.Size = new System.Drawing.Size(113, 22);
+            this.bShowAllPrio.TabIndex = 32;
+            this.bShowAllPrio.Text = "Afficher Tout";
+            this.bShowAllPrio.UseVisualStyleBackColor = true;
+            this.bShowAllPrio.Click += new System.EventHandler(this.bShowAllPrio_Click);
+            // 
+            // tbSearchPrio
+            // 
+            this.tbSearchPrio.Location = new System.Drawing.Point(9, 17);
+            this.tbSearchPrio.Name = "tbSearchPrio";
+            this.tbSearchPrio.Size = new System.Drawing.Size(100, 20);
+            this.tbSearchPrio.TabIndex = 31;
+            // 
+            // bSearchPrio
+            // 
+            this.bSearchPrio.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bSearchPrio.Location = new System.Drawing.Point(168, 15);
+            this.bSearchPrio.Name = "bSearchPrio";
+            this.bSearchPrio.Size = new System.Drawing.Size(113, 22);
+            this.bSearchPrio.TabIndex = 30;
+            this.bSearchPrio.Text = "Rechercher";
+            this.bSearchPrio.UseVisualStyleBackColor = true;
+            this.bSearchPrio.Click += new System.EventHandler(this.bSearchPrio_Click);
             // 
             // tabTaches
             // 
             this.tabTaches.AutoScroll = true;
-            this.tabTaches.Controls.Add(this.bRechercherTachePatrouilleur);
+            this.tabTaches.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.tabTaches.Controls.Add(this.dgvTacheQuot);
+            this.tabTaches.Controls.Add(this.grpbxRecherceTachePat);
             this.tabTaches.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.tabTaches.Location = new System.Drawing.Point(4, 25);
             this.tabTaches.Name = "tabTaches";
@@ -2488,12 +2959,156 @@
             this.tabTaches.Text = "Tâches d\'un Patrouilleur";
             this.tabTaches.UseVisualStyleBackColor = true;
             // 
+            // dgvTacheQuot
+            // 
+            this.dgvTacheQuot.AllowUserToAddRows = false;
+            this.dgvTacheQuot.AllowUserToDeleteRows = false;
+            this.dgvTacheQuot.AutoGenerateColumns = false;
+            this.dgvTacheQuot.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTacheQuot.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn13,
+            this.dataGridViewTextBoxColumn14,
+            this.dataGridViewTextBoxColumn15,
+            this.dataGridViewTextBoxColumn16});
+            this.dgvTacheQuot.DataSource = this.tacheQuotidienneBindingSource;
+            this.dgvTacheQuot.Location = new System.Drawing.Point(6, 111);
+            this.dgvTacheQuot.Name = "dgvTacheQuot";
+            this.dgvTacheQuot.ReadOnly = true;
+            this.dgvTacheQuot.Size = new System.Drawing.Size(946, 363);
+            this.dgvTacheQuot.TabIndex = 21;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn2.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            this.dataGridViewTextBoxColumn2.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "SecteurID";
+            this.dataGridViewTextBoxColumn3.HeaderText = "SecteurID";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.dataGridViewTextBoxColumn3.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "JourMoisID";
+            this.dataGridViewTextBoxColumn5.HeaderText = "JourMoisID";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.dataGridViewTextBoxColumn5.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "DixVingt";
+            this.dataGridViewTextBoxColumn10.HeaderText = "DixVingt";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            this.dataGridViewTextBoxColumn10.ReadOnly = true;
+            this.dataGridViewTextBoxColumn10.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "JourMois";
+            this.dataGridViewTextBoxColumn11.HeaderText = "JourMois";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            this.dataGridViewTextBoxColumn11.ReadOnly = true;
+            this.dataGridViewTextBoxColumn11.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn13
+            // 
+            this.dataGridViewTextBoxColumn13.DataPropertyName = "Secteur";
+            this.dataGridViewTextBoxColumn13.HeaderText = "Secteur";
+            this.dataGridViewTextBoxColumn13.Name = "dataGridViewTextBoxColumn13";
+            this.dataGridViewTextBoxColumn13.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn14
+            // 
+            this.dataGridViewTextBoxColumn14.DataPropertyName = "TacheQuotidienne_Assignation";
+            this.dataGridViewTextBoxColumn14.HeaderText = "TacheQuotidienne_Assignation";
+            this.dataGridViewTextBoxColumn14.Name = "dataGridViewTextBoxColumn14";
+            this.dataGridViewTextBoxColumn14.ReadOnly = true;
+            this.dataGridViewTextBoxColumn14.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn15
+            // 
+            this.dataGridViewTextBoxColumn15.DataPropertyName = "DemandeSpeciale";
+            this.dataGridViewTextBoxColumn15.HeaderText = "DemandeSpeciale";
+            this.dataGridViewTextBoxColumn15.Name = "dataGridViewTextBoxColumn15";
+            this.dataGridViewTextBoxColumn15.ReadOnly = true;
+            // 
+            // dataGridViewTextBoxColumn16
+            // 
+            this.dataGridViewTextBoxColumn16.DataPropertyName = "Patrouilleur";
+            this.dataGridViewTextBoxColumn16.HeaderText = "Patrouilleur";
+            this.dataGridViewTextBoxColumn16.Name = "dataGridViewTextBoxColumn16";
+            this.dataGridViewTextBoxColumn16.ReadOnly = true;
+            // 
+            // tacheQuotidienneBindingSource
+            // 
+            this.tacheQuotidienneBindingSource.DataSource = typeof(GARMU.Modele.TacheQuotidienne);
+            // 
+            // grpbxRecherceTachePat
+            // 
+            this.grpbxRecherceTachePat.Controls.Add(this.tbSearchTachePat);
+            this.grpbxRecherceTachePat.Controls.Add(this.lSearchCriteraTachePat);
+            this.grpbxRecherceTachePat.Controls.Add(this.ddlSearchCritTachePat);
+            this.grpbxRecherceTachePat.Controls.Add(this.lRechercheParTachePat);
+            this.grpbxRecherceTachePat.Controls.Add(this.bRechercherTachePatrouilleur);
+            this.grpbxRecherceTachePat.Location = new System.Drawing.Point(6, 6);
+            this.grpbxRecherceTachePat.Name = "grpbxRecherceTachePat";
+            this.grpbxRecherceTachePat.Size = new System.Drawing.Size(353, 99);
+            this.grpbxRecherceTachePat.TabIndex = 21;
+            this.grpbxRecherceTachePat.TabStop = false;
+            this.grpbxRecherceTachePat.Text = "Recherche";
+            // 
+            // tbSearchTachePat
+            // 
+            this.tbSearchTachePat.Location = new System.Drawing.Point(96, 65);
+            this.tbSearchTachePat.Name = "tbSearchTachePat";
+            this.tbSearchTachePat.Size = new System.Drawing.Size(135, 20);
+            this.tbSearchTachePat.TabIndex = 24;
+            // 
+            // lSearchCriteraTachePat
+            // 
+            this.lSearchCriteraTachePat.AutoSize = true;
+            this.lSearchCriteraTachePat.Location = new System.Drawing.Point(9, 68);
+            this.lSearchCriteraTachePat.Name = "lSearchCriteraTachePat";
+            this.lSearchCriteraTachePat.Size = new System.Drawing.Size(42, 13);
+            this.lSearchCriteraTachePat.TabIndex = 23;
+            this.lSearchCriteraTachePat.Text = "default:";
+            // 
+            // ddlSearchCritTachePat
+            // 
+            this.ddlSearchCritTachePat.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlSearchCritTachePat.FormattingEnabled = true;
+            this.ddlSearchCritTachePat.Location = new System.Drawing.Point(96, 24);
+            this.ddlSearchCritTachePat.Name = "ddlSearchCritTachePat";
+            this.ddlSearchCritTachePat.Size = new System.Drawing.Size(135, 21);
+            this.ddlSearchCritTachePat.TabIndex = 22;
+            // 
+            // lRechercheParTachePat
+            // 
+            this.lRechercheParTachePat.AutoSize = true;
+            this.lRechercheParTachePat.Location = new System.Drawing.Point(6, 27);
+            this.lRechercheParTachePat.Name = "lRechercheParTachePat";
+            this.lRechercheParTachePat.Size = new System.Drawing.Size(84, 13);
+            this.lRechercheParTachePat.TabIndex = 21;
+            this.lRechercheParTachePat.Text = "Rechercher par:";
+            // 
             // bRechercherTachePatrouilleur
             // 
             this.bRechercherTachePatrouilleur.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bRechercherTachePatrouilleur.Location = new System.Drawing.Point(196, 47);
+            this.bRechercherTachePatrouilleur.Location = new System.Drawing.Point(249, 60);
             this.bRechercherTachePatrouilleur.Name = "bRechercherTachePatrouilleur";
-            this.bRechercherTachePatrouilleur.Size = new System.Drawing.Size(113, 34);
+            this.bRechercherTachePatrouilleur.Size = new System.Drawing.Size(98, 28);
             this.bRechercherTachePatrouilleur.TabIndex = 20;
             this.bRechercherTachePatrouilleur.Text = "Rechercher";
             this.bRechercherTachePatrouilleur.UseVisualStyleBackColor = true;
@@ -2624,6 +3239,13 @@
             this.dgvVeh.TabIndex = 0;
             this.dgvVeh.SelectionChanged += new System.EventHandler(this.dgvVeh_SelectionChanged);
             // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoVehicule";
+            this.dataGridViewTextBoxColumn1.HeaderText = "NoVehicule";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
             // gbRechercheVehicule
             // 
             this.gbRechercheVehicule.Controls.Add(this.bAfficherToutVehicule);
@@ -2685,307 +3307,12 @@
             this.tcMenu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tcMenu.TabIndex = 0;
             // 
-            // groupBox3
+            // dataGridViewTextBoxColumn18
             // 
-            this.groupBox3.Controls.Add(this.textBox7);
-            this.groupBox3.Controls.Add(this.bSuppEmp);
-            this.groupBox3.Controls.Add(this.bCancelEmp);
-            this.groupBox3.Controls.Add(this.bSaveEmp);
-            this.groupBox3.Controls.Add(this.bModEmp);
-            this.groupBox3.Controls.Add(this.bAjoutEmp);
-            this.groupBox3.Controls.Add(label2);
-            this.groupBox3.Controls.Add(this.textBox8);
-            this.groupBox3.Location = new System.Drawing.Point(22, 175);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(406, 204);
-            this.groupBox3.TabIndex = 46;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Éditer";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(80, 27);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(100, 20);
-            this.textBox7.TabIndex = 6;
-            this.textBox7.Visible = false;
-            // 
-            // bSuppEmp
-            // 
-            this.bSuppEmp.Location = new System.Drawing.Point(325, 53);
-            this.bSuppEmp.Name = "bSuppEmp";
-            this.bSuppEmp.Size = new System.Drawing.Size(75, 23);
-            this.bSuppEmp.TabIndex = 5;
-            this.bSuppEmp.Text = "Supprimer";
-            this.bSuppEmp.UseVisualStyleBackColor = true;
-            // 
-            // bCancelEmp
-            // 
-            this.bCancelEmp.Location = new System.Drawing.Point(314, 175);
-            this.bCancelEmp.Name = "bCancelEmp";
-            this.bCancelEmp.Size = new System.Drawing.Size(86, 23);
-            this.bCancelEmp.TabIndex = 4;
-            this.bCancelEmp.Text = "Annuler";
-            this.bCancelEmp.UseVisualStyleBackColor = true;
-            this.bCancelEmp.Visible = false;
-            // 
-            // bSaveEmp
-            // 
-            this.bSaveEmp.Location = new System.Drawing.Point(222, 175);
-            this.bSaveEmp.Name = "bSaveEmp";
-            this.bSaveEmp.Size = new System.Drawing.Size(86, 23);
-            this.bSaveEmp.TabIndex = 3;
-            this.bSaveEmp.Text = "Sauvegarder";
-            this.bSaveEmp.UseVisualStyleBackColor = true;
-            this.bSaveEmp.Visible = false;
-            // 
-            // bModEmp
-            // 
-            this.bModEmp.Location = new System.Drawing.Point(325, 24);
-            this.bModEmp.Name = "bModEmp";
-            this.bModEmp.Size = new System.Drawing.Size(75, 23);
-            this.bModEmp.TabIndex = 3;
-            this.bModEmp.Text = "Modifier";
-            this.bModEmp.UseVisualStyleBackColor = true;
-            // 
-            // bAjoutEmp
-            // 
-            this.bAjoutEmp.Location = new System.Drawing.Point(325, 80);
-            this.bAjoutEmp.Name = "bAjoutEmp";
-            this.bAjoutEmp.Size = new System.Drawing.Size(75, 23);
-            this.bAjoutEmp.TabIndex = 2;
-            this.bAjoutEmp.Text = "Ajouter";
-            this.bAjoutEmp.UseVisualStyleBackColor = true;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new System.Drawing.Point(6, 30);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(68, 13);
-            label2.TabIndex = 0;
-            label2.Text = "No Vehicule:";
-            // 
-            // textBox8
-            // 
-            this.textBox8.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.vehiculeBindingSource, "NoVehicule", true));
-            this.textBox8.Location = new System.Drawing.Point(80, 27);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(100, 20);
-            this.textBox8.TabIndex = 1;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.PatrouilleurDataGridView);
-            this.groupBox4.Controls.Add(this.rbEployeePat);
-            this.groupBox4.Controls.Add(this.rbEmployeeTout);
-            this.groupBox4.Controls.Add(this.employeeDataGridView);
-            this.groupBox4.Location = new System.Drawing.Point(494, 19);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(832, 526);
-            this.groupBox4.TabIndex = 45;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Liste";
-            // 
-            // PatrouilleurDataGridView
-            // 
-            this.PatrouilleurDataGridView.AllowUserToAddRows = false;
-            this.PatrouilleurDataGridView.AllowUserToDeleteRows = false;
-            this.PatrouilleurDataGridView.AutoGenerateColumns = false;
-            this.PatrouilleurDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PatrouilleurDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.matriculeDataGridViewTextBoxColumn,
-            this.Nom,
-            this.Prenom,
-            this.Equipe,
-            this.Vehicule});
-            this.PatrouilleurDataGridView.DataSource = this.patrouilleurBindingSource;
-            this.PatrouilleurDataGridView.Location = new System.Drawing.Point(23, 324);
-            this.PatrouilleurDataGridView.Name = "PatrouilleurDataGridView";
-            this.PatrouilleurDataGridView.ReadOnly = true;
-            this.PatrouilleurDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.PatrouilleurDataGridView.Size = new System.Drawing.Size(809, 181);
-            this.PatrouilleurDataGridView.TabIndex = 44;
-            // 
-            // rbEployeePat
-            // 
-            this.rbEployeePat.AutoSize = true;
-            this.rbEployeePat.Location = new System.Drawing.Point(191, 29);
-            this.rbEployeePat.Name = "rbEployeePat";
-            this.rbEployeePat.Size = new System.Drawing.Size(135, 17);
-            this.rbEployeePat.TabIndex = 2;
-            this.rbEployeePat.Text = "Patrouilleurs Seulement";
-            this.rbEployeePat.UseVisualStyleBackColor = true;
-            this.rbEployeePat.CheckedChanged += new System.EventHandler(this.rbEployeePat_CheckedChanged_1);
-            // 
-            // rbEmployeeTout
-            // 
-            this.rbEmployeeTout.AutoSize = true;
-            this.rbEmployeeTout.Checked = true;
-            this.rbEmployeeTout.Location = new System.Drawing.Point(53, 29);
-            this.rbEmployeeTout.Name = "rbEmployeeTout";
-            this.rbEmployeeTout.Size = new System.Drawing.Size(112, 17);
-            this.rbEmployeeTout.TabIndex = 1;
-            this.rbEmployeeTout.TabStop = true;
-            this.rbEmployeeTout.Text = "Tous les employés";
-            this.rbEmployeeTout.UseVisualStyleBackColor = true;
-            this.rbEmployeeTout.CheckedChanged += new System.EventHandler(this.rbEmployeeTout_CheckedChanged_1);
-            // 
-            // employeeDataGridView
-            // 
-            this.employeeDataGridView.AllowUserToAddRows = false;
-            this.employeeDataGridView.AllowUserToDeleteRows = false;
-            this.employeeDataGridView.AutoGenerateColumns = false;
-            this.employeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.employeeDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.nomDataGridViewTextBoxColumn,
-            this.prenomDataGridViewTextBoxColumn});
-            this.employeeDataGridView.DataSource = this.employeeBindingSource;
-            this.employeeDataGridView.Location = new System.Drawing.Point(23, 52);
-            this.employeeDataGridView.Name = "employeeDataGridView";
-            this.employeeDataGridView.ReadOnly = true;
-            this.employeeDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.employeeDataGridView.Size = new System.Drawing.Size(809, 266);
-            this.employeeDataGridView.TabIndex = 0;
-            // 
-            // groupBox5
-            // 
-            this.groupBox5.Controls.Add(this.lblRechercheEmp);
-            this.groupBox5.Controls.Add(this.cbRechercheEMp);
-            this.groupBox5.Controls.Add(this.bAffEmp);
-            this.groupBox5.Controls.Add(this.tbRechercheEmp);
-            this.groupBox5.Controls.Add(this.bEmpRec);
-            this.groupBox5.Location = new System.Drawing.Point(22, 19);
-            this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(406, 96);
-            this.groupBox5.TabIndex = 44;
-            this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Rechercher par :";
-            // 
-            // bAffEmp
-            // 
-            this.bAffEmp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bAffEmp.Location = new System.Drawing.Point(222, 19);
-            this.bAffEmp.Name = "bAffEmp";
-            this.bAffEmp.Size = new System.Drawing.Size(113, 22);
-            this.bAffEmp.TabIndex = 32;
-            this.bAffEmp.Text = "Afficher Tout";
-            this.bAffEmp.UseVisualStyleBackColor = true;
-            this.bAffEmp.Click += new System.EventHandler(this.bAffEmp_Click);
-            // 
-            // tbRechercheEmp
-            // 
-            this.tbRechercheEmp.Location = new System.Drawing.Point(80, 54);
-            this.tbRechercheEmp.Name = "tbRechercheEmp";
-            this.tbRechercheEmp.Size = new System.Drawing.Size(124, 20);
-            this.tbRechercheEmp.TabIndex = 31;
-            // 
-            // bEmpRec
-            // 
-            this.bEmpRec.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bEmpRec.Location = new System.Drawing.Point(222, 52);
-            this.bEmpRec.Name = "bEmpRec";
-            this.bEmpRec.Size = new System.Drawing.Size(113, 22);
-            this.bEmpRec.TabIndex = 30;
-            this.bEmpRec.Text = "Rechercher";
-            this.bEmpRec.UseVisualStyleBackColor = true;
-            this.bEmpRec.Click += new System.EventHandler(this.bEmpRec_Click);
-            // 
-            // cbRechercheEMp
-            // 
-            this.cbRechercheEMp.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbRechercheEMp.FormattingEnabled = true;
-            this.cbRechercheEMp.Location = new System.Drawing.Point(83, 21);
-            this.cbRechercheEMp.Name = "cbRechercheEMp";
-            this.cbRechercheEMp.Size = new System.Drawing.Size(121, 21);
-            this.cbRechercheEMp.TabIndex = 33;
-            this.cbRechercheEMp.SelectedIndexChanged += new System.EventHandler(this.cbRechercheEMp_SelectedIndexChanged);
-            // 
-            // lblRechercheEmp
-            // 
-            this.lblRechercheEmp.AutoSize = true;
-            this.lblRechercheEmp.Location = new System.Drawing.Point(6, 57);
-            this.lblRechercheEmp.Name = "lblRechercheEmp";
-            this.lblRechercheEmp.Size = new System.Drawing.Size(35, 13);
-            this.lblRechercheEmp.TabIndex = 34;
-            this.lblRechercheEmp.Text = "Nom :";
-            // 
-            // Nom
-            // 
-            this.Nom.DataPropertyName = "Nom";
-            this.Nom.HeaderText = "Nom";
-            this.Nom.Name = "Nom";
-            this.Nom.ReadOnly = true;
-            // 
-            // Prenom
-            // 
-            this.Prenom.DataPropertyName = "Prenom";
-            this.Prenom.HeaderText = "Prenom";
-            this.Prenom.Name = "Prenom";
-            this.Prenom.ReadOnly = true;
-            // 
-            // Equipe
-            // 
-            this.Equipe.DataPropertyName = "EquipeNoEquipe";
-            this.Equipe.HeaderText = "Equipe";
-            this.Equipe.Name = "Equipe";
-            this.Equipe.ReadOnly = true;
-            // 
-            // Vehicule
-            // 
-            this.Vehicule.DataPropertyName = "VehiculeID";
-            this.Vehicule.HeaderText = "Vehicule";
-            this.Vehicule.Name = "Vehicule";
-            this.Vehicule.ReadOnly = true;
-            // 
-            // vehiculeBindingSource
-            // 
-            this.vehiculeBindingSource.DataSource = typeof(GARMU.Modele.Vehicule);
-            // 
-            // matriculeDataGridViewTextBoxColumn
-            // 
-            this.matriculeDataGridViewTextBoxColumn.DataPropertyName = "Matricule";
-            this.matriculeDataGridViewTextBoxColumn.HeaderText = "Matricule";
-            this.matriculeDataGridViewTextBoxColumn.Name = "matriculeDataGridViewTextBoxColumn";
-            this.matriculeDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // patrouilleurBindingSource
-            // 
-           this.patrouilleurBindingSource.DataSource = typeof(GARMU.Modele.Patrouilleur);
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            this.iDDataGridViewTextBoxColumn.ReadOnly = true;
-            this.iDDataGridViewTextBoxColumn.Visible = false;
-            // 
-            // nomDataGridViewTextBoxColumn
-            // 
-            this.nomDataGridViewTextBoxColumn.DataPropertyName = "Nom";
-            this.nomDataGridViewTextBoxColumn.HeaderText = "Nom";
-            this.nomDataGridViewTextBoxColumn.Name = "nomDataGridViewTextBoxColumn";
-            this.nomDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // prenomDataGridViewTextBoxColumn
-            // 
-            this.prenomDataGridViewTextBoxColumn.DataPropertyName = "Prenom";
-            this.prenomDataGridViewTextBoxColumn.HeaderText = "Prenom";
-            this.prenomDataGridViewTextBoxColumn.Name = "prenomDataGridViewTextBoxColumn";
-            this.prenomDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // employeeBindingSource
-            // 
-            this.employeeBindingSource.DataSource = typeof(GARMU.Modele.Employee);
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "NoVehicule";
-            this.dataGridViewTextBoxColumn1.HeaderText = "NoVehicule";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Nom";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Nom";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
             // 
             // frmPrincipal
             // 
@@ -3043,8 +3370,30 @@
             this.tabBD.ResumeLayout(false);
             this.tcBD.ResumeLayout(false);
             this.tabEmployes.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.vehiculeBindingSource)).EndInit();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.PatrouilleurDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.patrouilleurBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            this.groupBox5.ResumeLayout(false);
+            this.groupBox5.PerformLayout();
             this.tabPriorites.ResumeLayout(false);
+            this.gbEditPrio.ResumeLayout(false);
+            this.gbEditPrio.PerformLayout();
+            this.gbListPrio.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPrio)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.prioriteLocaleBindingSource)).EndInit();
+            this.gbSearchPrio.ResumeLayout(false);
+            this.gbSearchPrio.PerformLayout();
             this.tabTaches.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTacheQuot)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.tacheQuotidienneBindingSource)).EndInit();
+            this.grpbxRecherceTachePat.ResumeLayout(false);
+            this.grpbxRecherceTachePat.PerformLayout();
             this.tabVeh.ResumeLayout(false);
             this.gbEditVeh.ResumeLayout(false);
             this.gbEditVeh.PerformLayout();
@@ -3053,17 +3402,6 @@
             this.gbRechercheVehicule.ResumeLayout(false);
             this.gbRechercheVehicule.PerformLayout();
             this.tcMenu.ResumeLayout(false);
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.PatrouilleurDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).EndInit();
-            this.groupBox5.ResumeLayout(false);
-            this.groupBox5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.vehiculeBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.patrouilleurBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -3263,8 +3601,6 @@
         private System.Windows.Forms.TabControl tcBD;
         private System.Windows.Forms.TabPage tabEmployes;
         private System.Windows.Forms.TabPage tabPriorites;
-        private System.Windows.Forms.Button bAjouterPriorite;
-        private System.Windows.Forms.Button bRechercherPriorite;
         private System.Windows.Forms.TabPage tabTaches;
         private System.Windows.Forms.Button bRechercherTachePatrouilleur;
         private System.Windows.Forms.TabPage tabVeh;
@@ -3314,6 +3650,38 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn nomDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn prenomDataGridViewTextBoxColumn;
+        private System.Windows.Forms.GroupBox grpbxRecherceTachePat;
+        private System.Windows.Forms.TextBox tbSearchTachePat;
+        private System.Windows.Forms.Label lSearchCriteraTachePat;
+        private System.Windows.Forms.ComboBox ddlSearchCritTachePat;
+        private System.Windows.Forms.Label lRechercheParTachePat;
+        private System.Windows.Forms.DataGridView dgvTacheQuot;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn14;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn15;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
+        private System.Windows.Forms.BindingSource tacheQuotidienneBindingSource;
+        private System.Windows.Forms.GroupBox gbEditPrio;
+        private System.Windows.Forms.TextBox tbEditPrio;
+        private System.Windows.Forms.Label lNomPrio;
+        private System.Windows.Forms.Button bDeletePrio;
+        private System.Windows.Forms.Button bCancelPrio;
+        private System.Windows.Forms.Button bSavePrio;
+        private System.Windows.Forms.Button bModPrio;
+        private System.Windows.Forms.Button bAddPrio;
+        private System.Windows.Forms.GroupBox gbListPrio;
+        private System.Windows.Forms.GroupBox gbSearchPrio;
+        private System.Windows.Forms.Button bShowAllPrio;
+        private System.Windows.Forms.TextBox tbSearchPrio;
+        private System.Windows.Forms.Button bSearchPrio;
+        private System.Windows.Forms.DataGridView dgvPrio;
+        private System.Windows.Forms.BindingSource prioriteLocaleBindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn18;
     }
 }
 
