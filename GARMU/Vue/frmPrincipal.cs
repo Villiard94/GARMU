@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using GARMU.Modele;
 using GARMU.Controleur;
+using System.Globalization;
 
 namespace GARMU
 {
@@ -18,9 +19,9 @@ namespace GARMU
 
         //Les RichTextBox et TextBox des créations dynamiques de la planification mensuelle et du plan de travail. 
         Vue.NumberedRichTextBox[,] _rtbsPlanif = new Vue.NumberedRichTextBox[6, 5];
-        Vue.NumberedRichTextBox[,] _rtbsPlanTrav = new Vue.NumberedRichTextBox[5, 7];
-        TextBox[,] _tbsDatesPlanTravail = new TextBox[5, 7];
-        TextBox[,] _tbsRelevePlanTravail = new TextBox[5, 7];
+        Vue.NumberedRichTextBox[,] _rtbsPlanTrav = new Vue.NumberedRichTextBox[6, 7];
+        Label[,] _lblsDatesPlanTravail = new Label[6, 7];
+        TextBox[,] _tbsRelevePlanTravail = new TextBox[6, 7];
 
 
         #endregion
@@ -52,6 +53,7 @@ namespace GARMU
 
             #region Génération de PlanifMensuelle
 
+            //Faire le tableau
             const int colIndexStartPlanif = 1;
             const int rowIndexStartPlanif = 2;
 
@@ -71,6 +73,18 @@ namespace GARMU
                     rtb.Dock = DockStyle.Fill;
                 }
             }
+
+            //Remplir le ddl des années
+
+            for (int i = 2013; i < DateTime.Now.Year+2; i++)
+            {
+                ddlAnneePlanif.Items.Add(i);
+            }
+
+            // Ajuster les index pour que ddl soient positionnés sur la date d'aujourd'hui
+            ddlAnneePlanif.SelectedIndex = DateTime.Now.Year - 2013;
+            ddlMoisPlanif.SelectedIndex = DateTime.Now.Month - 1;
+
             #endregion
 
             #region Génération de PlanTravailEquipe
@@ -85,26 +99,35 @@ namespace GARMU
                     //Section de la création des dates
                     if (i % 2 != 0 && j % 3 != 2)
                     {
-                        TextBox tb = new TextBox();
-                        tb.Dock = DockStyle.Fill;
-                        tb.Margin = new Padding(0);
-                        tb.BorderStyle = BorderStyle.None;
+                        
 
                         // Ajout des Dates
                         if (j % 3 == 0)
                         {
-                            _tbsDatesPlanTravail[(i - 1) / 2, j / 3] = tb;
-                            tb.Text = String.Format("{0}, {1}", (i - 1) / 2, j / 3);
+                            Label lbl = new Label();
+
+                            
+
+                            _lblsDatesPlanTravail[(i - 1) / 2, j / 3] = lbl;
+
+                            tlpPlanTravail.Controls.Add(lbl, j, i);
+                            //tb.Text = String.Format("{0}, {1}", (i - 1) / 2, j / 3);
                         }
                         // Ajout des Releves
                         else if (j % 3 == 1)
                         {
+                            TextBox tb = new TextBox();
+                            tb.Dock = DockStyle.Fill;
+                            tb.Margin = new Padding(0);
+                            tb.BorderStyle = BorderStyle.None;
+
                             _tbsRelevePlanTravail[(i - 1) / 2, j / 3] = tb;
-                            tb.Text = String.Format("{0}, {1}", (i - 1) / 2, j / 3);
+                            //tb.Text = String.Format("{0}, {1}", (i - 1) / 2, j / 3);
+                            tlpPlanTravail.Controls.Add(tb, j, i);
+
                         }
 
 
-                        tlpPlanTravail.Controls.Add(tb, j, i);
                     }
 
                     //Section de la création des assignations
@@ -121,13 +144,46 @@ namespace GARMU
 
                         _rtbsPlanTrav[i / 2 - 1, j / 3] = rtb;
                     }
-
                 }
             }
 
+            //Création des ddl.
+            for (int i = 2013; i < DateTime.Now.Year + 2; i++)
+            {
+                ddlAnnePlanTravail.Items.Add(i);
+            }
+
+            ddlAnnePlanTravail.SelectedIndex = DateTime.Now.Year - 2013;
+            ddlMoisPlanTravail.SelectedIndex = DateTime.Now.Month - 1;
+            ddlEquipePlanTravail.SelectedIndex = 0;
+
+            //Remplir les textboxs de dates.
+            UpdatePlanTravailDate(DateTime.Now.Month, DateTime.Now.Year);
 
             #endregion
 
+        }
+
+        /// <summary>
+        /// Mettre à jour le plan de travail par équipe a partir de l'année et le mois spécifié
+        /// </summary>
+        /// <param name="month">Le mois en question</param>
+        /// <param name="year">L'année en question</param>
+        private void UpdatePlanTravailDate(int month, int year)
+        {
+            DateTime dt = new DateTime(year, month, 1);
+            GregorianCalendar gc = new GregorianCalendar();
+
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = (int)dt.DayOfWeek - 1; j < 7; j++)
+                {
+                    _lblsDatesPlanTravail[i, j].Text = dt.Day.ToString();
+                    dt = dt.AddDays(1);
+                    if (dt.Month != month)
+                        break;
+                }
+            }
         }
 
         private void frmPrincipal_Load(object sender, EventArgs e)

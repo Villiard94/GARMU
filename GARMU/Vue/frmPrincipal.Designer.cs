@@ -85,8 +85,8 @@
             this.tabPlanif = new System.Windows.Forms.TabPage();
             this.bEnregistrerPlanif = new System.Windows.Forms.Button();
             this.bRechercherPlanif = new System.Windows.Forms.Button();
-            this.cbAnneePlanif = new System.Windows.Forms.ComboBox();
-            this.cbMoisPlanif = new System.Windows.Forms.ComboBox();
+            this.ddlAnneePlanif = new System.Windows.Forms.ComboBox();
+            this.ddlMoisPlanif = new System.Windows.Forms.ComboBox();
             this.label16 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tbThemePlanif = new System.Windows.Forms.TextBox();
@@ -108,20 +108,20 @@
             this.tabPlanEquipe = new System.Windows.Forms.TabPage();
             this.btnEnregistrerPlan = new System.Windows.Forms.Button();
             this.btnRechercherPlan = new System.Windows.Forms.Button();
-            this.cboPlanifAnne = new System.Windows.Forms.ComboBox();
-            this.cboPlanifMois = new System.Windows.Forms.ComboBox();
-            this.cboPlanifEquipe = new System.Windows.Forms.ComboBox();
+            this.ddlAnnePlanTravail = new System.Windows.Forms.ComboBox();
+            this.ddlMoisPlanTravail = new System.Windows.Forms.ComboBox();
+            this.ddlEquipePlanTravail = new System.Windows.Forms.ComboBox();
             this.label28 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.tlpPlanTravail = new System.Windows.Forms.TableLayoutPanel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.label22 = new System.Windows.Forms.Label();
-            this.label23 = new System.Windows.Forms.Label();
-            this.label24 = new System.Windows.Forms.Label();
-            this.label25 = new System.Windows.Forms.Label();
+            this.lLundiPlanTravail = new System.Windows.Forms.Label();
+            this.lMardiPlanTravail = new System.Windows.Forms.Label();
+            this.lMercrediPlanTravail = new System.Windows.Forms.Label();
+            this.lJeudiPlanTravail = new System.Windows.Forms.Label();
+            this.lVendrediPlanTravail = new System.Windows.Forms.Label();
+            this.lSamediPlanTravail = new System.Windows.Forms.Label();
+            this.lDimanchePlanTravail = new System.Windows.Forms.Label();
             this.tabRapportQuot = new System.Windows.Forms.TabPage();
             this.bRapQuotVersRequ = new System.Windows.Forms.Button();
             this.bRapQuotVersSuiviRequ = new System.Windows.Forms.Button();
@@ -248,6 +248,7 @@
             this.bAddPrio = new System.Windows.Forms.Button();
             this.gbListPrio = new System.Windows.Forms.GroupBox();
             this.dgvPrio = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.prioriteLocaleBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.gbSearchPrio = new System.Windows.Forms.GroupBox();
             this.bShowAllPrio = new System.Windows.Forms.Button();
@@ -288,7 +289,6 @@
             this.tbRechercherVehicule = new System.Windows.Forms.TextBox();
             this.bRechercherVehicule = new System.Windows.Forms.Button();
             this.tcMenu = new System.Windows.Forms.TabControl();
-            this.dataGridViewTextBoxColumn18 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             label2 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabRapports.SuspendLayout();
@@ -926,8 +926,8 @@
             this.tabPlanif.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPlanif.Controls.Add(this.bEnregistrerPlanif);
             this.tabPlanif.Controls.Add(this.bRechercherPlanif);
-            this.tabPlanif.Controls.Add(this.cbAnneePlanif);
-            this.tabPlanif.Controls.Add(this.cbMoisPlanif);
+            this.tabPlanif.Controls.Add(this.ddlAnneePlanif);
+            this.tabPlanif.Controls.Add(this.ddlMoisPlanif);
             this.tabPlanif.Controls.Add(this.label16);
             this.tabPlanif.Controls.Add(this.label9);
             this.tabPlanif.Controls.Add(this.tbThemePlanif);
@@ -955,32 +955,28 @@
             // bRechercherPlanif
             // 
             this.bRechercherPlanif.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bRechercherPlanif.Location = new System.Drawing.Point(1085, 6);
+            this.bRechercherPlanif.Location = new System.Drawing.Point(1094, 4);
             this.bRechercherPlanif.Name = "bRechercherPlanif";
-            this.bRechercherPlanif.Size = new System.Drawing.Size(112, 20);
+            this.bRechercherPlanif.Size = new System.Drawing.Size(112, 22);
             this.bRechercherPlanif.TabIndex = 7;
             this.bRechercherPlanif.Text = "Rechercher";
             this.bRechercherPlanif.UseVisualStyleBackColor = true;
             this.bRechercherPlanif.Click += new System.EventHandler(this.bRechercherPlanif_Click);
             // 
-            // cbAnneePlanif
+            // ddlAnneePlanif
             // 
-            this.cbAnneePlanif.FormattingEnabled = true;
-            this.cbAnneePlanif.Items.AddRange(new object[] {
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017"});
-            this.cbAnneePlanif.Location = new System.Drawing.Point(534, 7);
-            this.cbAnneePlanif.Name = "cbAnneePlanif";
-            this.cbAnneePlanif.Size = new System.Drawing.Size(121, 21);
-            this.cbAnneePlanif.TabIndex = 6;
+            this.ddlAnneePlanif.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlAnneePlanif.FormattingEnabled = true;
+            this.ddlAnneePlanif.Location = new System.Drawing.Point(534, 7);
+            this.ddlAnneePlanif.Name = "ddlAnneePlanif";
+            this.ddlAnneePlanif.Size = new System.Drawing.Size(121, 21);
+            this.ddlAnneePlanif.TabIndex = 6;
             // 
-            // cbMoisPlanif
+            // ddlMoisPlanif
             // 
-            this.cbMoisPlanif.FormattingEnabled = true;
-            this.cbMoisPlanif.Items.AddRange(new object[] {
+            this.ddlMoisPlanif.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlMoisPlanif.FormattingEnabled = true;
+            this.ddlMoisPlanif.Items.AddRange(new object[] {
             "Janvier",
             "Février",
             "Mars",
@@ -990,12 +986,13 @@
             "Juillet",
             "Août",
             "Septembre",
+            "Octobre",
             "Novembre",
             "Décembre"});
-            this.cbMoisPlanif.Location = new System.Drawing.Point(350, 6);
-            this.cbMoisPlanif.Name = "cbMoisPlanif";
-            this.cbMoisPlanif.Size = new System.Drawing.Size(121, 21);
-            this.cbMoisPlanif.TabIndex = 5;
+            this.ddlMoisPlanif.Location = new System.Drawing.Point(350, 6);
+            this.ddlMoisPlanif.Name = "ddlMoisPlanif";
+            this.ddlMoisPlanif.Size = new System.Drawing.Size(121, 21);
+            this.ddlMoisPlanif.TabIndex = 5;
             // 
             // label16
             // 
@@ -1278,9 +1275,9 @@
             this.tabPlanEquipe.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPlanEquipe.Controls.Add(this.btnEnregistrerPlan);
             this.tabPlanEquipe.Controls.Add(this.btnRechercherPlan);
-            this.tabPlanEquipe.Controls.Add(this.cboPlanifAnne);
-            this.tabPlanEquipe.Controls.Add(this.cboPlanifMois);
-            this.tabPlanEquipe.Controls.Add(this.cboPlanifEquipe);
+            this.tabPlanEquipe.Controls.Add(this.ddlAnnePlanTravail);
+            this.tabPlanEquipe.Controls.Add(this.ddlMoisPlanTravail);
+            this.tabPlanEquipe.Controls.Add(this.ddlEquipePlanTravail);
             this.tabPlanEquipe.Controls.Add(this.label28);
             this.tabPlanEquipe.Controls.Add(this.label27);
             this.tabPlanEquipe.Controls.Add(this.label26);
@@ -1297,7 +1294,7 @@
             // btnEnregistrerPlan
             // 
             this.btnEnregistrerPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnEnregistrerPlan.Location = new System.Drawing.Point(1305, 5);
+            this.btnEnregistrerPlan.Location = new System.Drawing.Point(1307, 5);
             this.btnEnregistrerPlan.Name = "btnEnregistrerPlan";
             this.btnEnregistrerPlan.Size = new System.Drawing.Size(96, 28);
             this.btnEnregistrerPlan.TabIndex = 9;
@@ -1307,7 +1304,7 @@
             // btnRechercherPlan
             // 
             this.btnRechercherPlan.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnRechercherPlan.Location = new System.Drawing.Point(1191, 5);
+            this.btnRechercherPlan.Location = new System.Drawing.Point(1193, 5);
             this.btnRechercherPlan.Name = "btnRechercherPlan";
             this.btnRechercherPlan.Size = new System.Drawing.Size(96, 28);
             this.btnRechercherPlan.TabIndex = 8;
@@ -1315,24 +1312,20 @@
             this.btnRechercherPlan.UseVisualStyleBackColor = true;
             this.btnRechercherPlan.Click += new System.EventHandler(this.btnRechercherPlan_Click);
             // 
-            // cboPlanifAnne
+            // ddlAnnePlanTravail
             // 
-            this.cboPlanifAnne.FormattingEnabled = true;
-            this.cboPlanifAnne.Items.AddRange(new object[] {
-            "2013",
-            "2014",
-            "2015",
-            "2016",
-            "2017"});
-            this.cboPlanifAnne.Location = new System.Drawing.Point(492, 7);
-            this.cboPlanifAnne.Name = "cboPlanifAnne";
-            this.cboPlanifAnne.Size = new System.Drawing.Size(121, 21);
-            this.cboPlanifAnne.TabIndex = 6;
+            this.ddlAnnePlanTravail.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlAnnePlanTravail.FormattingEnabled = true;
+            this.ddlAnnePlanTravail.Location = new System.Drawing.Point(492, 7);
+            this.ddlAnnePlanTravail.Name = "ddlAnnePlanTravail";
+            this.ddlAnnePlanTravail.Size = new System.Drawing.Size(121, 21);
+            this.ddlAnnePlanTravail.TabIndex = 6;
             // 
-            // cboPlanifMois
+            // ddlMoisPlanTravail
             // 
-            this.cboPlanifMois.FormattingEnabled = true;
-            this.cboPlanifMois.Items.AddRange(new object[] {
+            this.ddlMoisPlanTravail.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlMoisPlanTravail.FormattingEnabled = true;
+            this.ddlMoisPlanTravail.Items.AddRange(new object[] {
             "Janvier",
             "Février",
             "Mars",
@@ -1342,17 +1335,19 @@
             "Juillet",
             "Août",
             "Septembre",
+            "Octobre",
             "Novembre",
             "Décembre"});
-            this.cboPlanifMois.Location = new System.Drawing.Point(287, 7);
-            this.cboPlanifMois.Name = "cboPlanifMois";
-            this.cboPlanifMois.Size = new System.Drawing.Size(121, 21);
-            this.cboPlanifMois.TabIndex = 5;
+            this.ddlMoisPlanTravail.Location = new System.Drawing.Point(287, 7);
+            this.ddlMoisPlanTravail.Name = "ddlMoisPlanTravail";
+            this.ddlMoisPlanTravail.Size = new System.Drawing.Size(121, 21);
+            this.ddlMoisPlanTravail.TabIndex = 5;
             // 
-            // cboPlanifEquipe
+            // ddlEquipePlanTravail
             // 
-            this.cboPlanifEquipe.FormattingEnabled = true;
-            this.cboPlanifEquipe.Items.AddRange(new object[] {
+            this.ddlEquipePlanTravail.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ddlEquipePlanTravail.FormattingEnabled = true;
+            this.ddlEquipePlanTravail.Items.AddRange(new object[] {
             "1",
             "2",
             "3",
@@ -1360,10 +1355,10 @@
             "5",
             "PAHV",
             "Multi"});
-            this.cboPlanifEquipe.Location = new System.Drawing.Point(72, 5);
-            this.cboPlanifEquipe.Name = "cboPlanifEquipe";
-            this.cboPlanifEquipe.Size = new System.Drawing.Size(121, 21);
-            this.cboPlanifEquipe.TabIndex = 4;
+            this.ddlEquipePlanTravail.Location = new System.Drawing.Point(72, 5);
+            this.ddlEquipePlanTravail.Name = "ddlEquipePlanTravail";
+            this.ddlEquipePlanTravail.Size = new System.Drawing.Size(121, 21);
+            this.ddlEquipePlanTravail.TabIndex = 4;
             // 
             // label28
             // 
@@ -1405,143 +1400,145 @@
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.238091F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.235889F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.235888F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.236131F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.23613F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.236131F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.23613F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.240138F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.240137F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.240138F));
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.240137F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
             this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 2.523617F));
-            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.240138F));
-            this.tlpPlanTravail.Controls.Add(this.label19, 0, 0);
-            this.tlpPlanTravail.Controls.Add(this.label20, 3, 0);
-            this.tlpPlanTravail.Controls.Add(this.label21, 6, 0);
-            this.tlpPlanTravail.Controls.Add(this.label22, 9, 0);
-            this.tlpPlanTravail.Controls.Add(this.label23, 12, 0);
-            this.tlpPlanTravail.Controls.Add(this.label24, 15, 0);
-            this.tlpPlanTravail.Controls.Add(this.label25, 18, 0);
+            this.tlpPlanTravail.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 9.240137F));
+            this.tlpPlanTravail.Controls.Add(this.lLundiPlanTravail, 0, 0);
+            this.tlpPlanTravail.Controls.Add(this.lMardiPlanTravail, 3, 0);
+            this.tlpPlanTravail.Controls.Add(this.lMercrediPlanTravail, 6, 0);
+            this.tlpPlanTravail.Controls.Add(this.lJeudiPlanTravail, 9, 0);
+            this.tlpPlanTravail.Controls.Add(this.lVendrediPlanTravail, 12, 0);
+            this.tlpPlanTravail.Controls.Add(this.lSamediPlanTravail, 15, 0);
+            this.tlpPlanTravail.Controls.Add(this.lDimanchePlanTravail, 18, 0);
             this.tlpPlanTravail.Location = new System.Drawing.Point(11, 39);
             this.tlpPlanTravail.Name = "tlpPlanTravail";
-            this.tlpPlanTravail.RowCount = 11;
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.911262F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.572702F));
-            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 15.64505F));
+            this.tlpPlanTravail.RowCount = 13;
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 3.280709F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.99673F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.12284F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.99673F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.12284F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.99673F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.12284F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.99673F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.12284F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.99673F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.12284F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 2.994463F));
+            this.tlpPlanTravail.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 13.12699F));
             this.tlpPlanTravail.Size = new System.Drawing.Size(1407, 516);
             this.tlpPlanTravail.TabIndex = 0;
             // 
-            // label19
+            // lLundiPlanTravail
             // 
-            this.label19.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tlpPlanTravail.SetColumnSpan(this.label19, 3);
-            this.label19.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(2, 2);
-            this.label19.Margin = new System.Windows.Forms.Padding(0);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(197, 19);
-            this.label19.TabIndex = 0;
-            this.label19.Text = "DIMANCHE";
-            this.label19.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lLundiPlanTravail.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tlpPlanTravail.SetColumnSpan(this.lLundiPlanTravail, 3);
+            this.lLundiPlanTravail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lLundiPlanTravail.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lLundiPlanTravail.Location = new System.Drawing.Point(2, 2);
+            this.lLundiPlanTravail.Margin = new System.Windows.Forms.Padding(0);
+            this.lLundiPlanTravail.Name = "lLundiPlanTravail";
+            this.lLundiPlanTravail.Size = new System.Drawing.Size(197, 16);
+            this.lLundiPlanTravail.TabIndex = 0;
+            this.lLundiPlanTravail.Text = "LUNDI";
+            this.lLundiPlanTravail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label20
+            // lMardiPlanTravail
             // 
-            this.label20.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tlpPlanTravail.SetColumnSpan(this.label20, 3);
-            this.label20.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(201, 2);
-            this.label20.Margin = new System.Windows.Forms.Padding(0);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(197, 19);
-            this.label20.TabIndex = 3;
-            this.label20.Text = "LUNDI";
-            this.label20.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lMardiPlanTravail.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tlpPlanTravail.SetColumnSpan(this.lMardiPlanTravail, 3);
+            this.lMardiPlanTravail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lMardiPlanTravail.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMardiPlanTravail.Location = new System.Drawing.Point(201, 2);
+            this.lMardiPlanTravail.Margin = new System.Windows.Forms.Padding(0);
+            this.lMardiPlanTravail.Name = "lMardiPlanTravail";
+            this.lMardiPlanTravail.Size = new System.Drawing.Size(197, 16);
+            this.lMardiPlanTravail.TabIndex = 3;
+            this.lMardiPlanTravail.Text = "MARDI";
+            this.lMardiPlanTravail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label21
+            // lMercrediPlanTravail
             // 
-            this.label21.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tlpPlanTravail.SetColumnSpan(this.label21, 3);
-            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(400, 2);
-            this.label21.Margin = new System.Windows.Forms.Padding(0);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(197, 19);
-            this.label21.TabIndex = 4;
-            this.label21.Text = "MARDI";
-            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lMercrediPlanTravail.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tlpPlanTravail.SetColumnSpan(this.lMercrediPlanTravail, 3);
+            this.lMercrediPlanTravail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lMercrediPlanTravail.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lMercrediPlanTravail.Location = new System.Drawing.Point(400, 2);
+            this.lMercrediPlanTravail.Margin = new System.Windows.Forms.Padding(0);
+            this.lMercrediPlanTravail.Name = "lMercrediPlanTravail";
+            this.lMercrediPlanTravail.Size = new System.Drawing.Size(197, 16);
+            this.lMercrediPlanTravail.TabIndex = 4;
+            this.lMercrediPlanTravail.Text = "MERCREDI";
+            this.lMercrediPlanTravail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label22
+            // lJeudiPlanTravail
             // 
-            this.label22.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tlpPlanTravail.SetColumnSpan(this.label22, 3);
-            this.label22.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label22.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(599, 2);
-            this.label22.Margin = new System.Windows.Forms.Padding(0);
-            this.label22.Name = "label22";
-            this.label22.Size = new System.Drawing.Size(197, 19);
-            this.label22.TabIndex = 5;
-            this.label22.Text = "MERCREDI";
-            this.label22.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lJeudiPlanTravail.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tlpPlanTravail.SetColumnSpan(this.lJeudiPlanTravail, 3);
+            this.lJeudiPlanTravail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lJeudiPlanTravail.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lJeudiPlanTravail.Location = new System.Drawing.Point(599, 2);
+            this.lJeudiPlanTravail.Margin = new System.Windows.Forms.Padding(0);
+            this.lJeudiPlanTravail.Name = "lJeudiPlanTravail";
+            this.lJeudiPlanTravail.Size = new System.Drawing.Size(197, 16);
+            this.lJeudiPlanTravail.TabIndex = 5;
+            this.lJeudiPlanTravail.Text = "JEUDI";
+            this.lJeudiPlanTravail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label23
+            // lVendrediPlanTravail
             // 
-            this.label23.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tlpPlanTravail.SetColumnSpan(this.label23, 3);
-            this.label23.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label23.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(798, 2);
-            this.label23.Margin = new System.Windows.Forms.Padding(0);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(197, 19);
-            this.label23.TabIndex = 6;
-            this.label23.Text = "JEUDI";
-            this.label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lVendrediPlanTravail.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tlpPlanTravail.SetColumnSpan(this.lVendrediPlanTravail, 3);
+            this.lVendrediPlanTravail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lVendrediPlanTravail.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lVendrediPlanTravail.Location = new System.Drawing.Point(798, 2);
+            this.lVendrediPlanTravail.Margin = new System.Windows.Forms.Padding(0);
+            this.lVendrediPlanTravail.Name = "lVendrediPlanTravail";
+            this.lVendrediPlanTravail.Size = new System.Drawing.Size(197, 16);
+            this.lVendrediPlanTravail.TabIndex = 6;
+            this.lVendrediPlanTravail.Text = "VENDREDI";
+            this.lVendrediPlanTravail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label24
+            // lSamediPlanTravail
             // 
-            this.label24.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tlpPlanTravail.SetColumnSpan(this.label24, 3);
-            this.label24.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label24.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(997, 2);
-            this.label24.Margin = new System.Windows.Forms.Padding(0);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(197, 19);
-            this.label24.TabIndex = 7;
-            this.label24.Text = "VENDREDI";
-            this.label24.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lSamediPlanTravail.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tlpPlanTravail.SetColumnSpan(this.lSamediPlanTravail, 3);
+            this.lSamediPlanTravail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lSamediPlanTravail.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lSamediPlanTravail.Location = new System.Drawing.Point(997, 2);
+            this.lSamediPlanTravail.Margin = new System.Windows.Forms.Padding(0);
+            this.lSamediPlanTravail.Name = "lSamediPlanTravail";
+            this.lSamediPlanTravail.Size = new System.Drawing.Size(197, 16);
+            this.lSamediPlanTravail.TabIndex = 7;
+            this.lSamediPlanTravail.Text = "SAMEDI";
+            this.lSamediPlanTravail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // label25
+            // lDimanchePlanTravail
             // 
-            this.label25.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.tlpPlanTravail.SetColumnSpan(this.label25, 3);
-            this.label25.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(1196, 2);
-            this.label25.Margin = new System.Windows.Forms.Padding(0);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(209, 19);
-            this.label25.TabIndex = 8;
-            this.label25.Text = "SAMEDI";
-            this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lDimanchePlanTravail.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.tlpPlanTravail.SetColumnSpan(this.lDimanchePlanTravail, 3);
+            this.lDimanchePlanTravail.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lDimanchePlanTravail.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lDimanchePlanTravail.Location = new System.Drawing.Point(1196, 2);
+            this.lDimanchePlanTravail.Margin = new System.Windows.Forms.Padding(0);
+            this.lDimanchePlanTravail.Name = "lDimanchePlanTravail";
+            this.lDimanchePlanTravail.Size = new System.Drawing.Size(209, 16);
+            this.lDimanchePlanTravail.TabIndex = 8;
+            this.lDimanchePlanTravail.Text = "DIMANCHE";
+            this.lDimanchePlanTravail.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // tabRapportQuot
             // 
@@ -2775,6 +2772,7 @@
             // tabPriorites
             // 
             this.tabPriorites.AutoScroll = true;
+            this.tabPriorites.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabPriorites.Controls.Add(this.gbEditPrio);
             this.tabPriorites.Controls.Add(this.gbListPrio);
             this.tabPriorites.Controls.Add(this.gbSearchPrio);
@@ -2898,6 +2896,13 @@
             this.dgvPrio.Size = new System.Drawing.Size(149, 237);
             this.dgvPrio.TabIndex = 0;
             this.dgvPrio.SelectionChanged += new System.EventHandler(this.dgvPrio_SelectionChanged);
+            // 
+            // dataGridViewTextBoxColumn18
+            // 
+            this.dataGridViewTextBoxColumn18.DataPropertyName = "Nom";
+            this.dataGridViewTextBoxColumn18.HeaderText = "Nom";
+            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
+            this.dataGridViewTextBoxColumn18.ReadOnly = true;
             // 
             // prioriteLocaleBindingSource
             // 
@@ -3116,6 +3121,7 @@
             // 
             // tabVeh
             // 
+            this.tabVeh.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tabVeh.Controls.Add(this.gbEditVeh);
             this.tabVeh.Controls.Add(this.gbListeVeh);
             this.tabVeh.Controls.Add(this.gbRechercheVehicule);
@@ -3307,13 +3313,6 @@
             this.tcMenu.SizeMode = System.Windows.Forms.TabSizeMode.Fixed;
             this.tcMenu.TabIndex = 0;
             // 
-            // dataGridViewTextBoxColumn18
-            // 
-            this.dataGridViewTextBoxColumn18.DataPropertyName = "Nom";
-            this.dataGridViewTextBoxColumn18.HeaderText = "Nom";
-            this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
-            this.dataGridViewTextBoxColumn18.ReadOnly = true;
-            // 
             // frmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -3479,8 +3478,8 @@
         private System.Windows.Forms.TabPage tabPlanif;
         private System.Windows.Forms.Button bEnregistrerPlanif;
         private System.Windows.Forms.Button bRechercherPlanif;
-        private System.Windows.Forms.ComboBox cbAnneePlanif;
-        private System.Windows.Forms.ComboBox cbMoisPlanif;
+        private System.Windows.Forms.ComboBox ddlAnneePlanif;
+        private System.Windows.Forms.ComboBox ddlMoisPlanif;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox tbThemePlanif;
@@ -3502,19 +3501,19 @@
         private System.Windows.Forms.TabPage tabPlanEquipe;
         private System.Windows.Forms.Button btnEnregistrerPlan;
         private System.Windows.Forms.Button btnRechercherPlan;
-        private System.Windows.Forms.ComboBox cboPlanifAnne;
-        private System.Windows.Forms.ComboBox cboPlanifMois;
-        private System.Windows.Forms.ComboBox cboPlanifEquipe;
+        private System.Windows.Forms.ComboBox ddlAnnePlanTravail;
+        private System.Windows.Forms.ComboBox ddlMoisPlanTravail;
+        private System.Windows.Forms.ComboBox ddlEquipePlanTravail;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TableLayoutPanel tlpPlanTravail;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.Label label22;
-        private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label label25;
+        private System.Windows.Forms.Label lMardiPlanTravail;
+        private System.Windows.Forms.Label lMercrediPlanTravail;
+        private System.Windows.Forms.Label lJeudiPlanTravail;
+        private System.Windows.Forms.Label lVendrediPlanTravail;
+        private System.Windows.Forms.Label lSamediPlanTravail;
+        private System.Windows.Forms.Label lDimanchePlanTravail;
         private System.Windows.Forms.TabPage tabRapportQuot;
         private System.Windows.Forms.Button bRapQuotVersRequ;
         private System.Windows.Forms.Button bRapQuotVersSuiviRequ;
@@ -3620,7 +3619,7 @@
         private System.Windows.Forms.TabControl tcMenu;
         private System.Windows.Forms.DataGridView dgvVeh;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label lLundiPlanTravail;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Button bSuppEmp;
